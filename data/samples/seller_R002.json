@@ -1,0 +1,82 @@
+{
+  "seller_id": "R002",
+  "display_name": "Paper Pouch Service Provider, Uttar Pradesh",
+  "city": "Lucknow",
+  "state": "Uttar Pradesh",
+  "business_type": "service_provider",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Paper Pouch",
+    "Wooden Center Table"
+  ],
+  "years_on_im": 8,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 0,
+    "lead_response_rate": 1.0,
+    "app_active_days_30d": 10,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-06-12",
+      "outcome": "general",
+      "duration_sec": 123,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 5.3,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-07-10",
+      "outcome": "callback",
+      "duration_sec": 148,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 5.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-07-17",
+      "outcome": "general",
+      "duration_sec": 38,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 5.3,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-07-18",
+      "outcome": "general",
+      "duration_sec": 77,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 5.3,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-07-22",
+      "outcome": "not_interested",
+      "duration_sec": 3,
+      "objections": [
+        "busy",
+        "not_needed"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 5.3,
+      "summary": "Bot call, original label 'Not Interested'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [
+      "Seller Unavailability & Scheduling Constraints",
+      "Explicit Disinterest / Refusal",
+      "Product / Service / Business Mismatch"
+    ],
+    "years_on_im_is_proxy": true
+  }
+}

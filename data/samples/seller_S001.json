@@ -1,0 +1,58 @@
+{
+  "seller_id": "S001",
+  "display_name": "Sharma Steel Traders",
+  "city": "Ludhiana",
+  "state": "Punjab",
+  "business_type": "trader",
+  "turnover_band": "1.5-5Cr",
+  "categories": [
+    "MS Pipes",
+    "GI Sheets",
+    "TMT Bars"
+  ],
+  "years_on_im": 6,
+  "subscription": "paid_basic",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 48,
+    "lead_response_rate": 0.31,
+    "app_active_days_30d": 22,
+    "avg_reply_time_hrs": 9.5,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-09-10",
+      "outcome": "callback",
+      "duration_sec": 38,
+      "objections": [
+        "busy"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 4.0,
+      "summary": "Said 'abhi busy hoon, baad mein'. Cut call fast."
+    },
+    {
+      "date": "2026-09-13",
+      "outcome": "disconnected",
+      "duration_sec": 21,
+      "objections": [
+        "busy"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 3.5,
+      "summary": "Hung up during long intro."
+    },
+    {
+      "date": "2026-09-16",
+      "outcome": "meeting_fixed",
+      "duration_sec": 140,
+      "objections": [
+        "price"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 7.0,
+      "summary": "Agreed after a crisp pitch focused on lead count."
+    }
+  ]
+}

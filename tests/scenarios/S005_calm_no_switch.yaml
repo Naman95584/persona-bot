@@ -1,0 +1,11 @@
+# Control scenario: a calm, engaged seller. NO style switch should fire before the
+# close. This guards against false positives (e.g. "busy" in "business").
+seller_id: S005
+title: "Calm exporter (false-positive check)"
+turns:
+  - text: "हाँ जी, बोलिए, मैं सुन रहा हूँ"
+    expect: []
+  - text: "हम already दूसरे portal पे भी हैं, उससे ठीक-ठाक business आता है"
+    expect: []
+  - text: "comparison दिखा दो तो देख लेंगे"
+    expect: []

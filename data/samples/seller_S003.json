@@ -1,0 +1,58 @@
+{
+  "seller_id": "S003",
+  "display_name": "Nexa Pharma Distributors",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "business_type": "distributor",
+  "turnover_band": "5-25Cr",
+  "categories": [
+    "Surgical Gloves",
+    "Hospital Consumables"
+  ],
+  "years_on_im": 4,
+  "subscription": "paid_premium",
+  "preferred_language": "en",
+  "engagement": {
+    "leads_last_30d": 120,
+    "lead_response_rate": 0.78,
+    "app_active_days_30d": 27,
+    "avg_reply_time_hrs": 2.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-09-10",
+      "outcome": "not_interested",
+      "duration_sec": 55,
+      "objections": [
+        "lead_quality"
+      ],
+      "seller_language": "en",
+      "avg_seller_turn_words": 14.0,
+      "summary": "Complained leads are irrelevant retail buyers."
+    },
+    {
+      "date": "2026-09-13",
+      "outcome": "disconnected",
+      "duration_sec": 40,
+      "objections": [
+        "lead_quality",
+        "price"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.0,
+      "summary": "Got irritated: 'kitni baar call karoge'. Switched to Hindi when annoyed."
+    },
+    {
+      "date": "2026-09-16",
+      "outcome": "callback",
+      "duration_sec": 80,
+      "objections": [
+        "price"
+      ],
+      "seller_language": "en",
+      "avg_seller_turn_words": 13.0,
+      "summary": "Wants ROI numbers before any meeting."
+    }
+  ]
+}

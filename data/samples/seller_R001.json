@@ -1,0 +1,72 @@
+{
+  "seller_id": "R001",
+  "display_name": "Control Valves Distributor, Gujarat",
+  "city": "Bhavnagar",
+  "state": "Gujarat",
+  "business_type": "distributor",
+  "turnover_band": "40L-1.5Cr",
+  "categories": [
+    "Control Valves",
+    "Digital Display Clock",
+    "HMI Touch Panel"
+  ],
+  "years_on_im": 3,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 0,
+    "lead_response_rate": 0.0,
+    "app_active_days_30d": 30,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-05-12",
+      "outcome": "callback",
+      "duration_sec": 117,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 4.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-05-20",
+      "outcome": "callback",
+      "duration_sec": 67,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 4.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-05-22",
+      "outcome": "not_interested",
+      "duration_sec": 63,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 4.3,
+      "summary": "Bot call, original label 'Not Interested'."
+    },
+    {
+      "date": "2026-07-08",
+      "outcome": "callback",
+      "duration_sec": 70,
+      "objections": [
+        "busy"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 4.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [
+      "Seller Unavailability & Scheduling Constraints",
+      "Callback / Deferred Engagement (Neutral)"
+    ],
+    "years_on_im_is_proxy": true
+  }
+}

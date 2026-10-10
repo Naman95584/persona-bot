@@ -1,0 +1,12 @@
+# Real-data demo 2 (R004): new / early-stage Hinglish retailer → CONFUSION switch on turn 2.
+seller_id: R004
+title: "Confused new retailer (real-data persona R004)"
+turns:
+  - text: "हाँ जी, बोलिए"
+    expect: []
+  - text: "लीड क्या होता है? समझ नहीं आया"
+    expect: [confusion]
+  - text: "अच्छा अच्छा, तो इसमें मुझे क्या करना होगा?"
+    expect: []
+  - text: "ठीक है, परसों सुबह 11 बजे का slot रख लो"
+    expect: [interest]

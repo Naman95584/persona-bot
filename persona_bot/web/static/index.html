@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persona Bot · Live Demo</title>
+<!--
+  Single-file UI: no build step, no framework. Three columns:
+    left   = seller + generated persona spec (with the reason for every choice)
+    middle = the call (push-to-talk mic, typed fallback, scripted demo lines)
+    right  = LIVE persona dials + switch log (what the jury watches during a switch)
+-->
+<style>
+  :root{
+    --bg:#f6f5f2; --panel:#ffffff; --ink:#1b1b1f; --muted:#6b6b76; --line:#e6e3dc;
+    --brand:#0f5e9c; --brand-soft:#e5f0f9; --ok:#18794e; --warn:#b4540a; --bad:#b42318; --vio:#6941c6;
+    --bot:#eef3f8; --seller:#fff6e8; --radius:12px;
+    --sig-rush:#b4540a; --sig-confusion:#6941c6; --sig-frustration:#b42318; --sig-interest:#18794e; --sig-language_switch:#0f5e9c;
+    font-family: "Inter", "Noto Sans", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-size:14px}
+  header{display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+  header h1{font-size:16px;margin:0;font-weight:650;letter-spacing:-.01em}
+  header .sub{color:var(--muted)}
+  .badge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px;letter-spacing:.04em}
+  .badge.mock{background:#fff1e0;color:var(--warn)} .badge.real{background:#e3f6ec;color:var(--ok)}
+  main{display:grid;grid-template-columns:minmax(280px,1.05fr) minmax(340px,1.4fr) minmax(280px,1fr);gap:14px;padding:14px;height:calc(100vh - 54px)}
+  @media (max-width:1100px){main{grid-template-columns:minmax(0,1fr);height:auto}}
+  .col{display:flex;flex-direction:column;gap:14px;min-height:0;min-width:0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
+  .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px;font-weight:650}
+  .scroll{overflow:auto;min-height:0}
+  .sellers{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;padding-bottom:6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+  .sellers button{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start;border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 10px;cursor:pointer;font:inherit}
+  .sellers button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13px}.kv dt{color:var(--muted)}.kv dd{margin:0}
+  details{border-top:1px solid var(--line);padding:8px 0} details:first-of-type{border-top:0}
+  summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:8px}
+  summary::-webkit-details-marker{display:none} summary .val{font-weight:500;color:var(--brand)}
+  .why{font-size:12.5px;color:#3d3d45;margin:6px 0 2px;line-height:1.45}
+  .src{font-size:11.5px;color:var(--muted);font-family:ui-monospace,Menlo,monospace;word-break:break-word}
+  .ev{font-size:11.5px;background:var(--brand-soft);color:var(--brand);padding:6px 8px;border-radius:8px;margin-top:6px;font-family:ui-monospace,Menlo,monospace}
+  /* conversation */
+  #convo{flex:1;display:flex;flex-direction:column;gap:10px;padding:4px}
+  .msg{max-width:86%;padding:10px 12px;border-radius:14px;line-height:1.5;font-size:15px}
+  .msg.bot{background:var(--bot);align-self:flex-start;border-bottom-left-radius:4px}
+  .msg.seller{background:var(--seller);align-self:flex-end;border-bottom-right-radius:4px}
+  .msg .meta{font-size:11px;color:var(--muted);margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .chip{font-size:11px;font-weight:650;padding:2px 7px;border-radius:99px;color:#fff}
+  .chip.ghost{background:#eee;color:#555;font-weight:500}
+  .switchbar{align-self:center;font-size:12px;font-weight:650;padding:5px 12px;border-radius:99px;background:#fff;border:1.5px dashed var(--vio);color:var(--vio)}
+  .controls{display:flex;flex-direction:column;gap:10px}
+  .row{display:flex;gap:8px;align-items:center}
+  .btn{font:inherit;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 14px;cursor:pointer}
+  .btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)} .btn:disabled{opacity:.45;cursor:not-allowed}
+  #mic{width:58px;height:58px;border-radius:50%;border:0;background:var(--brand);color:#fff;font-size:22px;cursor:pointer;flex:none;box-shadow:0 2px 0 rgba(0,0,0,.08)}
+  #mic.rec{background:var(--bad);animation:pulse 1s infinite} @keyframes pulse{50%{box-shadow:0 0 0 10px rgba(180,35,24,.15)}}
+  #text{flex:1;font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:10px}
+  .lines{display:flex;flex-wrap:wrap;gap:6px}
+  .lines button{font:inherit;font-size:12.5px;text-align:left;border:1px dashed #c9c4b8;background:#fffdf8;border-radius:8px;padding:6px 8px;cursor:pointer}
+  .lines button.used{opacity:.45}
+  .hint{font-size:12px;color:var(--muted)}
+  /* live persona */
+  .dial{display:grid;grid-template-columns:96px 1fr auto;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);transition:background .6s}
+  .dial:last-child{border-bottom:0} .dial .lab{color:var(--muted);font-size:12.5px} .dial .v{font-weight:650;font-variant-numeric:tabular-nums}
+  .dial.flash{background:#f3edff}
+  .bar{height:8px;background:#eee;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:var(--brand);border-radius:99px;transition:width .6s}
+  .dots{display:flex;gap:4px}.dots b{width:10px;height:10px;border-radius:50%;background:#e4e1da;transition:background .4s}.dots b.on{background:var(--brand)}
+  .pill{display:inline-block;padding:2px 9px;border-radius:99px;background:var(--brand-soft);color:var(--brand);font-weight:650}
+  #directives li{font-size:12.5px;margin:4px 0;line-height:1.4}
+  #log{display:flex;flex-direction:column;gap:8px}
+  .entry{border:1px solid var(--line);border-left:4px solid var(--vio);border-radius:8px;padding:8px 10px;animation:enter .5s}
+  @keyframes enter{from{transform:translateY(-6px);opacity:0}}
+  .entry .top{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:4px}
+  .entry .chg{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:#333}
+  .entry .ev2{font-size:12px;color:var(--muted);margin-top:3px}
+  .lat{display:flex;gap:14px;font-size:12px;color:var(--muted)} .lat b{color:var(--ink);font-variant-numeric:tabular-nums}
+  .empty{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Persona Bot</h1><span class="sub">IndiaMART Voice AI Hackathon · Problem 4: Persona Design</span>
+  <span style="flex:1"></span><span id="mode" class="badge">…</span>
+</header>
+
+<main>
+  <!-- LEFT: seller + persona spec -->
+  <section class="col">
+    <div class="card"><h2>Seller</h2><div class="sellers" id="sellers"></div>
+      <dl class="kv" id="sellerkv" style="margin-top:12px"></dl></div>
+    <div class="card scroll" style="flex:1"><h2>Generated persona · why each choice</h2><div id="spec" class="empty">Pick a seller.</div></div>
+  </section>
+
+  <!-- MIDDLE: the call -->
+  <section class="col">
+    <div class="card scroll" style="flex:1;display:flex;flex-direction:column"><h2>Call</h2>
+      <div id="convo"><div class="empty">Press <b>Start call</b>. The bot speaks first with the generated persona.</div></div></div>
+    <div class="card controls">
+      <div class="row">
+        <button class="btn primary" id="start">Start call</button>
+        <button class="btn" id="end" disabled>End call &amp; save log</button>
+        <span style="flex:1"></span><span class="hint" id="status"></span>
+      </div>
+      <div class="row">
+        <button id="mic" title="Click to talk, click again to send (or hold Space)" disabled>🎙</button>
+        <input id="text" placeholder="…or type what the seller says, then Enter" disabled>
+        <button class="btn" id="send" disabled>Send</button>
+      </div>
+      <div><div class="hint" id="lineshint" style="margin-bottom:6px"></div><div class="lines" id="lines"></div></div>
+    </div>
+  </section>
+
+  <!-- RIGHT: live persona + switch log -->
+  <section class="col">
+    <div class="card"><h2>Live persona</h2><div id="dials"></div>
+      <ul id="directives" style="padding-left:18px;margin:8px 0 0"></ul></div>
+    <div class="card scroll" style="flex:1"><h2>Switch log · signal → change → reason</h2>
+      <div id="log"><div class="empty">No switches yet.</div></div></div>
+    <div class="card"><h2>Latency (last turn)</h2><div class="lat" id="lat"><span class="empty">-</span></div></div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const S = { seller:null, call:null, mock:true, audio:null, lastPersona:null, used:new Set() };
+const SIG_LABEL = {rush:"Rush", confusion:"Confusion", frustration:"Frustration", interest:"Interest", language_switch:"Language"};
+const chip = (name, conf) => `<span class="chip" style="background:var(--sig-${name})">${SIG_LABEL[name]||name}${conf!=null?" "+conf.toFixed(2):""}</span>`;
+const esc = t => String(t ?? "").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+async function api(path, opts={}) {
+  const r = await fetch(path, opts);
+  if (!r.ok) throw new Error(await r.text());
+  return r.json();
+}
+
+// ─── boot ───────────────────────────────────────────────
+(async function boot(){
+  const h = await api("/api/health"); S.mock = h.mock;
+  $("#mode").textContent = h.mock ? "MOCK MODE · no Sarvam key" : "LIVE · Sarvam";
+  $("#mode").className = "badge " + (h.mock ? "mock" : "real");
+  const list = await api("/api/sellers");
+  $("#sellers").innerHTML = list.map(s => `<button data-id="${s.seller_id}">${s.seller_id} · ${esc(s.display_name.split(" ")[0])}</button>`).join("");
+  $("#sellers").onclick = e => { const id = e.target.dataset.id; if (id && !S.call) pickSeller(id); };
+  pickSeller(list[0].seller_id);
+})();
+
+async function pickSeller(id){
+  document.querySelectorAll("#sellers button").forEach(b => b.classList.toggle("on", b.dataset.id === id));
+  document.querySelector("#sellers button.on")?.scrollIntoView({block:"nearest", inline:"nearest"});
+  const d = await api(`/api/sellers/${id}`); S.seller = d;
+  const s = d.seller, e = s.engagement;
+  $("#sellerkv").innerHTML = [
+    ["Business", `${esc(s.display_name)}`], ["Where", `${esc(s.city)}, ${esc(s.state)}`],
+    ["Type", `${s.business_type} · ${s.turnover_band}`], ["Sells", esc(s.categories.join(", "))],
+    ["On IndiaMART", `${s.years_on_im} yr · ${s.subscription}`],
+    ["Engagement", `${e.leads_last_30d} leads/30d · replies ${(e.lead_response_rate*100)|0}% · app ${e.app_active_days_30d}/30 days`],
+    ["Past calls", s.past_calls.map(c => `${c.outcome}${c.objections.length? " ("+c.objections.join(",")+")":""}`).join(" · ") || "-"],
+  ].map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  renderSpec(d.persona);
+  renderDials(personaToSnap(d.persona), false);
+  const sc = await api(`/api/scenarios/${id}`); S.used.clear();
+  $("#lineshint").textContent = sc.lines.length ? `Demo script: "${sc.title}" (click a line to say it)` : "";
+  $("#lines").innerHTML = sc.lines.map((l,i) => `<button data-i="${i}">${esc(l)}</button>`).join("");
+  $("#lines").onclick = e => { const b = e.target.closest("button"); if (b && S.call) { b.classList.add("used"); sendTurn({text:b.textContent}); } };
+}
+
+function personaToSnap(p){
+  return {language:p.language.label, language_code:p.language.primary_code, formality:p.language.formality,
+    speaker:p.voice.speaker, pace:p.voice.pace, temperature:p.voice.temperature, warmth:p.tone.warmth,
+    empathy:p.tone.empathy, verbosity:p.tone.verbosity, directives:[], active_signals:[]};
+}
+
+function renderSpec(p){
+  const block = (title, val, r, extra="") => `<details ${title==="Voice"||title==="Language"?"open":""}><summary>${title}<span class="val">${val}</span></summary>
+     <div class="why">${esc(r.why)}</div><div class="src">${esc(r.source)}</div>${extra}</details>`;
+  const plan = p.conversation_plan;
+  $("#spec").className = "";
+  $("#spec").innerHTML =
+    `<div class="hint" style="margin-bottom:8px">Segment <b>${esc(p.segment)}</b> · ${p.evidence_used.length} evidence finding(s) used</div>` +
+    block("Voice", `${p.voice.speaker} · ${p.voice.gender} · pace ${p.voice.pace}`, p.voice.reason) +
+    block("Language", `${p.language.label} · ${p.language.formality}`, p.language.reason) +
+    block("Tone", `${p.tone.verbosity} · warmth ${p.tone.warmth} · empathy ${p.tone.empathy}`, p.tone.reason) +
+    block("Opening", "", plan.opening.reason, `<div class="ev" style="font-family:inherit;font-size:13px">${esc(plan.opening.line)}</div>`) +
+    `<details><summary>Personalisation<span class="val">${plan.personalisation.length}</span></summary>${plan.personalisation.map(h=>`<div class="why">• ${esc(h.hook)}</div><div class="src">${esc(h.reason.source)}</div>`).join("")}</details>` +
+    `<details><summary>Objection playbook<span class="val">${plan.objection_playbook.length}</span></summary>${plan.objection_playbook.map(x=>`<div class="why"><b>${x.objection}</b>: ${esc(x.response)}</div><div class="src">${esc(x.reason.why)}</div>`).join("")}</details>` +
+    `<details><summary>Guardrails &amp; escalation</summary>${[...plan.guardrails, ...plan.escalation_rules].map(g=>`<div class="why">• ${esc(g)}</div>`).join("")}</details>` +
+    block("Live watch-list", p.live_adaptation.watch_for.map(w=>SIG_LABEL[w]).join(", "), p.live_adaptation.reason) +
+    (p.evidence_used.length ? `<details><summary>Evidence used</summary>${p.evidence_used.map(e=>`<div class="ev">${esc(e)}</div>`).join("")}</details>` : "");
+}
+
+function renderDials(snap, animate=true){
+  const prev = S.lastPersona || snap; S.lastPersona = snap;
+  const dots = n => `<div class="dots">${[1,2,3,4,5].map(i=>`<b class="${i<=n?"on":""}"></b>`).join("")}</div>`;
+  const rows = [
+    ["language", "Language", `<span class="pill">${snap.language} · ${snap.language_code}</span>`, ""],
+    ["speaker", "Voice", `<span class="v">${snap.speaker}</span>`, `<span class="hint">temp ${snap.temperature}</span>`],
+    ["pace", "Pace", `<div class="bar"><i style="width:${(snap.pace-0.5)/1.5*100}%"></i></div>`, `<span class="v">${snap.pace.toFixed(2)}</span>`],
+    ["verbosity", "Length", `<span class="pill">${snap.verbosity}</span>`, ""],
+    ["warmth", "Warmth", dots(snap.warmth), `<span class="v">${snap.warmth}</span>`],
+    ["empathy", "Empathy", dots(snap.empathy), `<span class="v">${snap.empathy}</span>`],
+    ["formality", "Formality", `<span class="v">${snap.formality}</span>`, ""],
+  ];
+  $("#dials").innerHTML = rows.map(([k,l,mid,end]) => `<div class="dial ${animate && prev[k]!==snap[k] ? "flash":""}"><span class="lab">${l}</span>${mid}${end||"<span></span>"}</div>`).join("");
+  setTimeout(()=>document.querySelectorAll(".dial.flash").forEach(d=>d.classList.remove("flash")), 1600);
+  $("#directives").innerHTML = (snap.directives||[]).map((d,i)=>`<li>${chip(snap.active_signals[i])} ${esc(d)}</li>`).join("");
+}
+
+function addMsg(who, text, meta=""){
+  const c = $("#convo"); if (c.querySelector(".empty")) c.innerHTML = "";
+  c.insertAdjacentHTML("beforeend", `<div class="msg ${who}">${esc(text)}${meta?`<div class="meta">${meta}</div>`:""}</div>`);
+  c.parentElement.scrollTop = 1e9;
+}
+function addSwitchBar(sw){ $("#convo").insertAdjacentHTML("beforeend", `<div class="switchbar">⟲ persona switched: ${SIG_LABEL[sw.signal]}</div>`); }
+
+function addLog(sw){
+  const L = $("#log"); if (L.querySelector(".empty")) L.innerHTML = "";
+  const chg = Object.entries(sw.change).map(([k,[a,b]]) => k==="cancelled" ? `cancelled ${a}` : `${k}: ${a} → ${b}`).join("<br>");
+  L.insertAdjacentHTML("afterbegin", `<div class="entry" style="border-left-color:var(--sig-${sw.signal})">
+    <div class="top">${chip(sw.signal, sw.confidence)}<span class="hint">turn ${sw.turn} · ${(sw.ts_ms/1000).toFixed(1)}s${sw.latency_ms!=null?` · ${sw.latency_ms} ms`:""}</span></div>
+    <div class="chg">${chg || "style directive only"}</div><div class="ev2">${esc(sw.evidence)}</div></div>`);
+}
+
+function play(b64){
+  if (!b64) return;
+  if (S.audio) S.audio.pause();
+  S.audio = new Audio("data:audio/wav;base64," + b64); S.audio.play().catch(()=>{});
+}
+function setLat(l){
+  if (!l) return;
+  const parts = [["STT",l.stt_ms],["detect",l.detect_ms],["LLM",l.llm_ms],["TTS",l.tts_ms],["total",l.total_ms]].filter(([,v])=>v!=null);
+  $("#lat").innerHTML = parts.map(([k,v])=>`<span>${k} <b>${v} ms</b></span>`).join("");
+}
+function enable(on){ ["#mic","#text","#send","#end"].forEach(s=>$(s).disabled=!on); $("#start").disabled=on; }
+
+// ─── call flow ──────────────────────────────────────────
+$("#start").onclick = async () => {
+  $("#convo").innerHTML = ""; $("#log").innerHTML = `<div class="empty">No switches yet.</div>`;
+  document.querySelectorAll("#lines button").forEach(b=>b.classList.remove("used"));
+  $("#status").textContent = "connecting…";
+  const r = await api("/api/calls", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({seller_id:S.seller.seller.seller_id})});
+  S.call = r.call_id; enable(true); $("#status").textContent = r.call_id;
+  addMsg("bot", r.bot_text, `<span class="chip ghost">opening</span>`); renderDials(r.persona, false); play(r.audio_b64); setLat(r.latency);
+};
+$("#end").onclick = async () => {
+  const r = await api(`/api/calls/${S.call}/end`, {method:"POST"});
+  $("#status").textContent = `saved → ${r.switch_log.split("/").slice(-2).join("/")}`;
+  addMsg("bot", r.summary.meeting_fixed ? "✅ Call ended: meeting fixed" : "Call ended", "");
+  S.call = null; enable(false);
+};
+$("#send").onclick = () => { const t = $("#text").value.trim(); if (t) { $("#text").value = ""; sendTurn({text:t}); } };
+$("#text").onkeydown = e => { if (e.key === "Enter") $("#send").click(); };
+
+async function sendTurn({text, wav, seconds}){
+  if (S.audio) S.audio.pause();                               // seller talking → stop the bot (barge-in)
+  $("#status").textContent = "thinking…";
+  const fd = new FormData();
+  if (text) fd.append("text", text);
+  if (wav) { fd.append("audio", wav, "turn.wav"); fd.append("audio_seconds", seconds.toFixed(2)); }
+  let r;
+  try { r = await api(`/api/calls/${S.call}/turn`, {method:"POST", body:fd}); }
+  catch(e){ $("#status").textContent = "error: " + e.message.slice(0,120); return; }
+  if (r.seller_text) addMsg("seller", r.seller_text, r.signals.map(s=>chip(s.name, s.confidence)).join(""));
+  r.switches.forEach(sw => { addSwitchBar(sw); addLog(sw); });
+  addMsg("bot", r.bot_text, `<span class="chip ghost">${r.reply_source||""}</span><span class="chip ghost">${r.persona.language} · pace ${r.persona.pace}</span>`);
+  renderDials(r.persona, true); play(r.audio_b64); setLat(r.latency);
+  $("#status").textContent = r.meeting_fixed ? "✅ meeting fixed" : S.call;
+}
+
+// ─── microphone → 16 kHz mono WAV (format Saaras accepts everywhere) ─────
+let rec = null;
+async function startRec(){
+  if (S.mock) $("#status").textContent = "mock mode: STT is fake, so type the line or use a demo line";
+  const stream = await navigator.mediaDevices.getUserMedia({audio:{channelCount:1, echoCancellation:true, noiseSuppression:true}});
+  const ctx = new AudioContext(); const src = ctx.createMediaStreamSource(stream);
+  const proc = ctx.createScriptProcessor(4096, 1, 1); const chunks = [];
+  proc.onaudioprocess = e => chunks.push(new Float32Array(e.inputBuffer.getChannelData(0)));
+  src.connect(proc); proc.connect(ctx.destination);
+  rec = {stream, ctx, proc, chunks, t0: performance.now()};
+  $("#mic").classList.add("rec"); if (S.audio) S.audio.pause();
+}
+async function stopRec(){
+  if (!rec) return; const {stream, ctx, proc, chunks, t0} = rec; rec = null;
+  proc.disconnect(); stream.getTracks().forEach(t=>t.stop()); $("#mic").classList.remove("rec");
+  const secs = (performance.now() - t0) / 1000; if (secs < 0.4) return;
+  const wav = encodeWav(chunks, ctx.sampleRate, 16000); ctx.close();
+  sendTurn({wav, seconds: secs});
+}
+function encodeWav(chunks, inRate, outRate){
+  const len = chunks.reduce((a,c)=>a+c.length,0); const data = new Float32Array(len); let o = 0;
+  chunks.forEach(c=>{data.set(c,o); o+=c.length;});
+  const ratio = inRate / outRate, n = Math.floor(len / ratio), pcm = new Int16Array(n);
+  for (let i=0;i<n;i++){ const s = Math.max(-1, Math.min(1, data[Math.floor(i*ratio)])); pcm[i] = s < 0 ? s*0x8000 : s*0x7fff; }
+  const buf = new ArrayBuffer(44 + pcm.length*2), v = new DataView(buf);
+  const w = (p,s)=>[...s].forEach((c,i)=>v.setUint8(p+i,c.charCodeAt(0)));
+  w(0,"RIFF"); v.setUint32(4,36+pcm.length*2,true); w(8,"WAVE"); w(12,"fmt "); v.setUint32(16,16,true);
+  v.setUint16(20,1,true); v.setUint16(22,1,true); v.setUint32(24,outRate,true); v.setUint32(28,outRate*2,true);
+  v.setUint16(32,2,true); v.setUint16(34,16,true); w(36,"data"); v.setUint32(40,pcm.length*2,true);
+  new Int16Array(buf, 44).set(pcm);
+  return new Blob([buf], {type:"audio/wav"});
+}
+$("#mic").onclick = () => rec ? stopRec() : startRec();
+document.addEventListener("keydown", e => { if (e.code==="Space" && document.activeElement!==$("#text") && S.call && !rec && !e.repeat){ e.preventDefault(); startRec(); }});
+document.addEventListener("keyup", e => { if (e.code==="Space" && rec){ e.preventDefault(); stopRec(); }});
+</script>
+</body>
+</html>

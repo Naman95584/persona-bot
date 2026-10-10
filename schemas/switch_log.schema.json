@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SwitchLogEntry",
+  "description": "One line per mid-call persona switch (JSONL). Covers the deck's required fields: signal detected, change made, reason.",
+  "type": "object",
+  "required": ["call_id", "turn", "ts_ms", "signal", "confidence", "evidence", "change", "reason"],
+  "properties": {
+    "call_id": { "type": "string" },
+    "turn": { "type": "integer" },
+    "ts_ms": { "type": "integer", "description": "ms since call start" },
+    "signal": { "enum": ["frustration", "confusion", "interest", "language_switch", "rush"] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "evidence": { "type": "string", "description": "what triggered it: quoted seller words, features (turn length, words/sec, STT language)" },
+    "change": {
+      "type": "object",
+      "description": "persona delta, e.g. {\"voice.pace\": [1.0, 0.85], \"tone.verbosity\": [\"normal\", \"crisp\"]}",
+      "additionalProperties": { "type": "array", "minItems": 2, "maxItems": 2 }
+    },
+    "reason": { "type": "string" },
+    "latency_ms": { "type": "integer", "description": "detection → first audio in new persona" }
+  }
+}

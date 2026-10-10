@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# config.yaml: every knob in one place, so you can tune without touching code.
+# Values here are starting points. Listen to the voices at the venue and adjust.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# The call scenario. It's the same for every seller, which is what the deck asks for:
+# "the same scenario for 2 to 3 contrasting sellers".
+scenario:
+  goal: "Fix a 15-minute meeting between the seller and an IndiaMART growth advisor to help them get more and better buyer leads."
+  bot_names: { female: "Riya", male: "Rohan" }   # Hindi verbs agree with gender (रही/रहा), so name + gender travel together
+  default_gender: "female"   # used when evidence shows no gender effect (true in our synthetic data)
+  company: "IndiaMART"
+
+# ── Sarvam platform ──────────────────────────────────────────────────────────
+sarvam:
+  base_url: "https://api.sarvam.ai"
+  # Paths are kept here so a docs change is a one-line fix, not a code change.
+  stt_path: "/speech-to-text"
+  tts_path: "/text-to-speech"
+  chat_path: "/v1/chat/completions"
+  stt_model: "saaras:v3"       # docs list saaras:v4 (default) and saaras:v3. We use v3 so we can set mode=codemix for Hinglish
+  stt_mode: "codemix"          # only applies to saaras:v3; set to "" if you switch to v4
+  llm_model: "sarvam-105b-conversations"   # sarvam-m was deprecated; API lists sarvam-105b and sarvam-105b-conversations
+  tts_model: "bulbul:v3"       # v3 supports: speaker, pace (0.5–2.0), temperature. pitch/loudness = v2 only
+  tts_sample_rate: 22050
+  timeout_s: 20
+
+# ── Voice catalogue: persona (gender, language) → Bulbul speaker ─────────────
+# Speaker names must exist for the chosen tts_model. LISTEN to each one and swap
+# in whichever sounds best. These are placeholders picked from the v3 list.
+voices:
+  bulbul:v3:
+    female: { hi: "priya",  en: "ritu",   hinglish: "priya" }
+    male:   { hi: "shubh",  en: "aditya", hinglish: "shubh" }
+
+# Language label → BCP-47 code that STT/TTS understand
+language_codes:
+  hi: "hi-IN"
+  hinglish: "hi-IN"   # Hinglish is spoken as Hindi with English words mixed in
+  en: "en-IN"
+
+# How the bot writes Hindi for TTS. "devanagari" is the safest for Bulbul hi-IN.
+# English product words (leads, catalog, GST) stay in Latin script either way.
+hindi_script: "devanagari"
+
+# Pace bands → Bulbul pace value. The evidence miner works in bands; TTS needs numbers.
+pace_values: { slow: 1.0, normal: 1.1, fast: 1.25 }   # Bulbul 1.0 already sounds relaxed in Hindi; real sales callers speak faster
+
+# ── Evidence rules ───────────────────────────────────────────────────────────
+evidence:
+  min_n: 20            # never trust a rate computed from fewer calls than this
+  min_lift_pts: 3.0    # a choice must beat the alternatives by ≥3 percentage points to count as "evidence"
+  success_outcomes: ["meeting_fixed"]
+  fdr: 0.10           # Benjamini–Hochberg false-discovery rate for "strong" findings
+  shrink_k: 30         # shrinkage strength: a slice needs ~30 calls before its own rate counts as much as the prior
+
+# ── Live adaptation (signal → persona change) ────────────────────────────────
+live:
+  detector_mode: "rules"      # rules | llm | hybrid. Start with rules; it's fast and predictable
+  fire_confidence: 0.75       # fire immediately at or above this confidence
+  watch_confidence: 0.5       # a signal at or above this on 2 consecutive turns also fires (hysteresis)
+  cooldown_turns: 2           # minimum seller turns between two switches (prevents flip-flopping)
+  max_switches_per_call: 4
+  min_pace: 0.9               # a live switch may never make the voice slower than this
+  # On a language switch, keep the SAME voice (one consistent "person" on the call) and only
+  # change the language code. Bulbul v3 speakers are multilingual. Set true to swap speaker too.
+  change_speaker_on_language_switch: false
+  # Higher in the list = wins when two signals fire on the same turn
+  priority: ["frustration", "language_switch", "confusion", "rush", "interest"]
+
+  # What each signal changes. Numbers are deltas (+/-). Strings are set values.
+  deltas:
+    rush:
+      voice.pace: +0.15
+      tone.verbosity: "crisp"
+      directive: "The seller is in a hurry. Keep it very short: at most two brief sentences, the second being your question. Skip pleasantries. Go straight to asking for a meeting slot, and offer a callback time if they refuse."
+    confusion:
+      voice.pace: -0.1
+      tone.verbosity: "explanatory"
+      tone.empathy: +1
+      directive: "The seller is confused. Slow down. Use very simple everyday words, one idea per sentence, give one concrete example, then check they understood."
+    frustration:
+      voice.pace: -0.05
+      voice.temperature: -0.1
+      tone.empathy: +2
+      tone.warmth: +1
+      tone.verbosity: "crisp"
+      directive: "The seller is irritated. First sincerely acknowledge their feeling in one line and apologise if we bothered them. Do not push. Offer a choice: a quick 15-minute slot later, or we stop calling. Respect their answer."
+    interest:
+      tone.warmth: +1
+      voice.temperature: +0.1
+      directive: "The seller is interested. Answer their question directly with one specific benefit, then propose two concrete meeting slots."
+    language_switch:
+      directive: "The seller switched language. Reply fully in the new language from now on."
+
+# ── Server ───────────────────────────────────────────────────────────────────
+server:
+  host: "0.0.0.0"
+  port: 8000

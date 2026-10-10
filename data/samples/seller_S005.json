@@ -1,0 +1,35 @@
+{
+  "seller_id": "S005",
+  "display_name": "Surat Silk Exports",
+  "city": "Surat",
+  "state": "Gujarat",
+  "business_type": "exporter",
+  "turnover_band": "25Cr+",
+  "categories": [
+    "Silk Sarees",
+    "Dress Material"
+  ],
+  "years_on_im": 8,
+  "subscription": "paid_premium",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 90,
+    "lead_response_rate": 0.55,
+    "app_active_days_30d": 20,
+    "avg_reply_time_hrs": 5.0,
+    "last_login_days_ago": 1
+  },
+  "past_calls": [
+    {
+      "date": "2026-09-10",
+      "outcome": "meeting_fixed",
+      "duration_sec": 160,
+      "objections": [
+        "already_using_other"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 9.0,
+      "summary": "Uses another portal too; agreed to compare."
+    }
+  ]
+}

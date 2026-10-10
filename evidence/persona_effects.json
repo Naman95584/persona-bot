@@ -1,0 +1,10425 @@
+{
+ "meta": {
+  "n_calls": 6000,
+  "baseline": {
+   "wins": 1419,
+   "n": 6000,
+   "rate": 0.236,
+   "ci_low": 0.226,
+   "ci_high": 0.247
+  },
+  "success_outcomes": [
+   "meeting_fixed"
+  ],
+  "min_n": 20,
+  "segments": [
+   "business_type&size",
+   "seller_language&size",
+   "seller_language",
+   "business_type",
+   "top_objection",
+   "size",
+   ""
+  ],
+  "traits": [
+   "bot_language",
+   "formality",
+   "verbosity",
+   "acknowledged_objection",
+   "pace_band",
+   "voice_gender"
+  ]
+ },
+ "findings": [
+  {
+   "segment": "business_type=distributor&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.32,
+   "shrunk": 0.303,
+   "n": 97,
+   "rest_rate": 0.116,
+   "lift_pts": 18.7,
+   "p_value": 0.00032,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=trader&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.431,
+   "shrunk": 0.383,
+   "n": 72,
+   "rest_rate": 0.2,
+   "lift_pts": 18.3,
+   "p_value": 0.00024,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=exporter&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.333,
+   "shrunk": 0.311,
+   "n": 54,
+   "rest_rate": 0.173,
+   "lift_pts": 13.8,
+   "p_value": 0.0088,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=retailer&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.317,
+   "shrunk": 0.304,
+   "n": 120,
+   "rest_rate": 0.172,
+   "lift_pts": 13.2,
+   "p_value": 0.00093,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=service_provider&size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.267,
+   "shrunk": 0.268,
+   "n": 101,
+   "rest_rate": 0.143,
+   "lift_pts": 12.5,
+   "p_value": 0.0042,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=manufacturer&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.358,
+   "shrunk": 0.339,
+   "n": 134,
+   "rest_rate": 0.219,
+   "lift_pts": 12.0,
+   "p_value": 0.0015,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=trader",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.322,
+   "shrunk": 0.318,
+   "n": 338,
+   "rest_rate": 0.199,
+   "lift_pts": 11.9,
+   "p_value": 6.6e-06,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=trust",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.31,
+   "shrunk": 0.305,
+   "n": 303,
+   "rest_rate": 0.188,
+   "lift_pts": 11.7,
+   "p_value": 0.00039,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=trader&size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.315,
+   "shrunk": 0.306,
+   "n": 127,
+   "rest_rate": 0.19,
+   "lift_pts": 11.6,
+   "p_value": 0.0024,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hinglish&size=mid",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.316,
+   "shrunk": 0.305,
+   "n": 152,
+   "rest_rate": 0.189,
+   "lift_pts": 11.6,
+   "p_value": 0.0014,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=retailer&size=mid",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.306,
+   "shrunk": 0.292,
+   "n": 111,
+   "rest_rate": 0.176,
+   "lift_pts": 11.6,
+   "p_value": 0.014,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=trader&size=large",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.312,
+   "shrunk": 0.301,
+   "n": 144,
+   "rest_rate": 0.187,
+   "lift_pts": 11.4,
+   "p_value": 0.002,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=service_provider&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.309,
+   "shrunk": 0.298,
+   "n": 123,
+   "rest_rate": 0.186,
+   "lift_pts": 11.2,
+   "p_value": 0.018,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=en&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.343,
+   "shrunk": 0.327,
+   "n": 105,
+   "rest_rate": 0.219,
+   "lift_pts": 10.8,
+   "p_value": 0.0086,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=busy",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.29,
+   "shrunk": 0.289,
+   "n": 483,
+   "rest_rate": 0.186,
+   "lift_pts": 10.3,
+   "p_value": 3.1e-06,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=en&size=large",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.311,
+   "shrunk": 0.302,
+   "n": 196,
+   "rest_rate": 0.201,
+   "lift_pts": 10.1,
+   "p_value": 0.0017,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=retailer",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.298,
+   "shrunk": 0.295,
+   "n": 342,
+   "rest_rate": 0.195,
+   "lift_pts": 10.0,
+   "p_value": 0.00012,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hi&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.284,
+   "shrunk": 0.281,
+   "n": 306,
+   "rest_rate": 0.183,
+   "lift_pts": 9.8,
+   "p_value": 0.00019,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=manufacturer&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.315,
+   "shrunk": 0.307,
+   "n": 216,
+   "rest_rate": 0.209,
+   "lift_pts": 9.8,
+   "p_value": 0.008,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hinglish",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.304,
+   "shrunk": 0.302,
+   "n": 771,
+   "rest_rate": 0.208,
+   "lift_pts": 9.4,
+   "p_value": 1.5e-07,
+   "strength": "strong"
+  },
+  {
+   "segment": "size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.307,
+   "shrunk": 0.305,
+   "n": 387,
+   "rest_rate": 0.216,
+   "lift_pts": 8.9,
+   "p_value": 0.00028,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hinglish&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.295,
+   "shrunk": 0.291,
+   "n": 139,
+   "rest_rate": 0.204,
+   "lift_pts": 8.7,
+   "p_value": 0.018,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=none",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.3,
+   "shrunk": 0.297,
+   "n": 277,
+   "rest_rate": 0.211,
+   "lift_pts": 8.6,
+   "p_value": 0.0024,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hi&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.306,
+   "shrunk": 0.301,
+   "n": 291,
+   "rest_rate": 0.215,
+   "lift_pts": 8.6,
+   "p_value": 0.0015,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hi&size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.305,
+   "shrunk": 0.302,
+   "n": 282,
+   "rest_rate": 0.217,
+   "lift_pts": 8.5,
+   "p_value": 0.0021,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=service_provider",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.271,
+   "shrunk": 0.269,
+   "n": 373,
+   "rest_rate": 0.184,
+   "lift_pts": 8.5,
+   "p_value": 0.00048,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hinglish&size=large",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.298,
+   "shrunk": 0.294,
+   "n": 349,
+   "rest_rate": 0.209,
+   "lift_pts": 8.5,
+   "p_value": 0.00063,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=trader&size=large",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.293,
+   "shrunk": 0.284,
+   "n": 140,
+   "rest_rate": 0.199,
+   "lift_pts": 8.5,
+   "p_value": 0.016,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hinglish&size=small",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.304,
+   "shrunk": 0.299,
+   "n": 270,
+   "rest_rate": 0.216,
+   "lift_pts": 8.3,
+   "p_value": 0.003,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=retailer&size=large",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.291,
+   "shrunk": 0.282,
+   "n": 148,
+   "rest_rate": 0.2,
+   "lift_pts": 8.2,
+   "p_value": 0.017,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=trust",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.311,
+   "shrunk": 0.302,
+   "n": 196,
+   "rest_rate": 0.222,
+   "lift_pts": 8.0,
+   "p_value": 0.01,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=price",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.299,
+   "shrunk": 0.296,
+   "n": 498,
+   "rest_rate": 0.217,
+   "lift_pts": 7.9,
+   "p_value": 0.0013,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=exporter",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.293,
+   "shrunk": 0.291,
+   "n": 341,
+   "rest_rate": 0.216,
+   "lift_pts": 7.5,
+   "p_value": 0.0038,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=distributor",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.28,
+   "shrunk": 0.278,
+   "n": 489,
+   "rest_rate": 0.204,
+   "lift_pts": 7.4,
+   "p_value": 0.0036,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hi&size=large",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.264,
+   "shrunk": 0.263,
+   "n": 333,
+   "rest_rate": 0.19,
+   "lift_pts": 7.3,
+   "p_value": 0.0036,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=none",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.288,
+   "shrunk": 0.284,
+   "n": 299,
+   "rest_rate": 0.214,
+   "lift_pts": 7.0,
+   "p_value": 0.0085,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hi",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.277,
+   "shrunk": 0.276,
+   "n": 780,
+   "rest_rate": 0.21,
+   "lift_pts": 6.6,
+   "p_value": 0.00017,
+   "strength": "strong"
+  },
+  {
+   "segment": "size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.284,
+   "shrunk": 0.283,
+   "n": 708,
+   "rest_rate": 0.219,
+   "lift_pts": 6.4,
+   "p_value": 0.00042,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=retailer",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.261,
+   "shrunk": 0.26,
+   "n": 509,
+   "rest_rate": 0.198,
+   "lift_pts": 6.2,
+   "p_value": 0.0089,
+   "strength": "strong"
+  },
+  {
+   "segment": "top_objection=price",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.298,
+   "shrunk": 0.294,
+   "n": 356,
+   "rest_rate": 0.235,
+   "lift_pts": 5.9,
+   "p_value": 0.014,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=manufacturer",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.291,
+   "shrunk": 0.287,
+   "n": 340,
+   "rest_rate": 0.228,
+   "lift_pts": 5.9,
+   "p_value": 0.015,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=hi",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.272,
+   "shrunk": 0.272,
+   "n": 749,
+   "rest_rate": 0.214,
+   "lift_pts": 5.8,
+   "p_value": 0.00092,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=en",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.277,
+   "shrunk": 0.276,
+   "n": 459,
+   "rest_rate": 0.219,
+   "lift_pts": 5.7,
+   "p_value": 0.0086,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=manufacturer",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.28,
+   "shrunk": 0.278,
+   "n": 486,
+   "rest_rate": 0.221,
+   "lift_pts": 5.7,
+   "p_value": 0.016,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=service_provider",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.242,
+   "shrunk": 0.243,
+   "n": 537,
+   "rest_rate": 0.186,
+   "lift_pts": 5.7,
+   "p_value": 0.013,
+   "strength": "strong"
+  },
+  {
+   "segment": "size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.273,
+   "shrunk": 0.272,
+   "n": 607,
+   "rest_rate": 0.216,
+   "lift_pts": 5.6,
+   "p_value": 0.011,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=en",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.275,
+   "shrunk": 0.273,
+   "n": 462,
+   "rest_rate": 0.219,
+   "lift_pts": 5.4,
+   "p_value": 0.011,
+   "strength": "strong"
+  },
+  {
+   "segment": "size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.276,
+   "shrunk": 0.276,
+   "n": 725,
+   "rest_rate": 0.222,
+   "lift_pts": 5.4,
+   "p_value": 0.0027,
+   "strength": "strong"
+  },
+  {
+   "segment": "seller_language=en",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.276,
+   "shrunk": 0.272,
+   "n": 445,
+   "rest_rate": 0.22,
+   "lift_pts": 5.2,
+   "p_value": 0.01,
+   "strength": "strong"
+  },
+  {
+   "segment": "all",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.27,
+   "shrunk": 0.27,
+   "n": 2003,
+   "rest_rate": 0.22,
+   "lift_pts": 5.0,
+   "p_value": 7.3e-06,
+   "strength": "strong"
+  },
+  {
+   "segment": "size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.254,
+   "shrunk": 0.254,
+   "n": 882,
+   "rest_rate": 0.217,
+   "lift_pts": 3.7,
+   "p_value": 0.017,
+   "strength": "strong"
+  },
+  {
+   "segment": "all",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.251,
+   "shrunk": 0.251,
+   "n": 3049,
+   "rest_rate": 0.221,
+   "lift_pts": 3.0,
+   "p_value": 0.0032,
+   "strength": "strong"
+  },
+  {
+   "segment": "business_type=retailer&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.311,
+   "shrunk": 0.291,
+   "n": 103,
+   "rest_rate": 0.182,
+   "lift_pts": 10.9,
+   "p_value": 0.014,
+   "strength": "weak",
+   "note": "inconsistent with parent segment business_type=retailer"
+  },
+  {
+   "segment": "business_type=service_provider&size=mid",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.333,
+   "shrunk": 0.31,
+   "n": 75,
+   "rest_rate": 0.213,
+   "lift_pts": 9.7,
+   "p_value": 0.026,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=mid",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.34,
+   "shrunk": 0.307,
+   "n": 50,
+   "rest_rate": 0.213,
+   "lift_pts": 9.4,
+   "p_value": 0.04,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=small",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.245,
+   "shrunk": 0.246,
+   "n": 106,
+   "rest_rate": 0.152,
+   "lift_pts": 9.4,
+   "p_value": 0.022,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.229,
+   "shrunk": 0.233,
+   "n": 144,
+   "rest_rate": 0.144,
+   "lift_pts": 8.9,
+   "p_value": 0.028,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=small",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.248,
+   "shrunk": 0.24,
+   "n": 101,
+   "rest_rate": 0.153,
+   "lift_pts": 8.7,
+   "p_value": 0.022,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=mid",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.321,
+   "shrunk": 0.301,
+   "n": 81,
+   "rest_rate": 0.215,
+   "lift_pts": 8.6,
+   "p_value": 0.04,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.288,
+   "shrunk": 0.274,
+   "n": 59,
+   "rest_rate": 0.189,
+   "lift_pts": 8.5,
+   "p_value": 0.065,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.304,
+   "shrunk": 0.289,
+   "n": 79,
+   "rest_rate": 0.204,
+   "lift_pts": 8.5,
+   "p_value": 0.067,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=small",
+   "trait": "pace_band",
+   "best": "normal",
+   "rate": 0.282,
+   "shrunk": 0.27,
+   "n": 117,
+   "rest_rate": 0.191,
+   "lift_pts": 7.9,
+   "p_value": 0.026,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.27,
+   "shrunk": 0.268,
+   "n": 222,
+   "rest_rate": 0.189,
+   "lift_pts": 7.9,
+   "p_value": 0.024,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=small",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.223,
+   "shrunk": 0.225,
+   "n": 148,
+   "rest_rate": 0.147,
+   "lift_pts": 7.8,
+   "p_value": 0.045,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=mid",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.26,
+   "shrunk": 0.255,
+   "n": 96,
+   "rest_rate": 0.177,
+   "lift_pts": 7.8,
+   "p_value": 0.081,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.231,
+   "shrunk": 0.236,
+   "n": 104,
+   "rest_rate": 0.16,
+   "lift_pts": 7.6,
+   "p_value": 0.066,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=large",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.283,
+   "shrunk": 0.278,
+   "n": 152,
+   "rest_rate": 0.203,
+   "lift_pts": 7.5,
+   "p_value": 0.03,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.271,
+   "shrunk": 0.269,
+   "n": 221,
+   "rest_rate": 0.194,
+   "lift_pts": 7.5,
+   "p_value": 0.026,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=already_using_other",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.258,
+   "shrunk": 0.26,
+   "n": 159,
+   "rest_rate": 0.187,
+   "lift_pts": 7.3,
+   "p_value": 0.032,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.284,
+   "shrunk": 0.281,
+   "n": 141,
+   "rest_rate": 0.209,
+   "lift_pts": 7.2,
+   "p_value": 0.045,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.263,
+   "shrunk": 0.261,
+   "n": 186,
+   "rest_rate": 0.189,
+   "lift_pts": 7.2,
+   "p_value": 0.023,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=large",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.264,
+   "shrunk": 0.261,
+   "n": 182,
+   "rest_rate": 0.19,
+   "lift_pts": 7.1,
+   "p_value": 0.024,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.296,
+   "shrunk": 0.288,
+   "n": 71,
+   "rest_rate": 0.218,
+   "lift_pts": 7.0,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=large",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.286,
+   "shrunk": 0.277,
+   "n": 140,
+   "rest_rate": 0.208,
+   "lift_pts": 6.9,
+   "p_value": 0.04,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=large",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.265,
+   "shrunk": 0.262,
+   "n": 226,
+   "rest_rate": 0.193,
+   "lift_pts": 6.9,
+   "p_value": 0.038,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=mid",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.3,
+   "shrunk": 0.286,
+   "n": 70,
+   "rest_rate": 0.217,
+   "lift_pts": 6.9,
+   "p_value": 0.092,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.272,
+   "shrunk": 0.268,
+   "n": 151,
+   "rest_rate": 0.2,
+   "lift_pts": 6.8,
+   "p_value": 0.04,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.262,
+   "shrunk": 0.264,
+   "n": 65,
+   "rest_rate": 0.197,
+   "lift_pts": 6.7,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=mid",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.296,
+   "shrunk": 0.287,
+   "n": 152,
+   "rest_rate": 0.222,
+   "lift_pts": 6.5,
+   "p_value": 0.046,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=small",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.317,
+   "shrunk": 0.305,
+   "n": 145,
+   "rest_rate": 0.24,
+   "lift_pts": 6.5,
+   "p_value": 0.044,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=large",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.291,
+   "shrunk": 0.284,
+   "n": 148,
+   "rest_rate": 0.219,
+   "lift_pts": 6.5,
+   "p_value": 0.046,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=mid",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.294,
+   "shrunk": 0.29,
+   "n": 143,
+   "rest_rate": 0.226,
+   "lift_pts": 6.4,
+   "p_value": 0.063,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader&size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.273,
+   "shrunk": 0.273,
+   "n": 139,
+   "rest_rate": 0.21,
+   "lift_pts": 6.3,
+   "p_value": 0.073,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.263,
+   "shrunk": 0.264,
+   "n": 156,
+   "rest_rate": 0.203,
+   "lift_pts": 6.1,
+   "p_value": 0.071,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.268,
+   "shrunk": 0.26,
+   "n": 56,
+   "rest_rate": 0.199,
+   "lift_pts": 6.1,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.266,
+   "shrunk": 0.267,
+   "n": 124,
+   "rest_rate": 0.207,
+   "lift_pts": 6.0,
+   "p_value": 0.1,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.247,
+   "shrunk": 0.248,
+   "n": 97,
+   "rest_rate": 0.19,
+   "lift_pts": 5.8,
+   "p_value": 0.18,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.295,
+   "shrunk": 0.288,
+   "n": 149,
+   "rest_rate": 0.231,
+   "lift_pts": 5.7,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader&size=small",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.257,
+   "shrunk": 0.255,
+   "n": 202,
+   "rest_rate": 0.2,
+   "lift_pts": 5.5,
+   "p_value": 0.079,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=lead_quality",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.319,
+   "shrunk": 0.307,
+   "n": 144,
+   "rest_rate": 0.253,
+   "lift_pts": 5.4,
+   "p_value": 0.068,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.277,
+   "shrunk": 0.274,
+   "n": 213,
+   "rest_rate": 0.22,
+   "lift_pts": 5.4,
+   "p_value": 0.088,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=already_using_other",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.241,
+   "shrunk": 0.243,
+   "n": 195,
+   "rest_rate": 0.189,
+   "lift_pts": 5.4,
+   "p_value": 0.076,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=lead_quality",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.316,
+   "shrunk": 0.305,
+   "n": 158,
+   "rest_rate": 0.252,
+   "lift_pts": 5.3,
+   "p_value": 0.067,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=trust",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.292,
+   "shrunk": 0.286,
+   "n": 192,
+   "rest_rate": 0.233,
+   "lift_pts": 5.3,
+   "p_value": 0.063,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.276,
+   "shrunk": 0.274,
+   "n": 344,
+   "rest_rate": 0.221,
+   "lift_pts": 5.3,
+   "p_value": 0.025,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=small",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.281,
+   "shrunk": 0.278,
+   "n": 295,
+   "rest_rate": 0.226,
+   "lift_pts": 5.2,
+   "p_value": 0.035,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=mid",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.312,
+   "shrunk": 0.289,
+   "n": 96,
+   "rest_rate": 0.237,
+   "lift_pts": 5.2,
+   "p_value": 0.078,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.301,
+   "shrunk": 0.296,
+   "n": 163,
+   "rest_rate": 0.245,
+   "lift_pts": 5.1,
+   "p_value": 0.1,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.281,
+   "shrunk": 0.275,
+   "n": 146,
+   "rest_rate": 0.224,
+   "lift_pts": 5.1,
+   "p_value": 0.091,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish&size=mid",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.261,
+   "shrunk": 0.258,
+   "n": 211,
+   "rest_rate": 0.207,
+   "lift_pts": 5.1,
+   "p_value": 0.09,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.275,
+   "shrunk": 0.272,
+   "n": 342,
+   "rest_rate": 0.222,
+   "lift_pts": 5.0,
+   "p_value": 0.03,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.276,
+   "shrunk": 0.272,
+   "n": 181,
+   "rest_rate": 0.222,
+   "lift_pts": 5.0,
+   "p_value": 0.077,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=small",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.309,
+   "shrunk": 0.296,
+   "n": 123,
+   "rest_rate": 0.246,
+   "lift_pts": 5.0,
+   "p_value": 0.095,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=large",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.253,
+   "shrunk": 0.251,
+   "n": 182,
+   "rest_rate": 0.202,
+   "lift_pts": 4.9,
+   "p_value": 0.12,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=large",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.277,
+   "shrunk": 0.268,
+   "n": 195,
+   "rest_rate": 0.219,
+   "lift_pts": 4.9,
+   "p_value": 0.063,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=lead_quality",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.308,
+   "shrunk": 0.302,
+   "n": 169,
+   "rest_rate": 0.254,
+   "lift_pts": 4.8,
+   "p_value": 0.1,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=small",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.279,
+   "shrunk": 0.275,
+   "n": 298,
+   "rest_rate": 0.227,
+   "lift_pts": 4.8,
+   "p_value": 0.046,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=large",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.238,
+   "shrunk": 0.238,
+   "n": 277,
+   "rest_rate": 0.19,
+   "lift_pts": 4.8,
+   "p_value": 0.086,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader&size=small",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.261,
+   "shrunk": 0.259,
+   "n": 138,
+   "rest_rate": 0.211,
+   "lift_pts": 4.8,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=mid",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.295,
+   "shrunk": 0.279,
+   "n": 78,
+   "rest_rate": 0.231,
+   "lift_pts": 4.8,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=small",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.294,
+   "shrunk": 0.285,
+   "n": 218,
+   "rest_rate": 0.238,
+   "lift_pts": 4.7,
+   "p_value": 0.097,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=small",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.269,
+   "shrunk": 0.267,
+   "n": 450,
+   "rest_rate": 0.22,
+   "lift_pts": 4.7,
+   "p_value": 0.043,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=mid",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.279,
+   "shrunk": 0.268,
+   "n": 86,
+   "rest_rate": 0.221,
+   "lift_pts": 4.7,
+   "p_value": 0.19,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=small",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.31,
+   "shrunk": 0.293,
+   "n": 84,
+   "rest_rate": 0.246,
+   "lift_pts": 4.7,
+   "p_value": 0.14,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=busy",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.251,
+   "shrunk": 0.251,
+   "n": 475,
+   "rest_rate": 0.205,
+   "lift_pts": 4.6,
+   "p_value": 0.026,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=mid",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.25,
+   "shrunk": 0.251,
+   "n": 60,
+   "rest_rate": 0.207,
+   "lift_pts": 4.4,
+   "p_value": 0.25,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=small",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.298,
+   "shrunk": 0.287,
+   "n": 114,
+   "rest_rate": 0.243,
+   "lift_pts": 4.4,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.242,
+   "shrunk": 0.244,
+   "n": 368,
+   "rest_rate": 0.2,
+   "lift_pts": 4.4,
+   "p_value": 0.055,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=already_using_other",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.229,
+   "shrunk": 0.23,
+   "n": 275,
+   "rest_rate": 0.186,
+   "lift_pts": 4.4,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=small",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.301,
+   "shrunk": 0.29,
+   "n": 143,
+   "rest_rate": 0.246,
+   "lift_pts": 4.4,
+   "p_value": 0.12,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.259,
+   "shrunk": 0.26,
+   "n": 317,
+   "rest_rate": 0.217,
+   "lift_pts": 4.3,
+   "p_value": 0.074,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=mid",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.262,
+   "shrunk": 0.252,
+   "n": 42,
+   "rest_rate": 0.209,
+   "lift_pts": 4.3,
+   "p_value": 0.23,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=trust",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.281,
+   "shrunk": 0.28,
+   "n": 199,
+   "rest_rate": 0.237,
+   "lift_pts": 4.3,
+   "p_value": 0.12,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.333,
+   "shrunk": 0.304,
+   "n": 60,
+   "rest_rate": 0.261,
+   "lift_pts": 4.3,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=small",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.246,
+   "shrunk": 0.251,
+   "n": 118,
+   "rest_rate": 0.209,
+   "lift_pts": 4.2,
+   "p_value": 0.21,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.276,
+   "shrunk": 0.273,
+   "n": 279,
+   "rest_rate": 0.231,
+   "lift_pts": 4.2,
+   "p_value": 0.069,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.26,
+   "shrunk": 0.258,
+   "n": 146,
+   "rest_rate": 0.216,
+   "lift_pts": 4.2,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.261,
+   "shrunk": 0.26,
+   "n": 517,
+   "rest_rate": 0.218,
+   "lift_pts": 4.2,
+   "p_value": 0.052,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.265,
+   "shrunk": 0.261,
+   "n": 132,
+   "rest_rate": 0.219,
+   "lift_pts": 4.2,
+   "p_value": 0.14,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer",
+   "trait": "pace_band",
+   "best": "normal",
+   "rate": 0.259,
+   "shrunk": 0.256,
+   "n": 344,
+   "rest_rate": 0.215,
+   "lift_pts": 4.1,
+   "p_value": 0.061,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=lead_quality",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.297,
+   "shrunk": 0.292,
+   "n": 229,
+   "rest_rate": 0.251,
+   "lift_pts": 4.1,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=none",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.269,
+   "shrunk": 0.267,
+   "n": 275,
+   "rest_rate": 0.226,
+   "lift_pts": 4.1,
+   "p_value": 0.087,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor&size=mid",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.267,
+   "shrunk": 0.245,
+   "n": 45,
+   "rest_rate": 0.204,
+   "lift_pts": 4.1,
+   "p_value": 0.19,
+   "strength": "weak"
+  },
+  {
+   "segment": "size=mid",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.273,
+   "shrunk": 0.272,
+   "n": 395,
+   "rest_rate": 0.232,
+   "lift_pts": 4.0,
+   "p_value": 0.058,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=already_using_other",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.233,
+   "shrunk": 0.236,
+   "n": 172,
+   "rest_rate": 0.196,
+   "lift_pts": 4.0,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=large",
+   "trait": "verbosity",
+   "best": "explanatory",
+   "rate": 0.247,
+   "shrunk": 0.24,
+   "n": 170,
+   "rest_rate": 0.2,
+   "lift_pts": 4.0,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=small",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.253,
+   "shrunk": 0.247,
+   "n": 154,
+   "rest_rate": 0.208,
+   "lift_pts": 3.9,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=price",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.285,
+   "shrunk": 0.282,
+   "n": 344,
+   "rest_rate": 0.243,
+   "lift_pts": 3.9,
+   "p_value": 0.072,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.239,
+   "shrunk": 0.241,
+   "n": 259,
+   "rest_rate": 0.203,
+   "lift_pts": 3.8,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.273,
+   "shrunk": 0.271,
+   "n": 370,
+   "rest_rate": 0.233,
+   "lift_pts": 3.8,
+   "p_value": 0.07,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.264,
+   "shrunk": 0.264,
+   "n": 795,
+   "rest_rate": 0.226,
+   "lift_pts": 3.8,
+   "p_value": 0.021,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.286,
+   "shrunk": 0.271,
+   "n": 56,
+   "rest_rate": 0.233,
+   "lift_pts": 3.8,
+   "p_value": 0.23,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=large",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.247,
+   "shrunk": 0.244,
+   "n": 190,
+   "rest_rate": 0.206,
+   "lift_pts": 3.8,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.293,
+   "shrunk": 0.282,
+   "n": 99,
+   "rest_rate": 0.244,
+   "lift_pts": 3.8,
+   "p_value": 0.18,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=large",
+   "trait": "formality",
+   "best": "casual",
+   "rate": 0.241,
+   "shrunk": 0.239,
+   "n": 323,
+   "rest_rate": 0.202,
+   "lift_pts": 3.7,
+   "p_value": 0.08,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader&size=large",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.251,
+   "shrunk": 0.249,
+   "n": 199,
+   "rest_rate": 0.212,
+   "lift_pts": 3.7,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=small",
+   "trait": "verbosity",
+   "best": "explanatory",
+   "rate": 0.301,
+   "shrunk": 0.284,
+   "n": 136,
+   "rest_rate": 0.247,
+   "lift_pts": 3.7,
+   "p_value": 0.12,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=not_needed",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.25,
+   "shrunk": 0.25,
+   "n": 368,
+   "rest_rate": 0.214,
+   "lift_pts": 3.6,
+   "p_value": 0.09,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish&size=small",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.272,
+   "shrunk": 0.268,
+   "n": 261,
+   "rest_rate": 0.232,
+   "lift_pts": 3.6,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.261,
+   "shrunk": 0.261,
+   "n": 463,
+   "rest_rate": 0.226,
+   "lift_pts": 3.5,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish&size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.26,
+   "shrunk": 0.261,
+   "n": 369,
+   "rest_rate": 0.226,
+   "lift_pts": 3.5,
+   "p_value": 0.1,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=busy",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.239,
+   "shrunk": 0.238,
+   "n": 704,
+   "rest_rate": 0.203,
+   "lift_pts": 3.5,
+   "p_value": 0.05,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider&size=mid",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.274,
+   "shrunk": 0.266,
+   "n": 117,
+   "rest_rate": 0.231,
+   "lift_pts": 3.5,
+   "p_value": 0.23,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=lead_quality",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.302,
+   "shrunk": 0.294,
+   "n": 149,
+   "rest_rate": 0.26,
+   "lift_pts": 3.4,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.256,
+   "shrunk": 0.256,
+   "n": 1185,
+   "rest_rate": 0.222,
+   "lift_pts": 3.4,
+   "p_value": 0.028,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=trust",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.271,
+   "shrunk": 0.268,
+   "n": 288,
+   "rest_rate": 0.234,
+   "lift_pts": 3.4,
+   "p_value": 0.16,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.254,
+   "shrunk": 0.254,
+   "n": 705,
+   "rest_rate": 0.221,
+   "lift_pts": 3.3,
+   "p_value": 0.078,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.261,
+   "shrunk": 0.26,
+   "n": 433,
+   "rest_rate": 0.227,
+   "lift_pts": 3.3,
+   "p_value": 0.088,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=large",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.252,
+   "shrunk": 0.25,
+   "n": 206,
+   "rest_rate": 0.217,
+   "lift_pts": 3.3,
+   "p_value": 0.2,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.273,
+   "shrunk": 0.272,
+   "n": 311,
+   "rest_rate": 0.239,
+   "lift_pts": 3.3,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=en&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.256,
+   "shrunk": 0.256,
+   "n": 273,
+   "rest_rate": 0.223,
+   "lift_pts": 3.3,
+   "p_value": 0.18,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=lead_quality",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.292,
+   "shrunk": 0.286,
+   "n": 236,
+   "rest_rate": 0.254,
+   "lift_pts": 3.2,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=none",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.263,
+   "shrunk": 0.262,
+   "n": 266,
+   "rest_rate": 0.23,
+   "lift_pts": 3.2,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter&size=small",
+   "trait": "pace_band",
+   "best": "normal",
+   "rate": 0.294,
+   "shrunk": 0.283,
+   "n": 153,
+   "rest_rate": 0.251,
+   "lift_pts": 3.2,
+   "p_value": 0.17,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=not_needed",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.248,
+   "shrunk": 0.248,
+   "n": 355,
+   "rest_rate": 0.216,
+   "lift_pts": 3.2,
+   "p_value": 0.12,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hi&size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.235,
+   "shrunk": 0.238,
+   "n": 324,
+   "rest_rate": 0.206,
+   "lift_pts": 3.2,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.273,
+   "shrunk": 0.271,
+   "n": 319,
+   "rest_rate": 0.239,
+   "lift_pts": 3.2,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=distributor",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.266,
+   "shrunk": 0.264,
+   "n": 323,
+   "rest_rate": 0.232,
+   "lift_pts": 3.2,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=exporter",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.265,
+   "shrunk": 0.264,
+   "n": 310,
+   "rest_rate": 0.233,
+   "lift_pts": 3.1,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=not_needed",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.248,
+   "shrunk": 0.247,
+   "n": 359,
+   "rest_rate": 0.216,
+   "lift_pts": 3.1,
+   "p_value": 0.11,
+   "strength": "weak"
+  },
+  {
+   "segment": "seller_language=hinglish&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.267,
+   "shrunk": 0.265,
+   "n": 266,
+   "rest_rate": 0.234,
+   "lift_pts": 3.1,
+   "p_value": 0.15,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=mid",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.281,
+   "shrunk": 0.266,
+   "n": 57,
+   "rest_rate": 0.235,
+   "lift_pts": 3.1,
+   "p_value": 0.26,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=service_provider",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.234,
+   "shrunk": 0.235,
+   "n": 372,
+   "rest_rate": 0.204,
+   "lift_pts": 3.1,
+   "p_value": 0.13,
+   "strength": "weak"
+  },
+  {
+   "segment": "top_objection=busy",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.24,
+   "shrunk": 0.24,
+   "n": 512,
+   "rest_rate": 0.209,
+   "lift_pts": 3.1,
+   "p_value": 0.086,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=mid",
+   "trait": "pace_band",
+   "best": "normal",
+   "rate": 0.273,
+   "shrunk": 0.259,
+   "n": 77,
+   "rest_rate": 0.228,
+   "lift_pts": 3.1,
+   "p_value": 0.23,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=retailer&size=small",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.238,
+   "shrunk": 0.241,
+   "n": 126,
+   "rest_rate": 0.211,
+   "lift_pts": 3.0,
+   "p_value": 0.28,
+   "strength": "none"
+  },
+  {
+   "segment": "size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.254,
+   "shrunk": 0.254,
+   "n": 1142,
+   "rest_rate": 0.224,
+   "lift_pts": 3.0,
+   "p_value": 0.053,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.253,
+   "shrunk": 0.253,
+   "n": 742,
+   "rest_rate": 0.223,
+   "lift_pts": 3.0,
+   "p_value": 0.054,
+   "strength": "none"
+  },
+  {
+   "segment": "size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.249,
+   "shrunk": 0.25,
+   "n": 891,
+   "rest_rate": 0.22,
+   "lift_pts": 3.0,
+   "p_value": 0.044,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=manufacturer&size=mid",
+   "trait": "verbosity",
+   "best": "explanatory",
+   "rate": 0.286,
+   "shrunk": 0.259,
+   "n": 63,
+   "rest_rate": 0.229,
+   "lift_pts": 3.0,
+   "p_value": 0.21,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=retailer&size=large",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.255,
+   "shrunk": 0.248,
+   "n": 157,
+   "rest_rate": 0.218,
+   "lift_pts": 3.0,
+   "p_value": 0.19,
+   "strength": "weak"
+  },
+  {
+   "segment": "business_type=trader&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.246,
+   "shrunk": 0.247,
+   "n": 199,
+   "rest_rate": 0.217,
+   "lift_pts": 3.0,
+   "p_value": 0.24,
+   "strength": "weak"
+  },
+  {
+   "segment": "size=small",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.259,
+   "shrunk": 0.259,
+   "n": 730,
+   "rest_rate": 0.23,
+   "lift_pts": 2.9,
+   "p_value": 0.069,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter&size=mid",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.236,
+   "shrunk": 0.236,
+   "n": 89,
+   "rest_rate": 0.207,
+   "lift_pts": 2.9,
+   "p_value": 0.32,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.265,
+   "shrunk": 0.264,
+   "n": 291,
+   "rest_rate": 0.235,
+   "lift_pts": 2.9,
+   "p_value": 0.16,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.258,
+   "shrunk": 0.256,
+   "n": 492,
+   "rest_rate": 0.228,
+   "lift_pts": 2.8,
+   "p_value": 0.14,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=not_needed",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.24,
+   "shrunk": 0.24,
+   "n": 549,
+   "rest_rate": 0.212,
+   "lift_pts": 2.8,
+   "p_value": 0.13,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=busy",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.239,
+   "shrunk": 0.239,
+   "n": 486,
+   "rest_rate": 0.211,
+   "lift_pts": 2.8,
+   "p_value": 0.11,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.255,
+   "shrunk": 0.255,
+   "n": 243,
+   "rest_rate": 0.227,
+   "lift_pts": 2.8,
+   "p_value": 0.24,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=mid",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.317,
+   "shrunk": 0.294,
+   "n": 63,
+   "rest_rate": 0.266,
+   "lift_pts": 2.8,
+   "p_value": 0.23,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.262,
+   "shrunk": 0.261,
+   "n": 324,
+   "rest_rate": 0.234,
+   "lift_pts": 2.7,
+   "p_value": 0.16,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.263,
+   "shrunk": 0.261,
+   "n": 323,
+   "rest_rate": 0.234,
+   "lift_pts": 2.7,
+   "p_value": 0.16,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.248,
+   "shrunk": 0.248,
+   "n": 149,
+   "rest_rate": 0.221,
+   "lift_pts": 2.7,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=small",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.24,
+   "shrunk": 0.241,
+   "n": 150,
+   "rest_rate": 0.215,
+   "lift_pts": 2.6,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.257,
+   "shrunk": 0.256,
+   "n": 478,
+   "rest_rate": 0.23,
+   "lift_pts": 2.6,
+   "p_value": 0.16,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=trust",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.272,
+   "shrunk": 0.269,
+   "n": 195,
+   "rest_rate": 0.243,
+   "lift_pts": 2.6,
+   "p_value": 0.22,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=small",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.288,
+   "shrunk": 0.277,
+   "n": 104,
+   "rest_rate": 0.251,
+   "lift_pts": 2.6,
+   "p_value": 0.25,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=large",
+   "trait": "pace_band",
+   "best": "normal",
+   "rate": 0.257,
+   "shrunk": 0.255,
+   "n": 334,
+   "rest_rate": 0.229,
+   "lift_pts": 2.6,
+   "p_value": 0.15,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=small",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.244,
+   "shrunk": 0.246,
+   "n": 131,
+   "rest_rate": 0.22,
+   "lift_pts": 2.6,
+   "p_value": 0.29,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=retailer&size=mid",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.281,
+   "shrunk": 0.257,
+   "n": 57,
+   "rest_rate": 0.231,
+   "lift_pts": 2.6,
+   "p_value": 0.23,
+   "strength": "none"
+  },
+  {
+   "segment": "all",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.253,
+   "shrunk": 0.253,
+   "n": 1971,
+   "rest_rate": 0.228,
+   "lift_pts": 2.5,
+   "p_value": 0.017,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.245,
+   "shrunk": 0.245,
+   "n": 1159,
+   "rest_rate": 0.22,
+   "lift_pts": 2.5,
+   "p_value": 0.082,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.256,
+   "shrunk": 0.256,
+   "n": 770,
+   "rest_rate": 0.231,
+   "lift_pts": 2.5,
+   "p_value": 0.092,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.25,
+   "shrunk": 0.25,
+   "n": 544,
+   "rest_rate": 0.225,
+   "lift_pts": 2.5,
+   "p_value": 0.17,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=small",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.233,
+   "shrunk": 0.234,
+   "n": 257,
+   "rest_rate": 0.21,
+   "lift_pts": 2.4,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "all",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.253,
+   "shrunk": 0.253,
+   "n": 1984,
+   "rest_rate": 0.229,
+   "lift_pts": 2.4,
+   "p_value": 0.02,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=manufacturer&size=large",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.255,
+   "shrunk": 0.248,
+   "n": 137,
+   "rest_rate": 0.224,
+   "lift_pts": 2.4,
+   "p_value": 0.24,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=small",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.243,
+   "shrunk": 0.244,
+   "n": 140,
+   "rest_rate": 0.22,
+   "lift_pts": 2.4,
+   "p_value": 0.29,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=large",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.26,
+   "shrunk": 0.257,
+   "n": 154,
+   "rest_rate": 0.233,
+   "lift_pts": 2.4,
+   "p_value": 0.26,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.272,
+   "shrunk": 0.269,
+   "n": 173,
+   "rest_rate": 0.245,
+   "lift_pts": 2.4,
+   "p_value": 0.29,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=none",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.252,
+   "shrunk": 0.251,
+   "n": 416,
+   "rest_rate": 0.228,
+   "lift_pts": 2.3,
+   "p_value": 0.21,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=small",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.281,
+   "shrunk": 0.273,
+   "n": 135,
+   "rest_rate": 0.25,
+   "lift_pts": 2.3,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=service_provider",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.228,
+   "shrunk": 0.23,
+   "n": 382,
+   "rest_rate": 0.207,
+   "lift_pts": 2.3,
+   "p_value": 0.21,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=service_provider&size=large",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.227,
+   "shrunk": 0.231,
+   "n": 185,
+   "rest_rate": 0.208,
+   "lift_pts": 2.3,
+   "p_value": 0.31,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=large",
+   "trait": "verbosity",
+   "best": "normal",
+   "rate": 0.261,
+   "shrunk": 0.256,
+   "n": 142,
+   "rest_rate": 0.233,
+   "lift_pts": 2.3,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=large",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.253,
+   "shrunk": 0.255,
+   "n": 198,
+   "rest_rate": 0.232,
+   "lift_pts": 2.3,
+   "p_value": 0.29,
+   "strength": "none"
+  },
+  {
+   "segment": "size=small",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.254,
+   "shrunk": 0.254,
+   "n": 731,
+   "rest_rate": 0.232,
+   "lift_pts": 2.2,
+   "p_value": 0.13,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi&size=mid",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.266,
+   "shrunk": 0.262,
+   "n": 139,
+   "rest_rate": 0.24,
+   "lift_pts": 2.2,
+   "p_value": 0.28,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi&size=large",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.226,
+   "shrunk": 0.227,
+   "n": 482,
+   "rest_rate": 0.205,
+   "lift_pts": 2.2,
+   "p_value": 0.21,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi&size=mid",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.261,
+   "shrunk": 0.258,
+   "n": 207,
+   "rest_rate": 0.237,
+   "lift_pts": 2.1,
+   "p_value": 0.29,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.246,
+   "shrunk": 0.247,
+   "n": 763,
+   "rest_rate": 0.226,
+   "lift_pts": 2.1,
+   "p_value": 0.14,
+   "strength": "none"
+  },
+  {
+   "segment": "size=mid",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.257,
+   "shrunk": 0.256,
+   "n": 576,
+   "rest_rate": 0.235,
+   "lift_pts": 2.1,
+   "p_value": 0.19,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=price",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.271,
+   "shrunk": 0.271,
+   "n": 339,
+   "rest_rate": 0.25,
+   "lift_pts": 2.1,
+   "p_value": 0.23,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.255,
+   "shrunk": 0.255,
+   "n": 420,
+   "rest_rate": 0.234,
+   "lift_pts": 2.1,
+   "p_value": 0.25,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter&size=large",
+   "trait": "bot_language",
+   "best": "hinglish",
+   "rate": 0.24,
+   "shrunk": 0.242,
+   "n": 121,
+   "rest_rate": 0.221,
+   "lift_pts": 2.1,
+   "p_value": 0.35,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=mid",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.247,
+   "shrunk": 0.247,
+   "n": 146,
+   "rest_rate": 0.226,
+   "lift_pts": 2.1,
+   "p_value": 0.31,
+   "strength": "none"
+  },
+  {
+   "segment": "size=small",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.25,
+   "shrunk": 0.25,
+   "n": 1070,
+   "rest_rate": 0.23,
+   "lift_pts": 2.0,
+   "p_value": 0.13,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=not_needed",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.235,
+   "shrunk": 0.236,
+   "n": 587,
+   "rest_rate": 0.216,
+   "lift_pts": 2.0,
+   "p_value": 0.22,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=not_needed",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.24,
+   "shrunk": 0.24,
+   "n": 346,
+   "rest_rate": 0.22,
+   "lift_pts": 2.0,
+   "p_value": 0.23,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=manufacturer",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.261,
+   "shrunk": 0.26,
+   "n": 475,
+   "rest_rate": 0.24,
+   "lift_pts": 2.0,
+   "p_value": 0.22,
+   "strength": "none"
+  },
+  {
+   "segment": "size=large",
+   "trait": "bot_language",
+   "best": "hi",
+   "rate": 0.242,
+   "shrunk": 0.242,
+   "n": 867,
+   "rest_rate": 0.223,
+   "lift_pts": 1.9,
+   "p_value": 0.14,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter&size=large",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.238,
+   "shrunk": 0.241,
+   "n": 122,
+   "rest_rate": 0.222,
+   "lift_pts": 1.9,
+   "p_value": 0.37,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter&size=large",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.239,
+   "shrunk": 0.241,
+   "n": 117,
+   "rest_rate": 0.222,
+   "lift_pts": 1.9,
+   "p_value": 0.35,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.252,
+   "shrunk": 0.252,
+   "n": 349,
+   "rest_rate": 0.233,
+   "lift_pts": 1.9,
+   "p_value": 0.25,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=mid",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.272,
+   "shrunk": 0.266,
+   "n": 162,
+   "rest_rate": 0.247,
+   "lift_pts": 1.9,
+   "p_value": 0.31,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter&size=small",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.282,
+   "shrunk": 0.276,
+   "n": 149,
+   "rest_rate": 0.258,
+   "lift_pts": 1.8,
+   "p_value": 0.3,
+   "strength": "none"
+  },
+  {
+   "segment": "size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.238,
+   "shrunk": 0.239,
+   "n": 1300,
+   "rest_rate": 0.221,
+   "lift_pts": 1.8,
+   "p_value": 0.14,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=large",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.246,
+   "shrunk": 0.246,
+   "n": 565,
+   "rest_rate": 0.228,
+   "lift_pts": 1.8,
+   "p_value": 0.25,
+   "strength": "none"
+  },
+  {
+   "segment": "all",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.247,
+   "shrunk": 0.247,
+   "n": 1973,
+   "rest_rate": 0.231,
+   "lift_pts": 1.6,
+   "p_value": 0.083,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.256,
+   "shrunk": 0.254,
+   "n": 293,
+   "rest_rate": 0.238,
+   "lift_pts": 1.6,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=retailer",
+   "trait": "bot_language",
+   "best": "en",
+   "rate": 0.242,
+   "shrunk": 0.24,
+   "n": 322,
+   "rest_rate": 0.225,
+   "lift_pts": 1.5,
+   "p_value": 0.27,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=price",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.268,
+   "shrunk": 0.266,
+   "n": 332,
+   "rest_rate": 0.251,
+   "lift_pts": 1.5,
+   "p_value": 0.28,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=manufacturer",
+   "trait": "verbosity",
+   "best": "crisp",
+   "rate": 0.259,
+   "shrunk": 0.26,
+   "n": 324,
+   "rest_rate": 0.245,
+   "lift_pts": 1.5,
+   "p_value": 0.32,
+   "strength": "none"
+  },
+  {
+   "segment": "size=large",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.237,
+   "shrunk": 0.237,
+   "n": 1327,
+   "rest_rate": 0.222,
+   "lift_pts": 1.5,
+   "p_value": 0.19,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=large",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.248,
+   "shrunk": 0.248,
+   "n": 351,
+   "rest_rate": 0.233,
+   "lift_pts": 1.5,
+   "p_value": 0.29,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=large",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.25,
+   "shrunk": 0.248,
+   "n": 232,
+   "rest_rate": 0.233,
+   "lift_pts": 1.5,
+   "p_value": 0.34,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=manufacturer&size=large",
+   "trait": "formality",
+   "best": "casual",
+   "rate": 0.248,
+   "shrunk": 0.242,
+   "n": 133,
+   "rest_rate": 0.228,
+   "lift_pts": 1.4,
+   "p_value": 0.33,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.246,
+   "shrunk": 0.246,
+   "n": 1192,
+   "rest_rate": 0.232,
+   "lift_pts": 1.4,
+   "p_value": 0.22,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=busy",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.228,
+   "shrunk": 0.227,
+   "n": 725,
+   "rest_rate": 0.213,
+   "lift_pts": 1.4,
+   "p_value": 0.25,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=mid",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.225,
+   "shrunk": 0.228,
+   "n": 80,
+   "rest_rate": 0.214,
+   "lift_pts": 1.4,
+   "p_value": 0.43,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=retailer&size=small",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.226,
+   "shrunk": 0.229,
+   "n": 186,
+   "rest_rate": 0.216,
+   "lift_pts": 1.3,
+   "p_value": 0.41,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=retailer&size=small",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.227,
+   "shrunk": 0.228,
+   "n": 172,
+   "rest_rate": 0.215,
+   "lift_pts": 1.3,
+   "p_value": 0.4,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=small",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.252,
+   "shrunk": 0.251,
+   "n": 401,
+   "rest_rate": 0.238,
+   "lift_pts": 1.3,
+   "p_value": 0.32,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish&size=small",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.254,
+   "shrunk": 0.252,
+   "n": 268,
+   "rest_rate": 0.24,
+   "lift_pts": 1.2,
+   "p_value": 0.34,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=already_using_other",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.213,
+   "shrunk": 0.217,
+   "n": 183,
+   "rest_rate": 0.205,
+   "lift_pts": 1.2,
+   "p_value": 0.41,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=retailer",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.236,
+   "shrunk": 0.236,
+   "n": 518,
+   "rest_rate": 0.225,
+   "lift_pts": 1.1,
+   "p_value": 0.34,
+   "strength": "none"
+  },
+  {
+   "segment": "size=mid",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.253,
+   "shrunk": 0.253,
+   "n": 383,
+   "rest_rate": 0.242,
+   "lift_pts": 1.1,
+   "p_value": 0.34,
+   "strength": "none"
+  },
+  {
+   "segment": "size=large",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.237,
+   "shrunk": 0.237,
+   "n": 877,
+   "rest_rate": 0.226,
+   "lift_pts": 1.1,
+   "p_value": 0.26,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=service_provider&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.219,
+   "shrunk": 0.222,
+   "n": 270,
+   "rest_rate": 0.211,
+   "lift_pts": 1.1,
+   "p_value": 0.41,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor&size=small",
+   "trait": "formality",
+   "best": "aap_friendly",
+   "rate": 0.274,
+   "shrunk": 0.268,
+   "n": 113,
+   "rest_rate": 0.259,
+   "lift_pts": 0.9,
+   "p_value": 0.39,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=already_using_other",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.21,
+   "shrunk": 0.214,
+   "n": 271,
+   "rest_rate": 0.205,
+   "lift_pts": 0.9,
+   "p_value": 0.44,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.244,
+   "shrunk": 0.244,
+   "n": 537,
+   "rest_rate": 0.235,
+   "lift_pts": 0.9,
+   "p_value": 0.36,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=service_provider",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.218,
+   "shrunk": 0.219,
+   "n": 533,
+   "rest_rate": 0.211,
+   "lift_pts": 0.8,
+   "p_value": 0.39,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=mid",
+   "trait": "pace_band",
+   "best": "fast",
+   "rate": 0.3,
+   "shrunk": 0.281,
+   "n": 70,
+   "rest_rate": 0.273,
+   "lift_pts": 0.8,
+   "p_value": 0.34,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=none",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.243,
+   "shrunk": 0.244,
+   "n": 423,
+   "rest_rate": 0.237,
+   "lift_pts": 0.7,
+   "p_value": 0.42,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.236,
+   "shrunk": 0.236,
+   "n": 1149,
+   "rest_rate": 0.23,
+   "lift_pts": 0.6,
+   "p_value": 0.37,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=manufacturer&size=large",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.239,
+   "shrunk": 0.236,
+   "n": 218,
+   "rest_rate": 0.23,
+   "lift_pts": 0.6,
+   "p_value": 0.42,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hinglish",
+   "trait": "pace_band",
+   "best": "normal",
+   "rate": 0.244,
+   "shrunk": 0.243,
+   "n": 784,
+   "rest_rate": 0.237,
+   "lift_pts": 0.6,
+   "p_value": 0.36,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=small",
+   "trait": "acknowledged_objection",
+   "best": "no",
+   "rate": 0.232,
+   "shrunk": 0.23,
+   "n": 190,
+   "rest_rate": 0.224,
+   "lift_pts": 0.6,
+   "p_value": 0.42,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=large",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.242,
+   "shrunk": 0.242,
+   "n": 289,
+   "rest_rate": 0.236,
+   "lift_pts": 0.6,
+   "p_value": 0.43,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi&size=mid",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.252,
+   "shrunk": 0.251,
+   "n": 135,
+   "rest_rate": 0.247,
+   "lift_pts": 0.4,
+   "p_value": 0.46,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=exporter&size=small",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.271,
+   "shrunk": 0.266,
+   "n": 207,
+   "rest_rate": 0.262,
+   "lift_pts": 0.4,
+   "p_value": 0.42,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en&size=mid",
+   "trait": "pace_band",
+   "best": "slow",
+   "rate": 0.265,
+   "shrunk": 0.261,
+   "n": 102,
+   "rest_rate": 0.257,
+   "lift_pts": 0.4,
+   "p_value": 0.44,
+   "strength": "none"
+  },
+  {
+   "segment": "all",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.238,
+   "shrunk": 0.238,
+   "n": 3031,
+   "rest_rate": 0.235,
+   "lift_pts": 0.3,
+   "p_value": 0.4,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=manufacturer&size=small",
+   "trait": "voice_gender",
+   "best": "male",
+   "rate": 0.268,
+   "shrunk": 0.265,
+   "n": 220,
+   "rest_rate": 0.262,
+   "lift_pts": 0.3,
+   "p_value": 0.45,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=en",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.239,
+   "shrunk": 0.239,
+   "n": 670,
+   "rest_rate": 0.237,
+   "lift_pts": 0.2,
+   "p_value": 0.48,
+   "strength": "none"
+  },
+  {
+   "segment": "seller_language=hi&size=large",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.215,
+   "shrunk": 0.217,
+   "n": 483,
+   "rest_rate": 0.215,
+   "lift_pts": 0.2,
+   "p_value": 0.5,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=mid",
+   "trait": "acknowledged_objection",
+   "best": "yes",
+   "rate": 0.287,
+   "shrunk": 0.279,
+   "n": 101,
+   "rest_rate": 0.277,
+   "lift_pts": 0.2,
+   "p_value": 0.44,
+   "strength": "none"
+  },
+  {
+   "segment": "top_objection=price",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.258,
+   "shrunk": 0.257,
+   "n": 516,
+   "rest_rate": 0.256,
+   "lift_pts": 0.1,
+   "p_value": 0.47,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=distributor",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.244,
+   "shrunk": 0.244,
+   "n": 463,
+   "rest_rate": 0.244,
+   "lift_pts": -0.0,
+   "p_value": 0.5,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=service_provider&size=mid",
+   "trait": "formality",
+   "best": "aap_formal",
+   "rate": 0.253,
+   "shrunk": 0.253,
+   "n": 83,
+   "rest_rate": 0.254,
+   "lift_pts": -0.1,
+   "p_value": 0.5,
+   "strength": "none"
+  },
+  {
+   "segment": "business_type=trader&size=mid",
+   "trait": "voice_gender",
+   "best": "female",
+   "rate": 0.284,
+   "shrunk": 0.274,
+   "n": 116,
+   "rest_rate": 0.279,
+   "lift_pts": -0.5,
+   "p_value": 0.47,
+   "strength": "none"
+  }
+ ],
+ "cells": {
+  "business_type=retailer&size=small": {
+   "_baseline": {
+    "wins": 78,
+    "n": 353,
+    "rate": 0.221,
+    "ci_low": 0.181,
+    "ci_high": 0.267
+   },
+   "bot_language": {
+    "en": {
+     "wins": 22,
+     "n": 108,
+     "rate": 0.204,
+     "ci_low": 0.139,
+     "ci_high": 0.289,
+     "shrunk": 0.206
+    },
+    "hi": {
+     "wins": 26,
+     "n": 119,
+     "rate": 0.218,
+     "ci_low": 0.154,
+     "ci_high": 0.301,
+     "shrunk": 0.224
+    },
+    "hinglish": {
+     "wins": 30,
+     "n": 126,
+     "rate": 0.238,
+     "ci_low": 0.172,
+     "ci_high": 0.32,
+     "shrunk": 0.241
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 38,
+     "n": 120,
+     "rate": 0.317,
+     "ci_low": 0.24,
+     "ci_high": 0.404,
+     "shrunk": 0.304
+    },
+    "aap_friendly": {
+     "wins": 26,
+     "n": 119,
+     "rate": 0.218,
+     "ci_low": 0.154,
+     "ci_high": 0.301,
+     "shrunk": 0.224
+    },
+    "casual": {
+     "wins": 14,
+     "n": 114,
+     "rate": 0.123,
+     "ci_low": 0.075,
+     "ci_high": 0.196,
+     "shrunk": 0.142
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 26,
+     "n": 114,
+     "rate": 0.228,
+     "ci_low": 0.161,
+     "ci_high": 0.313,
+     "shrunk": 0.23
+    },
+    "crisp": {
+     "wins": 29,
+     "n": 118,
+     "rate": 0.246,
+     "ci_low": 0.177,
+     "ci_high": 0.331,
+     "shrunk": 0.251
+    },
+    "explanatory": {
+     "wins": 23,
+     "n": 121,
+     "rate": 0.19,
+     "ci_low": 0.13,
+     "ci_high": 0.269,
+     "shrunk": 0.192
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 36,
+     "n": 167,
+     "rate": 0.216,
+     "ci_low": 0.16,
+     "ci_high": 0.284,
+     "shrunk": 0.216
+    },
+    "yes": {
+     "wins": 42,
+     "n": 186,
+     "rate": 0.226,
+     "ci_low": 0.172,
+     "ci_high": 0.291,
+     "shrunk": 0.229
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 24,
+     "n": 110,
+     "rate": 0.218,
+     "ci_low": 0.151,
+     "ci_high": 0.304,
+     "shrunk": 0.222
+    },
+    "slow": {
+     "wins": 21,
+     "n": 126,
+     "rate": 0.167,
+     "ci_low": 0.112,
+     "ci_high": 0.241,
+     "shrunk": 0.182
+    },
+    "normal": {
+     "wins": 33,
+     "n": 117,
+     "rate": 0.282,
+     "ci_low": 0.208,
+     "ci_high": 0.37,
+     "shrunk": 0.27
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 39,
+     "n": 172,
+     "rate": 0.227,
+     "ci_low": 0.171,
+     "ci_high": 0.295,
+     "shrunk": 0.228
+    },
+    "female": {
+     "wins": 39,
+     "n": 181,
+     "rate": 0.215,
+     "ci_low": 0.162,
+     "ci_high": 0.281,
+     "shrunk": 0.218
+    }
+   }
+  },
+  "seller_language=en&size=small": {
+   "_baseline": {
+    "wins": 106,
+    "n": 476,
+    "rate": 0.223,
+    "ci_low": 0.188,
+    "ci_high": 0.262
+   },
+   "bot_language": {
+    "en": {
+     "wins": 39,
+     "n": 154,
+     "rate": 0.253,
+     "ci_low": 0.191,
+     "ci_high": 0.327,
+     "shrunk": 0.247
+    },
+    "hi": {
+     "wins": 33,
+     "n": 160,
+     "rate": 0.206,
+     "ci_low": 0.151,
+     "ci_high": 0.275,
+     "shrunk": 0.212
+    },
+    "hinglish": {
+     "wins": 34,
+     "n": 162,
+     "rate": 0.21,
+     "ci_low": 0.154,
+     "ci_high": 0.279,
+     "shrunk": 0.217
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 41,
+     "n": 151,
+     "rate": 0.272,
+     "ci_low": 0.207,
+     "ci_high": 0.347,
+     "shrunk": 0.268
+    },
+    "aap_friendly": {
+     "wins": 37,
+     "n": 167,
+     "rate": 0.222,
+     "ci_low": 0.165,
+     "ci_high": 0.29,
+     "shrunk": 0.225
+    },
+    "casual": {
+     "wins": 28,
+     "n": 158,
+     "rate": 0.177,
+     "ci_low": 0.126,
+     "ci_high": 0.244,
+     "shrunk": 0.183
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 36,
+     "n": 169,
+     "rate": 0.213,
+     "ci_low": 0.158,
+     "ci_high": 0.281,
+     "shrunk": 0.217
+    },
+    "crisp": {
+     "wins": 41,
+     "n": 156,
+     "rate": 0.263,
+     "ci_low": 0.2,
+     "ci_high": 0.337,
+     "shrunk": 0.264
+    },
+    "explanatory": {
+     "wins": 29,
+     "n": 151,
+     "rate": 0.192,
+     "ci_low": 0.137,
+     "ci_high": 0.262,
+     "shrunk": 0.194
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 44,
+     "n": 217,
+     "rate": 0.203,
+     "ci_low": 0.155,
+     "ci_high": 0.261,
+     "shrunk": 0.205
+    },
+    "yes": {
+     "wins": 62,
+     "n": 259,
+     "rate": 0.239,
+     "ci_low": 0.191,
+     "ci_high": 0.295,
+     "shrunk": 0.241
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 35,
+     "n": 165,
+     "rate": 0.212,
+     "ci_low": 0.157,
+     "ci_high": 0.281,
+     "shrunk": 0.216
+    },
+    "slow": {
+     "wins": 36,
+     "n": 150,
+     "rate": 0.24,
+     "ci_low": 0.179,
+     "ci_high": 0.314,
+     "shrunk": 0.241
+    },
+    "normal": {
+     "wins": 35,
+     "n": 161,
+     "rate": 0.217,
+     "ci_low": 0.161,
+     "ci_high": 0.287,
+     "shrunk": 0.219
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 60,
+     "n": 257,
+     "rate": 0.233,
+     "ci_low": 0.186,
+     "ci_high": 0.289,
+     "shrunk": 0.234
+    },
+    "female": {
+     "wins": 46,
+     "n": 219,
+     "rate": 0.21,
+     "ci_low": 0.161,
+     "ci_high": 0.269,
+     "shrunk": 0.213
+    }
+   }
+  },
+  "seller_language=en": {
+   "_baseline": {
+    "wins": 325,
+    "n": 1365,
+    "rate": 0.238,
+    "ci_low": 0.216,
+    "ci_high": 0.261
+   },
+   "bot_language": {
+    "en": {
+     "wins": 123,
+     "n": 445,
+     "rate": 0.276,
+     "ci_low": 0.237,
+     "ci_high": 0.32,
+     "shrunk": 0.272
+    },
+    "hi": {
+     "wins": 103,
+     "n": 457,
+     "rate": 0.225,
+     "ci_low": 0.189,
+     "ci_high": 0.266,
+     "shrunk": 0.227
+    },
+    "hinglish": {
+     "wins": 99,
+     "n": 463,
+     "rate": 0.214,
+     "ci_low": 0.179,
+     "ci_high": 0.253,
+     "shrunk": 0.216
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 116,
+     "n": 451,
+     "rate": 0.257,
+     "ci_low": 0.219,
+     "ci_high": 0.299,
+     "shrunk": 0.257
+    },
+    "aap_friendly": {
+     "wins": 127,
+     "n": 462,
+     "rate": 0.275,
+     "ci_low": 0.236,
+     "ci_high": 0.317,
+     "shrunk": 0.273
+    },
+    "casual": {
+     "wins": 82,
+     "n": 452,
+     "rate": 0.181,
+     "ci_low": 0.149,
+     "ci_high": 0.22,
+     "shrunk": 0.183
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 99,
+     "n": 449,
+     "rate": 0.22,
+     "ci_low": 0.185,
+     "ci_high": 0.261,
+     "shrunk": 0.222
+    },
+    "crisp": {
+     "wins": 127,
+     "n": 459,
+     "rate": 0.277,
+     "ci_low": 0.238,
+     "ci_high": 0.319,
+     "shrunk": 0.276
+    },
+    "explanatory": {
+     "wins": 99,
+     "n": 457,
+     "rate": 0.217,
+     "ci_low": 0.181,
+     "ci_high": 0.257,
+     "shrunk": 0.216
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 146,
+     "n": 660,
+     "rate": 0.221,
+     "ci_low": 0.191,
+     "ci_high": 0.254,
+     "shrunk": 0.221
+    },
+    "yes": {
+     "wins": 179,
+     "n": 705,
+     "rate": 0.254,
+     "ci_low": 0.223,
+     "ci_high": 0.287,
+     "shrunk": 0.254
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 105,
+     "n": 456,
+     "rate": 0.23,
+     "ci_low": 0.194,
+     "ci_high": 0.271,
+     "shrunk": 0.231
+    },
+    "slow": {
+     "wins": 113,
+     "n": 433,
+     "rate": 0.261,
+     "ci_low": 0.222,
+     "ci_high": 0.304,
+     "shrunk": 0.26
+    },
+    "normal": {
+     "wins": 107,
+     "n": 476,
+     "rate": 0.225,
+     "ci_low": 0.19,
+     "ci_high": 0.264,
+     "shrunk": 0.225
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 165,
+     "n": 695,
+     "rate": 0.237,
+     "ci_low": 0.207,
+     "ci_high": 0.27,
+     "shrunk": 0.237
+    },
+    "female": {
+     "wins": 160,
+     "n": 670,
+     "rate": 0.239,
+     "ci_low": 0.208,
+     "ci_high": 0.273,
+     "shrunk": 0.239
+    }
+   }
+  },
+  "business_type=retailer": {
+   "_baseline": {
+    "wins": 229,
+    "n": 994,
+    "rate": 0.23,
+    "ci_low": 0.205,
+    "ci_high": 0.258
+   },
+   "bot_language": {
+    "en": {
+     "wins": 78,
+     "n": 322,
+     "rate": 0.242,
+     "ci_low": 0.199,
+     "ci_high": 0.292,
+     "shrunk": 0.24
+    },
+    "hinglish": {
+     "wins": 83,
+     "n": 349,
+     "rate": 0.238,
+     "ci_low": 0.196,
+     "ci_high": 0.285,
+     "shrunk": 0.239
+    },
+    "hi": {
+     "wins": 68,
+     "n": 323,
+     "rate": 0.211,
+     "ci_low": 0.17,
+     "ci_high": 0.258,
+     "shrunk": 0.213
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 102,
+     "n": 342,
+     "rate": 0.298,
+     "ci_low": 0.252,
+     "ci_high": 0.349,
+     "shrunk": 0.295
+    },
+    "casual": {
+     "wins": 53,
+     "n": 324,
+     "rate": 0.164,
+     "ci_low": 0.127,
+     "ci_high": 0.208,
+     "shrunk": 0.168
+    },
+    "aap_friendly": {
+     "wins": 74,
+     "n": 328,
+     "rate": 0.226,
+     "ci_low": 0.184,
+     "ci_high": 0.274,
+     "shrunk": 0.227
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 86,
+     "n": 332,
+     "rate": 0.259,
+     "ci_low": 0.215,
+     "ci_high": 0.309,
+     "shrunk": 0.257
+    },
+    "crisp": {
+     "wins": 82,
+     "n": 317,
+     "rate": 0.259,
+     "ci_low": 0.214,
+     "ci_high": 0.31,
+     "shrunk": 0.26
+    },
+    "explanatory": {
+     "wins": 61,
+     "n": 345,
+     "rate": 0.177,
+     "ci_low": 0.14,
+     "ci_high": 0.221,
+     "shrunk": 0.179
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 107,
+     "n": 476,
+     "rate": 0.225,
+     "ci_low": 0.19,
+     "ci_high": 0.264,
+     "shrunk": 0.225
+    },
+    "yes": {
+     "wins": 122,
+     "n": 518,
+     "rate": 0.236,
+     "ci_low": 0.201,
+     "ci_high": 0.274,
+     "shrunk": 0.236
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 64,
+     "n": 306,
+     "rate": 0.209,
+     "ci_low": 0.167,
+     "ci_high": 0.258,
+     "shrunk": 0.212
+    },
+    "slow": {
+     "wins": 76,
+     "n": 344,
+     "rate": 0.221,
+     "ci_low": 0.18,
+     "ci_high": 0.268,
+     "shrunk": 0.223
+    },
+    "normal": {
+     "wins": 89,
+     "n": 344,
+     "rate": 0.259,
+     "ci_low": 0.215,
+     "ci_high": 0.307,
+     "shrunk": 0.256
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 133,
+     "n": 509,
+     "rate": 0.261,
+     "ci_low": 0.225,
+     "ci_high": 0.301,
+     "shrunk": 0.26
+    },
+    "female": {
+     "wins": 96,
+     "n": 485,
+     "rate": 0.198,
+     "ci_low": 0.165,
+     "ci_high": 0.236,
+     "shrunk": 0.2
+    }
+   }
+  },
+  "top_objection=lead_quality": {
+   "_baseline": {
+    "wins": 130,
+    "n": 476,
+    "rate": 0.273,
+    "ci_low": 0.235,
+    "ci_high": 0.315
+   },
+   "bot_language": {
+    "en": {
+     "wins": 50,
+     "n": 192,
+     "rate": 0.26,
+     "ci_low": 0.203,
+     "ci_high": 0.327,
+     "shrunk": 0.254
+    },
+    "hi": {
+     "wins": 35,
+     "n": 135,
+     "rate": 0.259,
+     "ci_low": 0.193,
+     "ci_high": 0.339,
+     "shrunk": 0.256
+    },
+    "hinglish": {
+     "wins": 45,
+     "n": 149,
+     "rate": 0.302,
+     "ci_low": 0.234,
+     "ci_high": 0.38,
+     "shrunk": 0.294
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 45,
+     "n": 174,
+     "rate": 0.259,
+     "ci_low": 0.199,
+     "ci_high": 0.328,
+     "shrunk": 0.258
+    },
+    "aap_friendly": {
+     "wins": 46,
+     "n": 144,
+     "rate": 0.319,
+     "ci_low": 0.249,
+     "ci_high": 0.399,
+     "shrunk": 0.307
+    },
+    "casual": {
+     "wins": 39,
+     "n": 158,
+     "rate": 0.247,
+     "ci_low": 0.186,
+     "ci_high": 0.32,
+     "shrunk": 0.241
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 35,
+     "n": 146,
+     "rate": 0.24,
+     "ci_low": 0.178,
+     "ci_high": 0.315,
+     "shrunk": 0.239
+    },
+    "crisp": {
+     "wins": 52,
+     "n": 169,
+     "rate": 0.308,
+     "ci_low": 0.243,
+     "ci_high": 0.381,
+     "shrunk": 0.302
+    },
+    "explanatory": {
+     "wins": 43,
+     "n": 161,
+     "rate": 0.267,
+     "ci_low": 0.205,
+     "ci_high": 0.34,
+     "shrunk": 0.257
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 62,
+     "n": 247,
+     "rate": 0.251,
+     "ci_low": 0.201,
+     "ci_high": 0.309,
+     "shrunk": 0.248
+    },
+    "yes": {
+     "wins": 68,
+     "n": 229,
+     "rate": 0.297,
+     "ci_low": 0.242,
+     "ci_high": 0.359,
+     "shrunk": 0.292
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 37,
+     "n": 150,
+     "rate": 0.247,
+     "ci_low": 0.185,
+     "ci_high": 0.321,
+     "shrunk": 0.245
+    },
+    "normal": {
+     "wins": 43,
+     "n": 168,
+     "rate": 0.256,
+     "ci_low": 0.196,
+     "ci_high": 0.327,
+     "shrunk": 0.251
+    },
+    "slow": {
+     "wins": 50,
+     "n": 158,
+     "rate": 0.316,
+     "ci_low": 0.249,
+     "ci_high": 0.393,
+     "shrunk": 0.305
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 69,
+     "n": 236,
+     "rate": 0.292,
+     "ci_low": 0.238,
+     "ci_high": 0.353,
+     "shrunk": 0.286
+    },
+    "female": {
+     "wins": 61,
+     "n": 240,
+     "rate": 0.254,
+     "ci_low": 0.203,
+     "ci_high": 0.313,
+     "shrunk": 0.252
+    }
+   }
+  },
+  "size=small": {
+   "_baseline": {
+    "wins": 527,
+    "n": 2198,
+    "rate": 0.24,
+    "ci_low": 0.222,
+    "ci_high": 0.258
+   },
+   "bot_language": {
+    "en": {
+     "wins": 158,
+     "n": 754,
+     "rate": 0.21,
+     "ci_low": 0.182,
+     "ci_high": 0.24,
+     "shrunk": 0.21
+    },
+    "hinglish": {
+     "wins": 189,
+     "n": 730,
+     "rate": 0.259,
+     "ci_low": 0.228,
+     "ci_high": 0.292,
+     "shrunk": 0.259
+    },
+    "hi": {
+     "wins": 180,
+     "n": 714,
+     "rate": 0.252,
+     "ci_low": 0.222,
+     "ci_high": 0.285,
+     "shrunk": 0.252
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 201,
+     "n": 708,
+     "rate": 0.284,
+     "ci_low": 0.252,
+     "ci_high": 0.318,
+     "shrunk": 0.283
+    },
+    "casual": {
+     "wins": 148,
+     "n": 748,
+     "rate": 0.198,
+     "ci_low": 0.171,
+     "ci_high": 0.228,
+     "shrunk": 0.198
+    },
+    "aap_friendly": {
+     "wins": 178,
+     "n": 742,
+     "rate": 0.24,
+     "ci_low": 0.211,
+     "ci_high": 0.272,
+     "shrunk": 0.24
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 176,
+     "n": 734,
+     "rate": 0.24,
+     "ci_low": 0.21,
+     "ci_high": 0.272,
+     "shrunk": 0.24
+    },
+    "crisp": {
+     "wins": 200,
+     "n": 725,
+     "rate": 0.276,
+     "ci_low": 0.245,
+     "ci_high": 0.31,
+     "shrunk": 0.276
+    },
+    "explanatory": {
+     "wins": 151,
+     "n": 739,
+     "rate": 0.204,
+     "ci_low": 0.177,
+     "ci_high": 0.235,
+     "shrunk": 0.204
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 237,
+     "n": 1056,
+     "rate": 0.224,
+     "ci_low": 0.2,
+     "ci_high": 0.251,
+     "shrunk": 0.224
+    },
+    "yes": {
+     "wins": 290,
+     "n": 1142,
+     "rate": 0.254,
+     "ci_low": 0.23,
+     "ci_high": 0.28,
+     "shrunk": 0.254
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 186,
+     "n": 731,
+     "rate": 0.254,
+     "ci_low": 0.224,
+     "ci_high": 0.287,
+     "shrunk": 0.254
+    },
+    "normal": {
+     "wins": 174,
+     "n": 759,
+     "rate": 0.229,
+     "ci_low": 0.201,
+     "ci_high": 0.26,
+     "shrunk": 0.229
+    },
+    "slow": {
+     "wins": 167,
+     "n": 708,
+     "rate": 0.236,
+     "ci_low": 0.206,
+     "ci_high": 0.269,
+     "shrunk": 0.236
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 259,
+     "n": 1128,
+     "rate": 0.23,
+     "ci_low": 0.206,
+     "ci_high": 0.255,
+     "shrunk": 0.23
+    },
+    "female": {
+     "wins": 268,
+     "n": 1070,
+     "rate": 0.25,
+     "ci_low": 0.225,
+     "ci_high": 0.277,
+     "shrunk": 0.25
+    }
+   }
+  },
+  "all": {
+   "_baseline": {
+    "wins": 1419,
+    "n": 6000,
+    "rate": 0.236,
+    "ci_low": 0.226,
+    "ci_high": 0.247
+   },
+   "bot_language": {
+    "en": {
+     "wins": 430,
+     "n": 2021,
+     "rate": 0.213,
+     "ci_low": 0.195,
+     "ci_high": 0.231,
+     "shrunk": 0.213
+    },
+    "hinglish": {
+     "wins": 499,
+     "n": 1971,
+     "rate": 0.253,
+     "ci_low": 0.234,
+     "ci_high": 0.273,
+     "shrunk": 0.253
+    },
+    "hi": {
+     "wins": 490,
+     "n": 2008,
+     "rate": 0.244,
+     "ci_low": 0.226,
+     "ci_high": 0.263,
+     "shrunk": 0.244
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 501,
+     "n": 1984,
+     "rate": 0.253,
+     "ci_low": 0.234,
+     "ci_high": 0.272,
+     "shrunk": 0.253
+    },
+    "casual": {
+     "wins": 431,
+     "n": 2027,
+     "rate": 0.213,
+     "ci_low": 0.195,
+     "ci_high": 0.231,
+     "shrunk": 0.213
+    },
+    "aap_friendly": {
+     "wins": 487,
+     "n": 1989,
+     "rate": 0.245,
+     "ci_low": 0.226,
+     "ci_high": 0.264,
+     "shrunk": 0.245
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 477,
+     "n": 2013,
+     "rate": 0.237,
+     "ci_low": 0.219,
+     "ci_high": 0.256,
+     "shrunk": 0.237
+    },
+    "explanatory": {
+     "wins": 401,
+     "n": 1984,
+     "rate": 0.202,
+     "ci_low": 0.185,
+     "ci_high": 0.22,
+     "shrunk": 0.202
+    },
+    "crisp": {
+     "wins": 541,
+     "n": 2003,
+     "rate": 0.27,
+     "ci_low": 0.251,
+     "ci_high": 0.29,
+     "shrunk": 0.27
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 653,
+     "n": 2951,
+     "rate": 0.221,
+     "ci_low": 0.207,
+     "ci_high": 0.237,
+     "shrunk": 0.221
+    },
+    "yes": {
+     "wins": 766,
+     "n": 3049,
+     "rate": 0.251,
+     "ci_low": 0.236,
+     "ci_high": 0.267,
+     "shrunk": 0.251
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 465,
+     "n": 1960,
+     "rate": 0.237,
+     "ci_low": 0.219,
+     "ci_high": 0.257,
+     "shrunk": 0.237
+    },
+    "slow": {
+     "wins": 488,
+     "n": 1973,
+     "rate": 0.247,
+     "ci_low": 0.229,
+     "ci_high": 0.267,
+     "shrunk": 0.247
+    },
+    "normal": {
+     "wins": 466,
+     "n": 2067,
+     "rate": 0.225,
+     "ci_low": 0.208,
+     "ci_high": 0.244,
+     "shrunk": 0.225
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 721,
+     "n": 3031,
+     "rate": 0.238,
+     "ci_low": 0.223,
+     "ci_high": 0.253,
+     "shrunk": 0.238
+    },
+    "female": {
+     "wins": 698,
+     "n": 2969,
+     "rate": 0.235,
+     "ci_low": 0.22,
+     "ci_high": 0.251,
+     "shrunk": 0.235
+    }
+   }
+  },
+  "business_type=exporter&size=mid": {
+   "_baseline": {
+    "wins": 40,
+    "n": 181,
+    "rate": 0.221,
+    "ci_low": 0.167,
+    "ci_high": 0.287
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 15,
+     "n": 60,
+     "rate": 0.25,
+     "ci_low": 0.158,
+     "ci_high": 0.372,
+     "shrunk": 0.251
+    },
+    "hi": {
+     "wins": 11,
+     "n": 59,
+     "rate": 0.186,
+     "ci_low": 0.107,
+     "ci_high": 0.304,
+     "shrunk": 0.206
+    },
+    "en": {
+     "wins": 14,
+     "n": 62,
+     "rate": 0.226,
+     "ci_low": 0.14,
+     "ci_high": 0.344,
+     "shrunk": 0.222
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 13,
+     "n": 48,
+     "rate": 0.271,
+     "ci_low": 0.166,
+     "ci_high": 0.41,
+     "shrunk": 0.264
+    },
+    "aap_friendly": {
+     "wins": 17,
+     "n": 59,
+     "rate": 0.288,
+     "ci_low": 0.188,
+     "ci_high": 0.414,
+     "shrunk": 0.274
+    },
+    "casual": {
+     "wins": 10,
+     "n": 74,
+     "rate": 0.135,
+     "ci_low": 0.075,
+     "ci_high": 0.231,
+     "shrunk": 0.157
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 12,
+     "n": 67,
+     "rate": 0.179,
+     "ci_low": 0.106,
+     "ci_high": 0.287,
+     "shrunk": 0.186
+    },
+    "normal": {
+     "wins": 10,
+     "n": 60,
+     "rate": 0.167,
+     "ci_low": 0.093,
+     "ci_high": 0.28,
+     "shrunk": 0.19
+    },
+    "crisp": {
+     "wins": 18,
+     "n": 54,
+     "rate": 0.333,
+     "ci_low": 0.222,
+     "ci_high": 0.466,
+     "shrunk": 0.311
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 16,
+     "n": 84,
+     "rate": 0.19,
+     "ci_low": 0.121,
+     "ci_high": 0.287,
+     "shrunk": 0.199
+    },
+    "yes": {
+     "wins": 24,
+     "n": 97,
+     "rate": 0.247,
+     "ci_low": 0.172,
+     "ci_high": 0.342,
+     "shrunk": 0.248
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 17,
+     "n": 72,
+     "rate": 0.236,
+     "ci_low": 0.153,
+     "ci_high": 0.346,
+     "shrunk": 0.239
+    },
+    "normal": {
+     "wins": 12,
+     "n": 67,
+     "rate": 0.179,
+     "ci_low": 0.106,
+     "ci_high": 0.287,
+     "shrunk": 0.193
+    },
+    "fast": {
+     "wins": 11,
+     "n": 42,
+     "rate": 0.262,
+     "ci_low": 0.153,
+     "ci_high": 0.411,
+     "shrunk": 0.252
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 19,
+     "n": 92,
+     "rate": 0.207,
+     "ci_low": 0.136,
+     "ci_high": 0.3,
+     "shrunk": 0.214
+    },
+    "male": {
+     "wins": 21,
+     "n": 89,
+     "rate": 0.236,
+     "ci_low": 0.16,
+     "ci_high": 0.334,
+     "shrunk": 0.236
+    }
+   }
+  },
+  "seller_language=hi&size=mid": {
+   "_baseline": {
+    "wins": 105,
+    "n": 422,
+    "rate": 0.249,
+    "ci_low": 0.21,
+    "ci_high": 0.292
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 31,
+     "n": 137,
+     "rate": 0.226,
+     "ci_low": 0.164,
+     "ci_high": 0.303,
+     "shrunk": 0.231
+    },
+    "en": {
+     "wins": 29,
+     "n": 133,
+     "rate": 0.218,
+     "ci_low": 0.156,
+     "ci_high": 0.296,
+     "shrunk": 0.217
+    },
+    "hi": {
+     "wins": 45,
+     "n": 152,
+     "rate": 0.296,
+     "ci_low": 0.229,
+     "ci_high": 0.373,
+     "shrunk": 0.287
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 30,
+     "n": 138,
+     "rate": 0.217,
+     "ci_low": 0.157,
+     "ci_high": 0.293,
+     "shrunk": 0.224
+    },
+    "casual": {
+     "wins": 38,
+     "n": 145,
+     "rate": 0.262,
+     "ci_low": 0.197,
+     "ci_high": 0.339,
+     "shrunk": 0.254
+    },
+    "aap_friendly": {
+     "wins": 37,
+     "n": 139,
+     "rate": 0.266,
+     "ci_low": 0.2,
+     "ci_high": 0.345,
+     "shrunk": 0.262
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 31,
+     "n": 137,
+     "rate": 0.226,
+     "ci_low": 0.164,
+     "ci_high": 0.303,
+     "shrunk": 0.222
+    },
+    "normal": {
+     "wins": 32,
+     "n": 142,
+     "rate": 0.225,
+     "ci_low": 0.164,
+     "ci_high": 0.301,
+     "shrunk": 0.227
+    },
+    "crisp": {
+     "wins": 42,
+     "n": 143,
+     "rate": 0.294,
+     "ci_low": 0.225,
+     "ci_high": 0.373,
+     "shrunk": 0.29
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 46,
+     "n": 209,
+     "rate": 0.22,
+     "ci_low": 0.169,
+     "ci_high": 0.281,
+     "shrunk": 0.22
+    },
+    "yes": {
+     "wins": 59,
+     "n": 213,
+     "rate": 0.277,
+     "ci_low": 0.221,
+     "ci_high": 0.341,
+     "shrunk": 0.274
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 34,
+     "n": 135,
+     "rate": 0.252,
+     "ci_low": 0.186,
+     "ci_high": 0.331,
+     "shrunk": 0.251
+    },
+    "normal": {
+     "wins": 40,
+     "n": 158,
+     "rate": 0.253,
+     "ci_low": 0.192,
+     "ci_high": 0.326,
+     "shrunk": 0.249
+    },
+    "fast": {
+     "wins": 31,
+     "n": 129,
+     "rate": 0.24,
+     "ci_low": 0.175,
+     "ci_high": 0.321,
+     "shrunk": 0.24
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 51,
+     "n": 215,
+     "rate": 0.237,
+     "ci_low": 0.185,
+     "ci_high": 0.298,
+     "shrunk": 0.237
+    },
+    "male": {
+     "wins": 54,
+     "n": 207,
+     "rate": 0.261,
+     "ci_low": 0.206,
+     "ci_high": 0.325,
+     "shrunk": 0.258
+    }
+   }
+  },
+  "seller_language=hi": {
+   "_baseline": {
+    "wins": 534,
+    "n": 2293,
+    "rate": 0.233,
+    "ci_low": 0.216,
+    "ci_high": 0.251
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 166,
+     "n": 737,
+     "rate": 0.225,
+     "ci_low": 0.197,
+     "ci_high": 0.257,
+     "shrunk": 0.226
+    },
+    "en": {
+     "wins": 152,
+     "n": 776,
+     "rate": 0.196,
+     "ci_low": 0.169,
+     "ci_high": 0.225,
+     "shrunk": 0.197
+    },
+    "hi": {
+     "wins": 216,
+     "n": 780,
+     "rate": 0.277,
+     "ci_low": 0.247,
+     "ci_high": 0.309,
+     "shrunk": 0.276
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 188,
+     "n": 763,
+     "rate": 0.246,
+     "ci_low": 0.217,
+     "ci_high": 0.278,
+     "shrunk": 0.247
+    },
+    "casual": {
+     "wins": 176,
+     "n": 784,
+     "rate": 0.224,
+     "ci_low": 0.197,
+     "ci_high": 0.255,
+     "shrunk": 0.224
+    },
+    "aap_friendly": {
+     "wins": 170,
+     "n": 746,
+     "rate": 0.228,
+     "ci_low": 0.199,
+     "ci_high": 0.259,
+     "shrunk": 0.229
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 156,
+     "n": 775,
+     "rate": 0.201,
+     "ci_low": 0.175,
+     "ci_high": 0.231,
+     "shrunk": 0.201
+    },
+    "crisp": {
+     "wins": 204,
+     "n": 749,
+     "rate": 0.272,
+     "ci_low": 0.242,
+     "ci_high": 0.305,
+     "shrunk": 0.272
+    },
+    "normal": {
+     "wins": 174,
+     "n": 769,
+     "rate": 0.226,
+     "ci_low": 0.198,
+     "ci_high": 0.257,
+     "shrunk": 0.227
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 250,
+     "n": 1134,
+     "rate": 0.22,
+     "ci_low": 0.197,
+     "ci_high": 0.246,
+     "shrunk": 0.22
+    },
+    "yes": {
+     "wins": 284,
+     "n": 1159,
+     "rate": 0.245,
+     "ci_low": 0.221,
+     "ci_high": 0.271,
+     "shrunk": 0.245
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 188,
+     "n": 742,
+     "rate": 0.253,
+     "ci_low": 0.223,
+     "ci_high": 0.286,
+     "shrunk": 0.253
+    },
+    "normal": {
+     "wins": 168,
+     "n": 807,
+     "rate": 0.208,
+     "ci_low": 0.182,
+     "ci_high": 0.238,
+     "shrunk": 0.209
+    },
+    "fast": {
+     "wins": 178,
+     "n": 744,
+     "rate": 0.239,
+     "ci_low": 0.21,
+     "ci_high": 0.271,
+     "shrunk": 0.239
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 271,
+     "n": 1149,
+     "rate": 0.236,
+     "ci_low": 0.212,
+     "ci_high": 0.261,
+     "shrunk": 0.236
+    },
+    "male": {
+     "wins": 263,
+     "n": 1144,
+     "rate": 0.23,
+     "ci_low": 0.206,
+     "ci_high": 0.255,
+     "shrunk": 0.23
+    }
+   }
+  },
+  "business_type=exporter": {
+   "_baseline": {
+    "wins": 237,
+    "n": 974,
+    "rate": 0.243,
+    "ci_low": 0.217,
+    "ci_high": 0.271
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 82,
+     "n": 310,
+     "rate": 0.265,
+     "ci_low": 0.219,
+     "ci_high": 0.316,
+     "shrunk": 0.264
+    },
+    "en": {
+     "wins": 72,
+     "n": 352,
+     "rate": 0.205,
+     "ci_low": 0.166,
+     "ci_high": 0.25,
+     "shrunk": 0.205
+    },
+    "hi": {
+     "wins": 83,
+     "n": 312,
+     "rate": 0.266,
+     "ci_low": 0.22,
+     "ci_high": 0.318,
+     "shrunk": 0.264
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 79,
+     "n": 304,
+     "rate": 0.26,
+     "ci_low": 0.214,
+     "ci_high": 0.312,
+     "shrunk": 0.259
+    },
+    "casual": {
+     "wins": 73,
+     "n": 346,
+     "rate": 0.211,
+     "ci_low": 0.171,
+     "ci_high": 0.257,
+     "shrunk": 0.211
+    },
+    "aap_friendly": {
+     "wins": 85,
+     "n": 324,
+     "rate": 0.262,
+     "ci_low": 0.217,
+     "ci_high": 0.313,
+     "shrunk": 0.261
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 65,
+     "n": 321,
+     "rate": 0.202,
+     "ci_low": 0.162,
+     "ci_high": 0.25,
+     "shrunk": 0.202
+    },
+    "crisp": {
+     "wins": 100,
+     "n": 341,
+     "rate": 0.293,
+     "ci_low": 0.247,
+     "ci_high": 0.344,
+     "shrunk": 0.291
+    },
+    "normal": {
+     "wins": 72,
+     "n": 312,
+     "rate": 0.231,
+     "ci_low": 0.187,
+     "ci_high": 0.281,
+     "shrunk": 0.231
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 127,
+     "n": 492,
+     "rate": 0.258,
+     "ci_low": 0.221,
+     "ci_high": 0.299,
+     "shrunk": 0.256
+    },
+    "yes": {
+     "wins": 110,
+     "n": 482,
+     "rate": 0.228,
+     "ci_low": 0.193,
+     "ci_high": 0.268,
+     "shrunk": 0.23
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 76,
+     "n": 328,
+     "rate": 0.232,
+     "ci_low": 0.189,
+     "ci_high": 0.28,
+     "shrunk": 0.233
+    },
+    "normal": {
+     "wins": 86,
+     "n": 353,
+     "rate": 0.244,
+     "ci_low": 0.202,
+     "ci_high": 0.291,
+     "shrunk": 0.242
+    },
+    "fast": {
+     "wins": 75,
+     "n": 293,
+     "rate": 0.256,
+     "ci_low": 0.209,
+     "ci_high": 0.309,
+     "shrunk": 0.254
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 114,
+     "n": 496,
+     "rate": 0.23,
+     "ci_low": 0.195,
+     "ci_high": 0.269,
+     "shrunk": 0.23
+    },
+    "male": {
+     "wins": 123,
+     "n": 478,
+     "rate": 0.257,
+     "ci_low": 0.22,
+     "ci_high": 0.298,
+     "shrunk": 0.256
+    }
+   }
+  },
+  "top_objection=none": {
+   "_baseline": {
+    "wins": 200,
+    "n": 832,
+    "rate": 0.24,
+    "ci_low": 0.213,
+    "ci_high": 0.271
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 51,
+     "n": 260,
+     "rate": 0.196,
+     "ci_low": 0.152,
+     "ci_high": 0.249,
+     "shrunk": 0.202
+    },
+    "hi": {
+     "wins": 86,
+     "n": 299,
+     "rate": 0.288,
+     "ci_low": 0.239,
+     "ci_high": 0.341,
+     "shrunk": 0.284
+    },
+    "en": {
+     "wins": 63,
+     "n": 273,
+     "rate": 0.231,
+     "ci_low": 0.185,
+     "ci_high": 0.284,
+     "shrunk": 0.229
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 70,
+     "n": 266,
+     "rate": 0.263,
+     "ci_low": 0.214,
+     "ci_high": 0.319,
+     "shrunk": 0.262
+    },
+    "aap_friendly": {
+     "wins": 59,
+     "n": 270,
+     "rate": 0.219,
+     "ci_low": 0.173,
+     "ci_high": 0.272,
+     "shrunk": 0.221
+    },
+    "casual": {
+     "wins": 71,
+     "n": 296,
+     "rate": 0.24,
+     "ci_low": 0.195,
+     "ci_high": 0.292,
+     "shrunk": 0.237
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 53,
+     "n": 275,
+     "rate": 0.193,
+     "ci_low": 0.15,
+     "ci_high": 0.243,
+     "shrunk": 0.194
+    },
+    "normal": {
+     "wins": 64,
+     "n": 280,
+     "rate": 0.229,
+     "ci_low": 0.183,
+     "ci_high": 0.281,
+     "shrunk": 0.229
+    },
+    "crisp": {
+     "wins": 83,
+     "n": 277,
+     "rate": 0.3,
+     "ci_low": 0.249,
+     "ci_high": 0.356,
+     "shrunk": 0.297
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 97,
+     "n": 409,
+     "rate": 0.237,
+     "ci_low": 0.199,
+     "ci_high": 0.281,
+     "shrunk": 0.236
+    },
+    "yes": {
+     "wins": 103,
+     "n": 423,
+     "rate": 0.243,
+     "ci_low": 0.205,
+     "ci_high": 0.287,
+     "shrunk": 0.244
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 74,
+     "n": 275,
+     "rate": 0.269,
+     "ci_low": 0.22,
+     "ci_high": 0.324,
+     "shrunk": 0.267
+    },
+    "fast": {
+     "wins": 65,
+     "n": 270,
+     "rate": 0.241,
+     "ci_low": 0.194,
+     "ci_high": 0.295,
+     "shrunk": 0.24
+    },
+    "normal": {
+     "wins": 61,
+     "n": 287,
+     "rate": 0.213,
+     "ci_low": 0.169,
+     "ci_high": 0.264,
+     "shrunk": 0.214
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 105,
+     "n": 416,
+     "rate": 0.252,
+     "ci_low": 0.213,
+     "ci_high": 0.296,
+     "shrunk": 0.251
+    },
+    "male": {
+     "wins": 95,
+     "n": 416,
+     "rate": 0.228,
+     "ci_low": 0.191,
+     "ci_high": 0.271,
+     "shrunk": 0.229
+    }
+   }
+  },
+  "size=mid": {
+   "_baseline": {
+    "wins": 291,
+    "n": 1185,
+    "rate": 0.246,
+    "ci_low": 0.222,
+    "ci_high": 0.271
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 108,
+     "n": 395,
+     "rate": 0.273,
+     "ci_low": 0.232,
+     "ci_high": 0.319,
+     "shrunk": 0.272
+    },
+    "en": {
+     "wins": 83,
+     "n": 363,
+     "rate": 0.229,
+     "ci_low": 0.188,
+     "ci_high": 0.275,
+     "shrunk": 0.227
+    },
+    "hi": {
+     "wins": 100,
+     "n": 427,
+     "rate": 0.234,
+     "ci_low": 0.197,
+     "ci_high": 0.277,
+     "shrunk": 0.235
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 99,
+     "n": 399,
+     "rate": 0.248,
+     "ci_low": 0.208,
+     "ci_high": 0.293,
+     "shrunk": 0.248
+    },
+    "casual": {
+     "wins": 91,
+     "n": 416,
+     "rate": 0.219,
+     "ci_low": 0.182,
+     "ci_high": 0.261,
+     "shrunk": 0.218
+    },
+    "aap_friendly": {
+     "wins": 101,
+     "n": 370,
+     "rate": 0.273,
+     "ci_low": 0.23,
+     "ci_high": 0.321,
+     "shrunk": 0.271
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 77,
+     "n": 389,
+     "rate": 0.198,
+     "ci_low": 0.161,
+     "ci_high": 0.24,
+     "shrunk": 0.198
+    },
+    "normal": {
+     "wins": 95,
+     "n": 409,
+     "rate": 0.232,
+     "ci_low": 0.194,
+     "ci_high": 0.276,
+     "shrunk": 0.233
+    },
+    "crisp": {
+     "wins": 119,
+     "n": 387,
+     "rate": 0.307,
+     "ci_low": 0.264,
+     "ci_high": 0.355,
+     "shrunk": 0.305
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 125,
+     "n": 578,
+     "rate": 0.216,
+     "ci_low": 0.185,
+     "ci_high": 0.252,
+     "shrunk": 0.217
+    },
+    "yes": {
+     "wins": 166,
+     "n": 607,
+     "rate": 0.273,
+     "ci_low": 0.24,
+     "ci_high": 0.31,
+     "shrunk": 0.272
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 97,
+     "n": 383,
+     "rate": 0.253,
+     "ci_low": 0.212,
+     "ci_high": 0.299,
+     "shrunk": 0.253
+    },
+    "normal": {
+     "wins": 104,
+     "n": 421,
+     "rate": 0.247,
+     "ci_low": 0.208,
+     "ci_high": 0.29,
+     "shrunk": 0.246
+    },
+    "fast": {
+     "wins": 90,
+     "n": 381,
+     "rate": 0.236,
+     "ci_low": 0.196,
+     "ci_high": 0.281,
+     "shrunk": 0.236
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 143,
+     "n": 609,
+     "rate": 0.235,
+     "ci_low": 0.203,
+     "ci_high": 0.27,
+     "shrunk": 0.235
+    },
+    "male": {
+     "wins": 148,
+     "n": 576,
+     "rate": 0.257,
+     "ci_low": 0.223,
+     "ci_high": 0.294,
+     "shrunk": 0.256
+    }
+   }
+  },
+  "top_objection=price": {
+   "_baseline": {
+    "wins": 263,
+    "n": 1024,
+    "rate": 0.257,
+    "ci_low": 0.231,
+    "ci_high": 0.284
+   },
+   "bot_language": {
+    "en": {
+     "wins": 76,
+     "n": 321,
+     "rate": 0.237,
+     "ci_low": 0.194,
+     "ci_high": 0.286,
+     "shrunk": 0.235
+    },
+    "hi": {
+     "wins": 81,
+     "n": 347,
+     "rate": 0.233,
+     "ci_low": 0.192,
+     "ci_high": 0.281,
+     "shrunk": 0.234
+    },
+    "hinglish": {
+     "wins": 106,
+     "n": 356,
+     "rate": 0.298,
+     "ci_low": 0.253,
+     "ci_high": 0.347,
+     "shrunk": 0.294
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 95,
+     "n": 344,
+     "rate": 0.276,
+     "ci_low": 0.232,
+     "ci_high": 0.326,
+     "shrunk": 0.274
+    },
+    "aap_friendly": {
+     "wins": 98,
+     "n": 344,
+     "rate": 0.285,
+     "ci_low": 0.24,
+     "ci_high": 0.335,
+     "shrunk": 0.282
+    },
+    "casual": {
+     "wins": 70,
+     "n": 336,
+     "rate": 0.208,
+     "ci_low": 0.168,
+     "ci_high": 0.255,
+     "shrunk": 0.209
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 92,
+     "n": 339,
+     "rate": 0.271,
+     "ci_low": 0.227,
+     "ci_high": 0.321,
+     "shrunk": 0.271
+    },
+    "explanatory": {
+     "wins": 78,
+     "n": 337,
+     "rate": 0.231,
+     "ci_low": 0.19,
+     "ci_high": 0.279,
+     "shrunk": 0.229
+    },
+    "normal": {
+     "wins": 93,
+     "n": 348,
+     "rate": 0.267,
+     "ci_low": 0.223,
+     "ci_high": 0.316,
+     "shrunk": 0.265
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 114,
+     "n": 526,
+     "rate": 0.217,
+     "ci_low": 0.184,
+     "ci_high": 0.254,
+     "shrunk": 0.217
+    },
+    "yes": {
+     "wins": 149,
+     "n": 498,
+     "rate": 0.299,
+     "ci_low": 0.261,
+     "ci_high": 0.341,
+     "shrunk": 0.296
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 89,
+     "n": 332,
+     "rate": 0.268,
+     "ci_low": 0.223,
+     "ci_high": 0.318,
+     "shrunk": 0.266
+    },
+    "slow": {
+     "wins": 94,
+     "n": 355,
+     "rate": 0.265,
+     "ci_low": 0.222,
+     "ci_high": 0.313,
+     "shrunk": 0.263
+    },
+    "normal": {
+     "wins": 80,
+     "n": 337,
+     "rate": 0.237,
+     "ci_low": 0.195,
+     "ci_high": 0.286,
+     "shrunk": 0.236
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 133,
+     "n": 516,
+     "rate": 0.258,
+     "ci_low": 0.222,
+     "ci_high": 0.297,
+     "shrunk": 0.257
+    },
+    "male": {
+     "wins": 130,
+     "n": 508,
+     "rate": 0.256,
+     "ci_low": 0.22,
+     "ci_high": 0.296,
+     "shrunk": 0.255
+    }
+   }
+  },
+  "business_type=exporter&size=small": {
+   "_baseline": {
+    "wins": 114,
+    "n": 428,
+    "rate": 0.266,
+    "ci_low": 0.227,
+    "ci_high": 0.31
+   },
+   "bot_language": {
+    "en": {
+     "wins": 30,
+     "n": 154,
+     "rate": 0.195,
+     "ci_low": 0.14,
+     "ci_high": 0.264,
+     "shrunk": 0.198
+    },
+    "hi": {
+     "wins": 46,
+     "n": 145,
+     "rate": 0.317,
+     "ci_low": 0.247,
+     "ci_high": 0.397,
+     "shrunk": 0.305
+    },
+    "hinglish": {
+     "wins": 38,
+     "n": 129,
+     "rate": 0.295,
+     "ci_low": 0.223,
+     "ci_high": 0.378,
+     "shrunk": 0.287
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 37,
+     "n": 134,
+     "rate": 0.276,
+     "ci_low": 0.207,
+     "ci_high": 0.357,
+     "shrunk": 0.272
+    },
+    "casual": {
+     "wins": 35,
+     "n": 145,
+     "rate": 0.241,
+     "ci_low": 0.179,
+     "ci_high": 0.317,
+     "shrunk": 0.236
+    },
+    "aap_friendly": {
+     "wins": 42,
+     "n": 149,
+     "rate": 0.282,
+     "ci_low": 0.216,
+     "ci_high": 0.359,
+     "shrunk": 0.276
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 49,
+     "n": 163,
+     "rate": 0.301,
+     "ci_low": 0.235,
+     "ci_high": 0.375,
+     "shrunk": 0.296
+    },
+    "explanatory": {
+     "wins": 26,
+     "n": 126,
+     "rate": 0.206,
+     "ci_low": 0.145,
+     "ci_high": 0.285,
+     "shrunk": 0.206
+    },
+    "normal": {
+     "wins": 39,
+     "n": 139,
+     "rate": 0.281,
+     "ci_low": 0.213,
+     "ci_high": 0.36,
+     "shrunk": 0.273
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 50,
+     "n": 210,
+     "rate": 0.238,
+     "ci_low": 0.186,
+     "ci_high": 0.3,
+     "shrunk": 0.24
+    },
+    "no": {
+     "wins": 64,
+     "n": 218,
+     "rate": 0.294,
+     "ci_low": 0.237,
+     "ci_high": 0.357,
+     "shrunk": 0.285
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 45,
+     "n": 153,
+     "rate": 0.294,
+     "ci_low": 0.228,
+     "ci_high": 0.371,
+     "shrunk": 0.283
+    },
+    "slow": {
+     "wins": 31,
+     "n": 139,
+     "rate": 0.223,
+     "ci_low": 0.162,
+     "ci_high": 0.299,
+     "shrunk": 0.227
+    },
+    "fast": {
+     "wins": 38,
+     "n": 136,
+     "rate": 0.279,
+     "ci_low": 0.211,
+     "ci_high": 0.36,
+     "shrunk": 0.272
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 56,
+     "n": 207,
+     "rate": 0.271,
+     "ci_low": 0.215,
+     "ci_high": 0.335,
+     "shrunk": 0.266
+    },
+    "female": {
+     "wins": 58,
+     "n": 221,
+     "rate": 0.262,
+     "ci_low": 0.209,
+     "ci_high": 0.324,
+     "shrunk": 0.259
+    }
+   }
+  },
+  "seller_language=hi&size=small": {
+   "_baseline": {
+    "wins": 221,
+    "n": 905,
+    "rate": 0.244,
+    "ci_low": 0.217,
+    "ci_high": 0.273
+   },
+   "bot_language": {
+    "en": {
+     "wins": 65,
+     "n": 312,
+     "rate": 0.208,
+     "ci_low": 0.167,
+     "ci_high": 0.257,
+     "shrunk": 0.209
+    },
+    "hinglish": {
+     "wins": 73,
+     "n": 298,
+     "rate": 0.245,
+     "ci_low": 0.2,
+     "ci_high": 0.297,
+     "shrunk": 0.246
+    },
+    "hi": {
+     "wins": 83,
+     "n": 295,
+     "rate": 0.281,
+     "ci_low": 0.233,
+     "ci_high": 0.335,
+     "shrunk": 0.278
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 89,
+     "n": 291,
+     "rate": 0.306,
+     "ci_low": 0.256,
+     "ci_high": 0.361,
+     "shrunk": 0.301
+    },
+    "aap_friendly": {
+     "wins": 72,
+     "n": 298,
+     "rate": 0.242,
+     "ci_low": 0.196,
+     "ci_high": 0.293,
+     "shrunk": 0.242
+    },
+    "casual": {
+     "wins": 60,
+     "n": 316,
+     "rate": 0.19,
+     "ci_low": 0.15,
+     "ci_high": 0.237,
+     "shrunk": 0.192
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 86,
+     "n": 282,
+     "rate": 0.305,
+     "ci_low": 0.254,
+     "ci_high": 0.361,
+     "shrunk": 0.302
+    },
+    "explanatory": {
+     "wins": 66,
+     "n": 319,
+     "rate": 0.207,
+     "ci_low": 0.166,
+     "ci_high": 0.255,
+     "shrunk": 0.206
+    },
+    "normal": {
+     "wins": 69,
+     "n": 304,
+     "rate": 0.227,
+     "ci_low": 0.183,
+     "ci_high": 0.277,
+     "shrunk": 0.228
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 121,
+     "n": 463,
+     "rate": 0.261,
+     "ci_low": 0.223,
+     "ci_high": 0.303,
+     "shrunk": 0.261
+    },
+    "no": {
+     "wins": 100,
+     "n": 442,
+     "rate": 0.226,
+     "ci_low": 0.19,
+     "ci_high": 0.268,
+     "shrunk": 0.226
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 71,
+     "n": 306,
+     "rate": 0.232,
+     "ci_low": 0.188,
+     "ci_high": 0.282,
+     "shrunk": 0.231
+    },
+    "fast": {
+     "wins": 83,
+     "n": 298,
+     "rate": 0.279,
+     "ci_low": 0.231,
+     "ci_high": 0.332,
+     "shrunk": 0.275
+    },
+    "slow": {
+     "wins": 67,
+     "n": 301,
+     "rate": 0.223,
+     "ci_low": 0.179,
+     "ci_high": 0.273,
+     "shrunk": 0.225
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 100,
+     "n": 455,
+     "rate": 0.22,
+     "ci_low": 0.184,
+     "ci_high": 0.26,
+     "shrunk": 0.221
+    },
+    "female": {
+     "wins": 121,
+     "n": 450,
+     "rate": 0.269,
+     "ci_low": 0.23,
+     "ci_high": 0.312,
+     "shrunk": 0.267
+    }
+   }
+  },
+  "top_objection=not_needed": {
+   "_baseline": {
+    "wins": 247,
+    "n": 1092,
+    "rate": 0.226,
+    "ci_low": 0.202,
+    "ci_high": 0.252
+   },
+   "bot_language": {
+    "en": {
+     "wins": 75,
+     "n": 356,
+     "rate": 0.211,
+     "ci_low": 0.172,
+     "ci_high": 0.256,
+     "shrunk": 0.211
+    },
+    "hinglish": {
+     "wins": 92,
+     "n": 368,
+     "rate": 0.25,
+     "ci_low": 0.208,
+     "ci_high": 0.297,
+     "shrunk": 0.25
+    },
+    "hi": {
+     "wins": 80,
+     "n": 368,
+     "rate": 0.217,
+     "ci_low": 0.178,
+     "ci_high": 0.262,
+     "shrunk": 0.219
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 88,
+     "n": 355,
+     "rate": 0.248,
+     "ci_low": 0.206,
+     "ci_high": 0.295,
+     "shrunk": 0.248
+    },
+    "casual": {
+     "wins": 77,
+     "n": 383,
+     "rate": 0.201,
+     "ci_low": 0.164,
+     "ci_high": 0.244,
+     "shrunk": 0.202
+    },
+    "aap_friendly": {
+     "wins": 82,
+     "n": 354,
+     "rate": 0.232,
+     "ci_low": 0.191,
+     "ci_high": 0.278,
+     "shrunk": 0.233
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 77,
+     "n": 377,
+     "rate": 0.204,
+     "ci_low": 0.167,
+     "ci_high": 0.248,
+     "shrunk": 0.209
+    },
+    "explanatory": {
+     "wins": 81,
+     "n": 356,
+     "rate": 0.228,
+     "ci_low": 0.187,
+     "ci_high": 0.274,
+     "shrunk": 0.226
+    },
+    "normal": {
+     "wins": 89,
+     "n": 359,
+     "rate": 0.248,
+     "ci_low": 0.206,
+     "ci_high": 0.295,
+     "shrunk": 0.247
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 138,
+     "n": 587,
+     "rate": 0.235,
+     "ci_low": 0.203,
+     "ci_high": 0.271,
+     "shrunk": 0.236
+    },
+    "no": {
+     "wins": 109,
+     "n": 505,
+     "rate": 0.216,
+     "ci_low": 0.182,
+     "ci_high": 0.254,
+     "shrunk": 0.216
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 86,
+     "n": 378,
+     "rate": 0.228,
+     "ci_low": 0.188,
+     "ci_high": 0.272,
+     "shrunk": 0.227
+    },
+    "slow": {
+     "wins": 83,
+     "n": 346,
+     "rate": 0.24,
+     "ci_low": 0.198,
+     "ci_high": 0.288,
+     "shrunk": 0.24
+    },
+    "fast": {
+     "wins": 78,
+     "n": 368,
+     "rate": 0.212,
+     "ci_low": 0.173,
+     "ci_high": 0.257,
+     "shrunk": 0.214
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 132,
+     "n": 549,
+     "rate": 0.24,
+     "ci_low": 0.207,
+     "ci_high": 0.278,
+     "shrunk": 0.24
+    },
+    "female": {
+     "wins": 115,
+     "n": 543,
+     "rate": 0.212,
+     "ci_low": 0.18,
+     "ci_high": 0.248,
+     "shrunk": 0.213
+    }
+   }
+  },
+  "business_type=manufacturer&size=large": {
+   "_baseline": {
+    "wins": 96,
+    "n": 409,
+    "rate": 0.235,
+    "ci_low": 0.196,
+    "ci_high": 0.278
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 32,
+     "n": 143,
+     "rate": 0.224,
+     "ci_low": 0.163,
+     "ci_high": 0.299,
+     "shrunk": 0.227
+    },
+    "en": {
+     "wins": 35,
+     "n": 137,
+     "rate": 0.255,
+     "ci_low": 0.19,
+     "ci_high": 0.334,
+     "shrunk": 0.248
+    },
+    "hinglish": {
+     "wins": 29,
+     "n": 129,
+     "rate": 0.225,
+     "ci_low": 0.161,
+     "ci_high": 0.304,
+     "shrunk": 0.23
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 28,
+     "n": 131,
+     "rate": 0.214,
+     "ci_low": 0.152,
+     "ci_high": 0.292,
+     "shrunk": 0.221
+    },
+    "casual": {
+     "wins": 33,
+     "n": 133,
+     "rate": 0.248,
+     "ci_low": 0.182,
+     "ci_high": 0.328,
+     "shrunk": 0.242
+    },
+    "aap_friendly": {
+     "wins": 35,
+     "n": 145,
+     "rate": 0.241,
+     "ci_low": 0.179,
+     "ci_high": 0.317,
+     "shrunk": 0.242
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 27,
+     "n": 131,
+     "rate": 0.206,
+     "ci_low": 0.146,
+     "ci_high": 0.283,
+     "shrunk": 0.205
+    },
+    "normal": {
+     "wins": 29,
+     "n": 137,
+     "rate": 0.212,
+     "ci_low": 0.152,
+     "ci_high": 0.287,
+     "shrunk": 0.216
+    },
+    "crisp": {
+     "wins": 40,
+     "n": 141,
+     "rate": 0.284,
+     "ci_low": 0.216,
+     "ci_high": 0.363,
+     "shrunk": 0.281
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 52,
+     "n": 218,
+     "rate": 0.239,
+     "ci_low": 0.187,
+     "ci_high": 0.299,
+     "shrunk": 0.236
+    },
+    "yes": {
+     "wins": 44,
+     "n": 191,
+     "rate": 0.23,
+     "ci_low": 0.176,
+     "ci_high": 0.295,
+     "shrunk": 0.233
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 31,
+     "n": 138,
+     "rate": 0.225,
+     "ci_low": 0.163,
+     "ci_high": 0.301,
+     "shrunk": 0.229
+    },
+    "normal": {
+     "wins": 25,
+     "n": 131,
+     "rate": 0.191,
+     "ci_low": 0.133,
+     "ci_high": 0.267,
+     "shrunk": 0.197
+    },
+    "fast": {
+     "wins": 40,
+     "n": 140,
+     "rate": 0.286,
+     "ci_low": 0.217,
+     "ci_high": 0.365,
+     "shrunk": 0.277
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 52,
+     "n": 206,
+     "rate": 0.252,
+     "ci_low": 0.198,
+     "ci_high": 0.316,
+     "shrunk": 0.25
+    },
+    "male": {
+     "wins": 44,
+     "n": 203,
+     "rate": 0.217,
+     "ci_low": 0.166,
+     "ci_high": 0.278,
+     "shrunk": 0.219
+    }
+   }
+  },
+  "seller_language=hi&size=large": {
+   "_baseline": {
+    "wins": 208,
+    "n": 966,
+    "rate": 0.215,
+    "ci_low": 0.191,
+    "ci_high": 0.242
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 88,
+     "n": 333,
+     "rate": 0.264,
+     "ci_low": 0.22,
+     "ci_high": 0.314,
+     "shrunk": 0.263
+    },
+    "hinglish": {
+     "wins": 62,
+     "n": 302,
+     "rate": 0.205,
+     "ci_low": 0.164,
+     "ci_high": 0.254,
+     "shrunk": 0.21
+    },
+    "en": {
+     "wins": 58,
+     "n": 331,
+     "rate": 0.175,
+     "ci_low": 0.138,
+     "ci_high": 0.22,
+     "shrunk": 0.178
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 69,
+     "n": 334,
+     "rate": 0.207,
+     "ci_low": 0.167,
+     "ci_high": 0.253,
+     "shrunk": 0.21
+    },
+    "casual": {
+     "wins": 78,
+     "n": 323,
+     "rate": 0.241,
+     "ci_low": 0.198,
+     "ci_high": 0.291,
+     "shrunk": 0.239
+    },
+    "aap_friendly": {
+     "wins": 61,
+     "n": 309,
+     "rate": 0.197,
+     "ci_low": 0.157,
+     "ci_high": 0.245,
+     "shrunk": 0.202
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 59,
+     "n": 319,
+     "rate": 0.185,
+     "ci_low": 0.146,
+     "ci_high": 0.231,
+     "shrunk": 0.186
+    },
+    "normal": {
+     "wins": 73,
+     "n": 323,
+     "rate": 0.226,
+     "ci_low": 0.184,
+     "ci_high": 0.275,
+     "shrunk": 0.227
+    },
+    "crisp": {
+     "wins": 76,
+     "n": 324,
+     "rate": 0.235,
+     "ci_low": 0.192,
+     "ci_high": 0.284,
+     "shrunk": 0.238
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 104,
+     "n": 483,
+     "rate": 0.215,
+     "ci_low": 0.181,
+     "ci_high": 0.254,
+     "shrunk": 0.216
+    },
+    "yes": {
+     "wins": 104,
+     "n": 483,
+     "rate": 0.215,
+     "ci_low": 0.181,
+     "ci_high": 0.254,
+     "shrunk": 0.217
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 87,
+     "n": 306,
+     "rate": 0.284,
+     "ci_low": 0.237,
+     "ci_high": 0.337,
+     "shrunk": 0.281
+    },
+    "fast": {
+     "wins": 64,
+     "n": 317,
+     "rate": 0.202,
+     "ci_low": 0.161,
+     "ci_high": 0.25,
+     "shrunk": 0.205
+    },
+    "normal": {
+     "wins": 57,
+     "n": 343,
+     "rate": 0.166,
+     "ci_low": 0.131,
+     "ci_high": 0.209,
+     "shrunk": 0.171
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 99,
+     "n": 484,
+     "rate": 0.205,
+     "ci_low": 0.171,
+     "ci_high": 0.243,
+     "shrunk": 0.206
+    },
+    "male": {
+     "wins": 109,
+     "n": 482,
+     "rate": 0.226,
+     "ci_low": 0.191,
+     "ci_high": 0.266,
+     "shrunk": 0.227
+    }
+   }
+  },
+  "business_type=manufacturer": {
+   "_baseline": {
+    "wins": 246,
+    "n": 984,
+    "rate": 0.25,
+    "ci_low": 0.224,
+    "ci_high": 0.278
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 86,
+     "n": 336,
+     "rate": 0.256,
+     "ci_low": 0.212,
+     "ci_high": 0.305,
+     "shrunk": 0.255
+    },
+    "en": {
+     "wins": 75,
+     "n": 337,
+     "rate": 0.223,
+     "ci_low": 0.181,
+     "ci_high": 0.27,
+     "shrunk": 0.222
+    },
+    "hinglish": {
+     "wins": 85,
+     "n": 311,
+     "rate": 0.273,
+     "ci_low": 0.227,
+     "ci_high": 0.325,
+     "shrunk": 0.272
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 87,
+     "n": 319,
+     "rate": 0.273,
+     "ci_low": 0.227,
+     "ci_high": 0.324,
+     "shrunk": 0.271
+    },
+    "casual": {
+     "wins": 78,
+     "n": 346,
+     "rate": 0.225,
+     "ci_low": 0.185,
+     "ci_high": 0.272,
+     "shrunk": 0.224
+    },
+    "aap_friendly": {
+     "wins": 81,
+     "n": 319,
+     "rate": 0.254,
+     "ci_low": 0.209,
+     "ci_high": 0.304,
+     "shrunk": 0.253
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 86,
+     "n": 330,
+     "rate": 0.261,
+     "ci_low": 0.216,
+     "ci_high": 0.311,
+     "shrunk": 0.256
+    },
+    "normal": {
+     "wins": 76,
+     "n": 330,
+     "rate": 0.23,
+     "ci_low": 0.188,
+     "ci_high": 0.279,
+     "shrunk": 0.231
+    },
+    "crisp": {
+     "wins": 84,
+     "n": 324,
+     "rate": 0.259,
+     "ci_low": 0.215,
+     "ci_high": 0.31,
+     "shrunk": 0.26
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 110,
+     "n": 498,
+     "rate": 0.221,
+     "ci_low": 0.187,
+     "ci_high": 0.259,
+     "shrunk": 0.221
+    },
+    "yes": {
+     "wins": 136,
+     "n": 486,
+     "rate": 0.28,
+     "ci_low": 0.242,
+     "ci_high": 0.321,
+     "shrunk": 0.278
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 70,
+     "n": 300,
+     "rate": 0.233,
+     "ci_low": 0.189,
+     "ci_high": 0.284,
+     "shrunk": 0.235
+    },
+    "normal": {
+     "wins": 77,
+     "n": 344,
+     "rate": 0.224,
+     "ci_low": 0.183,
+     "ci_high": 0.271,
+     "shrunk": 0.224
+    },
+    "fast": {
+     "wins": 99,
+     "n": 340,
+     "rate": 0.291,
+     "ci_low": 0.245,
+     "ci_high": 0.342,
+     "shrunk": 0.287
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 124,
+     "n": 475,
+     "rate": 0.261,
+     "ci_low": 0.224,
+     "ci_high": 0.302,
+     "shrunk": 0.26
+    },
+    "male": {
+     "wins": 122,
+     "n": 509,
+     "rate": 0.24,
+     "ci_low": 0.205,
+     "ci_high": 0.279,
+     "shrunk": 0.24
+    }
+   }
+  },
+  "size=large": {
+   "_baseline": {
+    "wins": 601,
+    "n": 2617,
+    "rate": 0.23,
+    "ci_low": 0.214,
+    "ci_high": 0.246
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 210,
+     "n": 867,
+     "rate": 0.242,
+     "ci_low": 0.215,
+     "ci_high": 0.272,
+     "shrunk": 0.242
+    },
+    "hinglish": {
+     "wins": 202,
+     "n": 846,
+     "rate": 0.239,
+     "ci_low": 0.211,
+     "ci_high": 0.269,
+     "shrunk": 0.239
+    },
+    "en": {
+     "wins": 189,
+     "n": 904,
+     "rate": 0.209,
+     "ci_low": 0.184,
+     "ci_high": 0.237,
+     "shrunk": 0.209
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 201,
+     "n": 877,
+     "rate": 0.229,
+     "ci_low": 0.203,
+     "ci_high": 0.258,
+     "shrunk": 0.23
+    },
+    "casual": {
+     "wins": 192,
+     "n": 863,
+     "rate": 0.222,
+     "ci_low": 0.196,
+     "ci_high": 0.251,
+     "shrunk": 0.222
+    },
+    "aap_friendly": {
+     "wins": 208,
+     "n": 877,
+     "rate": 0.237,
+     "ci_low": 0.21,
+     "ci_high": 0.266,
+     "shrunk": 0.237
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 173,
+     "n": 856,
+     "rate": 0.202,
+     "ci_low": 0.177,
+     "ci_high": 0.23,
+     "shrunk": 0.202
+    },
+    "crisp": {
+     "wins": 222,
+     "n": 891,
+     "rate": 0.249,
+     "ci_low": 0.222,
+     "ci_high": 0.279,
+     "shrunk": 0.25
+    },
+    "normal": {
+     "wins": 206,
+     "n": 870,
+     "rate": 0.237,
+     "ci_low": 0.21,
+     "ci_high": 0.266,
+     "shrunk": 0.237
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 291,
+     "n": 1317,
+     "rate": 0.221,
+     "ci_low": 0.199,
+     "ci_high": 0.244,
+     "shrunk": 0.221
+    },
+    "yes": {
+     "wins": 310,
+     "n": 1300,
+     "rate": 0.238,
+     "ci_low": 0.216,
+     "ci_high": 0.262,
+     "shrunk": 0.239
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 224,
+     "n": 882,
+     "rate": 0.254,
+     "ci_low": 0.226,
+     "ci_high": 0.284,
+     "shrunk": 0.254
+    },
+    "fast": {
+     "wins": 189,
+     "n": 848,
+     "rate": 0.223,
+     "ci_low": 0.196,
+     "ci_high": 0.252,
+     "shrunk": 0.223
+    },
+    "normal": {
+     "wins": 188,
+     "n": 887,
+     "rate": 0.212,
+     "ci_low": 0.186,
+     "ci_high": 0.24,
+     "shrunk": 0.212
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 287,
+     "n": 1290,
+     "rate": 0.222,
+     "ci_low": 0.201,
+     "ci_high": 0.246,
+     "shrunk": 0.223
+    },
+    "male": {
+     "wins": 314,
+     "n": 1327,
+     "rate": 0.237,
+     "ci_low": 0.215,
+     "ci_high": 0.26,
+     "shrunk": 0.237
+    }
+   }
+  },
+  "seller_language=hinglish&size=small": {
+   "_baseline": {
+    "wins": 200,
+    "n": 817,
+    "rate": 0.245,
+    "ci_low": 0.217,
+    "ci_high": 0.275
+   },
+   "bot_language": {
+    "en": {
+     "wins": 54,
+     "n": 288,
+     "rate": 0.188,
+     "ci_low": 0.147,
+     "ci_high": 0.237,
+     "shrunk": 0.19
+    },
+    "hinglish": {
+     "wins": 82,
+     "n": 270,
+     "rate": 0.304,
+     "ci_low": 0.252,
+     "ci_high": 0.361,
+     "shrunk": 0.299
+    },
+    "hi": {
+     "wins": 64,
+     "n": 259,
+     "rate": 0.247,
+     "ci_low": 0.199,
+     "ci_high": 0.303,
+     "shrunk": 0.247
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 60,
+     "n": 274,
+     "rate": 0.219,
+     "ci_low": 0.174,
+     "ci_high": 0.272,
+     "shrunk": 0.218
+    },
+    "aap_formal": {
+     "wins": 71,
+     "n": 266,
+     "rate": 0.267,
+     "ci_low": 0.217,
+     "ci_high": 0.323,
+     "shrunk": 0.265
+    },
+    "aap_friendly": {
+     "wins": 69,
+     "n": 277,
+     "rate": 0.249,
+     "ci_low": 0.202,
+     "ci_high": 0.303,
+     "shrunk": 0.249
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 56,
+     "n": 269,
+     "rate": 0.208,
+     "ci_low": 0.164,
+     "ci_high": 0.261,
+     "shrunk": 0.208
+    },
+    "crisp": {
+     "wins": 73,
+     "n": 287,
+     "rate": 0.254,
+     "ci_low": 0.207,
+     "ci_high": 0.308,
+     "shrunk": 0.256
+    },
+    "normal": {
+     "wins": 71,
+     "n": 261,
+     "rate": 0.272,
+     "ci_low": 0.222,
+     "ci_high": 0.329,
+     "shrunk": 0.268
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 107,
+     "n": 420,
+     "rate": 0.255,
+     "ci_low": 0.215,
+     "ci_high": 0.299,
+     "shrunk": 0.255
+    },
+    "no": {
+     "wins": 93,
+     "n": 397,
+     "rate": 0.234,
+     "ci_low": 0.195,
+     "ci_high": 0.278,
+     "shrunk": 0.233
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 64,
+     "n": 257,
+     "rate": 0.249,
+     "ci_low": 0.2,
+     "ci_high": 0.305,
+     "shrunk": 0.249
+    },
+    "fast": {
+     "wins": 68,
+     "n": 268,
+     "rate": 0.254,
+     "ci_low": 0.205,
+     "ci_high": 0.309,
+     "shrunk": 0.252
+    },
+    "normal": {
+     "wins": 68,
+     "n": 292,
+     "rate": 0.233,
+     "ci_low": 0.188,
+     "ci_high": 0.285,
+     "shrunk": 0.232
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 101,
+     "n": 401,
+     "rate": 0.252,
+     "ci_low": 0.212,
+     "ci_high": 0.297,
+     "shrunk": 0.251
+    },
+    "male": {
+     "wins": 99,
+     "n": 416,
+     "rate": 0.238,
+     "ci_low": 0.2,
+     "ci_high": 0.281,
+     "shrunk": 0.238
+    }
+   }
+  },
+  "seller_language=hinglish": {
+   "_baseline": {
+    "wins": 560,
+    "n": 2342,
+    "rate": 0.239,
+    "ci_low": 0.222,
+    "ci_high": 0.257
+   },
+   "bot_language": {
+    "en": {
+     "wins": 155,
+     "n": 800,
+     "rate": 0.194,
+     "ci_low": 0.168,
+     "ci_high": 0.223,
+     "shrunk": 0.194
+    },
+    "hi": {
+     "wins": 171,
+     "n": 771,
+     "rate": 0.222,
+     "ci_low": 0.194,
+     "ci_high": 0.252,
+     "shrunk": 0.223
+    },
+    "hinglish": {
+     "wins": 234,
+     "n": 771,
+     "rate": 0.304,
+     "ci_low": 0.272,
+     "ci_high": 0.337,
+     "shrunk": 0.302
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 173,
+     "n": 791,
+     "rate": 0.219,
+     "ci_low": 0.191,
+     "ci_high": 0.249,
+     "shrunk": 0.218
+    },
+    "aap_formal": {
+     "wins": 197,
+     "n": 770,
+     "rate": 0.256,
+     "ci_low": 0.226,
+     "ci_high": 0.288,
+     "shrunk": 0.256
+    },
+    "aap_friendly": {
+     "wins": 190,
+     "n": 781,
+     "rate": 0.243,
+     "ci_low": 0.214,
+     "ci_high": 0.275,
+     "shrunk": 0.243
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 146,
+     "n": 752,
+     "rate": 0.194,
+     "ci_low": 0.167,
+     "ci_high": 0.224,
+     "shrunk": 0.194
+    },
+    "crisp": {
+     "wins": 210,
+     "n": 795,
+     "rate": 0.264,
+     "ci_low": 0.235,
+     "ci_high": 0.296,
+     "shrunk": 0.264
+    },
+    "normal": {
+     "wins": 204,
+     "n": 795,
+     "rate": 0.257,
+     "ci_low": 0.227,
+     "ci_high": 0.288,
+     "shrunk": 0.256
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 303,
+     "n": 1185,
+     "rate": 0.256,
+     "ci_low": 0.232,
+     "ci_high": 0.281,
+     "shrunk": 0.256
+    },
+    "no": {
+     "wins": 257,
+     "n": 1157,
+     "rate": 0.222,
+     "ci_low": 0.199,
+     "ci_high": 0.247,
+     "shrunk": 0.222
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 187,
+     "n": 798,
+     "rate": 0.234,
+     "ci_low": 0.206,
+     "ci_high": 0.265,
+     "shrunk": 0.235
+    },
+    "fast": {
+     "wins": 182,
+     "n": 760,
+     "rate": 0.239,
+     "ci_low": 0.21,
+     "ci_high": 0.271,
+     "shrunk": 0.239
+    },
+    "normal": {
+     "wins": 191,
+     "n": 784,
+     "rate": 0.244,
+     "ci_low": 0.215,
+     "ci_high": 0.275,
+     "shrunk": 0.243
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 267,
+     "n": 1150,
+     "rate": 0.232,
+     "ci_low": 0.209,
+     "ci_high": 0.257,
+     "shrunk": 0.232
+    },
+    "male": {
+     "wins": 293,
+     "n": 1192,
+     "rate": 0.246,
+     "ci_low": 0.222,
+     "ci_high": 0.271,
+     "shrunk": 0.246
+    }
+   }
+  },
+  "business_type=manufacturer&size=mid": {
+   "_baseline": {
+    "wins": 43,
+    "n": 172,
+    "rate": 0.25,
+    "ci_low": 0.191,
+    "ci_high": 0.32
+   },
+   "bot_language": {
+    "en": {
+     "wins": 10,
+     "n": 52,
+     "rate": 0.192,
+     "ci_low": 0.108,
+     "ci_high": 0.319,
+     "shrunk": 0.2
+    },
+    "hinglish": {
+     "wins": 17,
+     "n": 50,
+     "rate": 0.34,
+     "ci_low": 0.224,
+     "ci_high": 0.478,
+     "shrunk": 0.307
+    },
+    "hi": {
+     "wins": 16,
+     "n": 70,
+     "rate": 0.229,
+     "ci_low": 0.146,
+     "ci_high": 0.34,
+     "shrunk": 0.233
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 16,
+     "n": 62,
+     "rate": 0.258,
+     "ci_low": 0.166,
+     "ci_high": 0.379,
+     "shrunk": 0.243
+    },
+    "aap_friendly": {
+     "wins": 16,
+     "n": 56,
+     "rate": 0.286,
+     "ci_low": 0.184,
+     "ci_high": 0.415,
+     "shrunk": 0.271
+    },
+    "aap_formal": {
+     "wins": 11,
+     "n": 54,
+     "rate": 0.204,
+     "ci_low": 0.118,
+     "ci_high": 0.329,
+     "shrunk": 0.221
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 12,
+     "n": 54,
+     "rate": 0.222,
+     "ci_low": 0.132,
+     "ci_high": 0.349,
+     "shrunk": 0.227
+    },
+    "explanatory": {
+     "wins": 18,
+     "n": 63,
+     "rate": 0.286,
+     "ci_low": 0.189,
+     "ci_high": 0.407,
+     "shrunk": 0.259
+    },
+    "crisp": {
+     "wins": 13,
+     "n": 55,
+     "rate": 0.236,
+     "ci_low": 0.144,
+     "ci_high": 0.363,
+     "shrunk": 0.248
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 19,
+     "n": 93,
+     "rate": 0.204,
+     "ci_low": 0.135,
+     "ci_high": 0.297,
+     "shrunk": 0.208
+    },
+    "yes": {
+     "wins": 24,
+     "n": 79,
+     "rate": 0.304,
+     "ci_low": 0.213,
+     "ci_high": 0.412,
+     "shrunk": 0.289
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 17,
+     "n": 66,
+     "rate": 0.258,
+     "ci_low": 0.167,
+     "ci_high": 0.374,
+     "shrunk": 0.248
+    },
+    "fast": {
+     "wins": 16,
+     "n": 57,
+     "rate": 0.281,
+     "ci_low": 0.181,
+     "ci_high": 0.408,
+     "shrunk": 0.266
+    },
+    "slow": {
+     "wins": 10,
+     "n": 49,
+     "rate": 0.204,
+     "ci_low": 0.115,
+     "ci_high": 0.336,
+     "shrunk": 0.221
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 19,
+     "n": 86,
+     "rate": 0.221,
+     "ci_low": 0.146,
+     "ci_high": 0.319,
+     "shrunk": 0.225
+    },
+    "female": {
+     "wins": 24,
+     "n": 86,
+     "rate": 0.279,
+     "ci_low": 0.195,
+     "ci_high": 0.382,
+     "shrunk": 0.268
+    }
+   }
+  },
+  "top_objection=trust": {
+   "_baseline": {
+    "wins": 145,
+    "n": 574,
+    "rate": 0.253,
+    "ci_low": 0.219,
+    "ci_high": 0.29
+   },
+   "bot_language": {
+    "en": {
+     "wins": 45,
+     "n": 210,
+     "rate": 0.214,
+     "ci_low": 0.164,
+     "ci_high": 0.275,
+     "shrunk": 0.214
+    },
+    "hi": {
+     "wins": 61,
+     "n": 196,
+     "rate": 0.311,
+     "ci_low": 0.251,
+     "ci_high": 0.379,
+     "shrunk": 0.302
+    },
+    "hinglish": {
+     "wins": 39,
+     "n": 168,
+     "rate": 0.232,
+     "ci_low": 0.175,
+     "ci_high": 0.302,
+     "shrunk": 0.235
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 46,
+     "n": 191,
+     "rate": 0.241,
+     "ci_low": 0.186,
+     "ci_high": 0.306,
+     "shrunk": 0.237
+    },
+    "aap_formal": {
+     "wins": 56,
+     "n": 192,
+     "rate": 0.292,
+     "ci_low": 0.232,
+     "ci_high": 0.36,
+     "shrunk": 0.286
+    },
+    "aap_friendly": {
+     "wins": 43,
+     "n": 191,
+     "rate": 0.225,
+     "ci_low": 0.172,
+     "ci_high": 0.289,
+     "shrunk": 0.228
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 44,
+     "n": 183,
+     "rate": 0.24,
+     "ci_low": 0.184,
+     "ci_high": 0.307,
+     "shrunk": 0.24
+    },
+    "crisp": {
+     "wins": 56,
+     "n": 199,
+     "rate": 0.281,
+     "ci_low": 0.224,
+     "ci_high": 0.348,
+     "shrunk": 0.28
+    },
+    "explanatory": {
+     "wins": 45,
+     "n": 192,
+     "rate": 0.234,
+     "ci_low": 0.18,
+     "ci_high": 0.299,
+     "shrunk": 0.23
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 51,
+     "n": 271,
+     "rate": 0.188,
+     "ci_low": 0.146,
+     "ci_high": 0.239,
+     "shrunk": 0.191
+    },
+    "yes": {
+     "wins": 94,
+     "n": 303,
+     "rate": 0.31,
+     "ci_low": 0.261,
+     "ci_high": 0.364,
+     "shrunk": 0.305
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 51,
+     "n": 208,
+     "rate": 0.245,
+     "ci_low": 0.192,
+     "ci_high": 0.308,
+     "shrunk": 0.243
+    },
+    "fast": {
+     "wins": 41,
+     "n": 171,
+     "rate": 0.24,
+     "ci_low": 0.182,
+     "ci_high": 0.309,
+     "shrunk": 0.239
+    },
+    "slow": {
+     "wins": 53,
+     "n": 195,
+     "rate": 0.272,
+     "ci_low": 0.214,
+     "ci_high": 0.338,
+     "shrunk": 0.269
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 78,
+     "n": 288,
+     "rate": 0.271,
+     "ci_low": 0.223,
+     "ci_high": 0.325,
+     "shrunk": 0.268
+    },
+    "female": {
+     "wins": 67,
+     "n": 286,
+     "rate": 0.234,
+     "ci_low": 0.189,
+     "ci_high": 0.287,
+     "shrunk": 0.234
+    }
+   }
+  },
+  "business_type=distributor&size=small": {
+   "_baseline": {
+    "wins": 75,
+    "n": 283,
+    "rate": 0.265,
+    "ci_low": 0.217,
+    "ci_high": 0.319
+   },
+   "bot_language": {
+    "en": {
+     "wins": 19,
+     "n": 89,
+     "rate": 0.213,
+     "ci_low": 0.141,
+     "ci_high": 0.31,
+     "shrunk": 0.213
+    },
+    "hi": {
+     "wins": 34,
+     "n": 114,
+     "rate": 0.298,
+     "ci_low": 0.222,
+     "ci_high": 0.388,
+     "shrunk": 0.287
+    },
+    "hinglish": {
+     "wins": 22,
+     "n": 80,
+     "rate": 0.275,
+     "ci_low": 0.189,
+     "ci_high": 0.381,
+     "shrunk": 0.269
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 22,
+     "n": 85,
+     "rate": 0.259,
+     "ci_low": 0.178,
+     "ci_high": 0.361,
+     "shrunk": 0.257
+    },
+    "aap_friendly": {
+     "wins": 31,
+     "n": 113,
+     "rate": 0.274,
+     "ci_low": 0.201,
+     "ci_high": 0.363,
+     "shrunk": 0.268
+    },
+    "casual": {
+     "wins": 22,
+     "n": 85,
+     "rate": 0.259,
+     "ci_low": 0.178,
+     "ci_high": 0.361,
+     "shrunk": 0.247
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 21,
+     "n": 91,
+     "rate": 0.231,
+     "ci_low": 0.156,
+     "ci_high": 0.327,
+     "shrunk": 0.224
+    },
+    "crisp": {
+     "wins": 24,
+     "n": 88,
+     "rate": 0.273,
+     "ci_low": 0.191,
+     "ci_high": 0.374,
+     "shrunk": 0.272
+    },
+    "normal": {
+     "wins": 30,
+     "n": 104,
+     "rate": 0.288,
+     "ci_low": 0.21,
+     "ci_high": 0.382,
+     "shrunk": 0.277
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 44,
+     "n": 149,
+     "rate": 0.295,
+     "ci_low": 0.228,
+     "ci_high": 0.373,
+     "shrunk": 0.288
+    },
+    "no": {
+     "wins": 31,
+     "n": 134,
+     "rate": 0.231,
+     "ci_low": 0.168,
+     "ci_high": 0.31,
+     "shrunk": 0.23
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 28,
+     "n": 105,
+     "rate": 0.267,
+     "ci_low": 0.191,
+     "ci_high": 0.358,
+     "shrunk": 0.26
+    },
+    "slow": {
+     "wins": 26,
+     "n": 84,
+     "rate": 0.31,
+     "ci_low": 0.221,
+     "ci_high": 0.415,
+     "shrunk": 0.293
+    },
+    "normal": {
+     "wins": 21,
+     "n": 94,
+     "rate": 0.223,
+     "ci_low": 0.151,
+     "ci_high": 0.318,
+     "shrunk": 0.224
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 38,
+     "n": 135,
+     "rate": 0.281,
+     "ci_low": 0.212,
+     "ci_high": 0.363,
+     "shrunk": 0.273
+    },
+    "male": {
+     "wins": 37,
+     "n": 148,
+     "rate": 0.25,
+     "ci_low": 0.187,
+     "ci_high": 0.325,
+     "shrunk": 0.248
+    }
+   }
+  },
+  "business_type=distributor": {
+   "_baseline": {
+    "wins": 228,
+    "n": 934,
+    "rate": 0.244,
+    "ci_low": 0.218,
+    "ci_high": 0.273
+   },
+   "bot_language": {
+    "en": {
+     "wins": 64,
+     "n": 281,
+     "rate": 0.228,
+     "ci_low": 0.183,
+     "ci_high": 0.28,
+     "shrunk": 0.226
+    },
+    "hi": {
+     "wins": 87,
+     "n": 362,
+     "rate": 0.24,
+     "ci_low": 0.199,
+     "ci_high": 0.287,
+     "shrunk": 0.241
+    },
+    "hinglish": {
+     "wins": 77,
+     "n": 291,
+     "rate": 0.265,
+     "ci_low": 0.217,
+     "ci_high": 0.318,
+     "shrunk": 0.264
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 73,
+     "n": 313,
+     "rate": 0.233,
+     "ci_low": 0.19,
+     "ci_high": 0.283,
+     "shrunk": 0.235
+    },
+    "aap_friendly": {
+     "wins": 86,
+     "n": 323,
+     "rate": 0.266,
+     "ci_low": 0.221,
+     "ci_high": 0.317,
+     "shrunk": 0.264
+    },
+    "casual": {
+     "wins": 69,
+     "n": 298,
+     "rate": 0.232,
+     "ci_low": 0.187,
+     "ci_high": 0.283,
+     "shrunk": 0.23
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 66,
+     "n": 296,
+     "rate": 0.223,
+     "ci_low": 0.179,
+     "ci_high": 0.274,
+     "shrunk": 0.221
+    },
+    "crisp": {
+     "wins": 77,
+     "n": 315,
+     "rate": 0.244,
+     "ci_low": 0.2,
+     "ci_high": 0.295,
+     "shrunk": 0.247
+    },
+    "normal": {
+     "wins": 85,
+     "n": 323,
+     "rate": 0.263,
+     "ci_low": 0.218,
+     "ci_high": 0.314,
+     "shrunk": 0.261
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 137,
+     "n": 489,
+     "rate": 0.28,
+     "ci_low": 0.242,
+     "ci_high": 0.322,
+     "shrunk": 0.278
+    },
+    "no": {
+     "wins": 91,
+     "n": 445,
+     "rate": 0.204,
+     "ci_low": 0.17,
+     "ci_high": 0.244,
+     "shrunk": 0.206
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 83,
+     "n": 340,
+     "rate": 0.244,
+     "ci_low": 0.201,
+     "ci_high": 0.292,
+     "shrunk": 0.244
+    },
+    "slow": {
+     "wins": 77,
+     "n": 279,
+     "rate": 0.276,
+     "ci_low": 0.227,
+     "ci_high": 0.331,
+     "shrunk": 0.273
+    },
+    "normal": {
+     "wins": 68,
+     "n": 315,
+     "rate": 0.216,
+     "ci_low": 0.174,
+     "ci_high": 0.265,
+     "shrunk": 0.217
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 113,
+     "n": 463,
+     "rate": 0.244,
+     "ci_low": 0.207,
+     "ci_high": 0.285,
+     "shrunk": 0.244
+    },
+    "male": {
+     "wins": 115,
+     "n": 471,
+     "rate": 0.244,
+     "ci_low": 0.208,
+     "ci_high": 0.285,
+     "shrunk": 0.244
+    }
+   }
+  },
+  "business_type=service_provider&size=small": {
+   "_baseline": {
+    "wins": 56,
+    "n": 304,
+    "rate": 0.184,
+    "ci_low": 0.145,
+    "ci_high": 0.232
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 24,
+     "n": 125,
+     "rate": 0.192,
+     "ci_low": 0.133,
+     "ci_high": 0.27,
+     "shrunk": 0.204
+    },
+    "hi": {
+     "wins": 7,
+     "n": 78,
+     "rate": 0.09,
+     "ci_low": 0.044,
+     "ci_high": 0.174,
+     "shrunk": 0.133
+    },
+    "en": {
+     "wins": 25,
+     "n": 101,
+     "rate": 0.248,
+     "ci_low": 0.174,
+     "ci_high": 0.34,
+     "shrunk": 0.24
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 15,
+     "n": 99,
+     "rate": 0.152,
+     "ci_low": 0.094,
+     "ci_high": 0.235,
+     "shrunk": 0.173
+    },
+    "casual": {
+     "wins": 17,
+     "n": 101,
+     "rate": 0.168,
+     "ci_low": 0.108,
+     "ci_high": 0.253,
+     "shrunk": 0.178
+    },
+    "aap_formal": {
+     "wins": 24,
+     "n": 104,
+     "rate": 0.231,
+     "ci_low": 0.16,
+     "ci_high": 0.32,
+     "shrunk": 0.236
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 14,
+     "n": 95,
+     "rate": 0.147,
+     "ci_low": 0.09,
+     "ci_high": 0.232,
+     "shrunk": 0.169
+    },
+    "crisp": {
+     "wins": 27,
+     "n": 101,
+     "rate": 0.267,
+     "ci_low": 0.191,
+     "ci_high": 0.361,
+     "shrunk": 0.268
+    },
+    "explanatory": {
+     "wins": 15,
+     "n": 108,
+     "rate": 0.139,
+     "ci_low": 0.086,
+     "ci_high": 0.217,
+     "shrunk": 0.153
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 23,
+     "n": 160,
+     "rate": 0.144,
+     "ci_low": 0.098,
+     "ci_high": 0.206,
+     "shrunk": 0.156
+    },
+    "yes": {
+     "wins": 33,
+     "n": 144,
+     "rate": 0.229,
+     "ci_low": 0.168,
+     "ci_high": 0.304,
+     "shrunk": 0.233
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 26,
+     "n": 106,
+     "rate": 0.245,
+     "ci_low": 0.173,
+     "ci_high": 0.335,
+     "shrunk": 0.246
+    },
+    "fast": {
+     "wins": 20,
+     "n": 93,
+     "rate": 0.215,
+     "ci_low": 0.144,
+     "ci_high": 0.309,
+     "shrunk": 0.22
+    },
+    "normal": {
+     "wins": 10,
+     "n": 105,
+     "rate": 0.095,
+     "ci_low": 0.053,
+     "ci_high": 0.166,
+     "shrunk": 0.124
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 33,
+     "n": 148,
+     "rate": 0.223,
+     "ci_low": 0.163,
+     "ci_high": 0.297,
+     "shrunk": 0.225
+    },
+    "male": {
+     "wins": 23,
+     "n": 156,
+     "rate": 0.147,
+     "ci_low": 0.1,
+     "ci_high": 0.212,
+     "shrunk": 0.162
+    }
+   }
+  },
+  "business_type=service_provider": {
+   "_baseline": {
+    "wins": 230,
+    "n": 1074,
+    "rate": 0.214,
+    "ci_low": 0.191,
+    "ci_high": 0.24
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 87,
+     "n": 382,
+     "rate": 0.228,
+     "ci_low": 0.189,
+     "ci_high": 0.272,
+     "shrunk": 0.23
+    },
+    "hi": {
+     "wins": 72,
+     "n": 333,
+     "rate": 0.216,
+     "ci_low": 0.175,
+     "ci_high": 0.264,
+     "shrunk": 0.219
+    },
+    "en": {
+     "wins": 71,
+     "n": 359,
+     "rate": 0.198,
+     "ci_low": 0.16,
+     "ci_high": 0.242,
+     "shrunk": 0.199
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 66,
+     "n": 351,
+     "rate": 0.188,
+     "ci_low": 0.151,
+     "ci_high": 0.232,
+     "shrunk": 0.193
+    },
+    "casual": {
+     "wins": 77,
+     "n": 351,
+     "rate": 0.219,
+     "ci_low": 0.179,
+     "ci_high": 0.266,
+     "shrunk": 0.219
+    },
+    "aap_formal": {
+     "wins": 87,
+     "n": 372,
+     "rate": 0.234,
+     "ci_low": 0.194,
+     "ci_high": 0.279,
+     "shrunk": 0.235
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 69,
+     "n": 351,
+     "rate": 0.197,
+     "ci_low": 0.158,
+     "ci_high": 0.241,
+     "shrunk": 0.2
+    },
+    "crisp": {
+     "wins": 89,
+     "n": 368,
+     "rate": 0.242,
+     "ci_low": 0.201,
+     "ci_high": 0.288,
+     "shrunk": 0.244
+    },
+    "explanatory": {
+     "wins": 72,
+     "n": 355,
+     "rate": 0.203,
+     "ci_low": 0.164,
+     "ci_high": 0.248,
+     "shrunk": 0.203
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 100,
+     "n": 537,
+     "rate": 0.186,
+     "ci_low": 0.156,
+     "ci_high": 0.221,
+     "shrunk": 0.188
+    },
+    "yes": {
+     "wins": 130,
+     "n": 537,
+     "rate": 0.242,
+     "ci_low": 0.208,
+     "ci_high": 0.28,
+     "shrunk": 0.243
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 101,
+     "n": 373,
+     "rate": 0.271,
+     "ci_low": 0.228,
+     "ci_high": 0.318,
+     "shrunk": 0.269
+    },
+    "fast": {
+     "wins": 62,
+     "n": 327,
+     "rate": 0.19,
+     "ci_low": 0.151,
+     "ci_high": 0.236,
+     "shrunk": 0.194
+    },
+    "normal": {
+     "wins": 67,
+     "n": 374,
+     "rate": 0.179,
+     "ci_low": 0.144,
+     "ci_high": 0.221,
+     "shrunk": 0.183
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 116,
+     "n": 533,
+     "rate": 0.218,
+     "ci_low": 0.185,
+     "ci_high": 0.255,
+     "shrunk": 0.219
+    },
+    "male": {
+     "wins": 114,
+     "n": 541,
+     "rate": 0.211,
+     "ci_low": 0.178,
+     "ci_high": 0.247,
+     "shrunk": 0.212
+    }
+   }
+  },
+  "top_objection=already_using_other": {
+   "_baseline": {
+    "wins": 112,
+    "n": 539,
+    "rate": 0.208,
+    "ci_low": 0.176,
+    "ci_high": 0.244
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 40,
+     "n": 191,
+     "rate": 0.209,
+     "ci_low": 0.158,
+     "ci_high": 0.273,
+     "shrunk": 0.214
+    },
+    "hinglish": {
+     "wins": 47,
+     "n": 195,
+     "rate": 0.241,
+     "ci_low": 0.186,
+     "ci_high": 0.306,
+     "shrunk": 0.243
+    },
+    "en": {
+     "wins": 25,
+     "n": 153,
+     "rate": 0.163,
+     "ci_low": 0.113,
+     "ci_high": 0.23,
+     "shrunk": 0.171
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 40,
+     "n": 172,
+     "rate": 0.233,
+     "ci_low": 0.176,
+     "ci_high": 0.301,
+     "shrunk": 0.236
+    },
+    "casual": {
+     "wins": 36,
+     "n": 193,
+     "rate": 0.187,
+     "ci_low": 0.138,
+     "ci_high": 0.247,
+     "shrunk": 0.19
+    },
+    "aap_friendly": {
+     "wins": 36,
+     "n": 174,
+     "rate": 0.207,
+     "ci_low": 0.153,
+     "ci_high": 0.273,
+     "shrunk": 0.212
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 31,
+     "n": 169,
+     "rate": 0.183,
+     "ci_low": 0.132,
+     "ci_high": 0.249,
+     "shrunk": 0.186
+    },
+    "crisp": {
+     "wins": 41,
+     "n": 159,
+     "rate": 0.258,
+     "ci_low": 0.196,
+     "ci_high": 0.331,
+     "shrunk": 0.26
+    },
+    "normal": {
+     "wins": 40,
+     "n": 211,
+     "rate": 0.19,
+     "ci_low": 0.142,
+     "ci_high": 0.248,
+     "shrunk": 0.195
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 55,
+     "n": 268,
+     "rate": 0.205,
+     "ci_low": 0.161,
+     "ci_high": 0.258,
+     "shrunk": 0.207
+    },
+    "yes": {
+     "wins": 57,
+     "n": 271,
+     "rate": 0.21,
+     "ci_low": 0.166,
+     "ci_high": 0.263,
+     "shrunk": 0.214
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 39,
+     "n": 183,
+     "rate": 0.213,
+     "ci_low": 0.16,
+     "ci_high": 0.278,
+     "shrunk": 0.217
+    },
+    "normal": {
+     "wins": 38,
+     "n": 178,
+     "rate": 0.213,
+     "ci_low": 0.16,
+     "ci_high": 0.279,
+     "shrunk": 0.215
+    },
+    "slow": {
+     "wins": 35,
+     "n": 178,
+     "rate": 0.197,
+     "ci_low": 0.145,
+     "ci_high": 0.261,
+     "shrunk": 0.204
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 49,
+     "n": 264,
+     "rate": 0.186,
+     "ci_low": 0.143,
+     "ci_high": 0.237,
+     "shrunk": 0.191
+    },
+    "male": {
+     "wins": 63,
+     "n": 275,
+     "rate": 0.229,
+     "ci_low": 0.183,
+     "ci_high": 0.282,
+     "shrunk": 0.23
+    }
+   }
+  },
+  "business_type=service_provider&size=large": {
+   "_baseline": {
+    "wins": 117,
+    "n": 545,
+    "rate": 0.215,
+    "ci_low": 0.182,
+    "ci_high": 0.251
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 48,
+     "n": 182,
+     "rate": 0.264,
+     "ci_low": 0.205,
+     "ci_high": 0.332,
+     "shrunk": 0.261
+    },
+    "hinglish": {
+     "wins": 38,
+     "n": 182,
+     "rate": 0.209,
+     "ci_low": 0.156,
+     "ci_high": 0.274,
+     "shrunk": 0.215
+    },
+    "en": {
+     "wins": 31,
+     "n": 181,
+     "rate": 0.171,
+     "ci_low": 0.123,
+     "ci_high": 0.233,
+     "shrunk": 0.177
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 41,
+     "n": 179,
+     "rate": 0.229,
+     "ci_low": 0.174,
+     "ci_high": 0.296,
+     "shrunk": 0.227
+    },
+    "aap_formal": {
+     "wins": 42,
+     "n": 185,
+     "rate": 0.227,
+     "ci_low": 0.173,
+     "ci_high": 0.293,
+     "shrunk": 0.231
+    },
+    "aap_friendly": {
+     "wins": 34,
+     "n": 181,
+     "rate": 0.188,
+     "ci_low": 0.138,
+     "ci_high": 0.251,
+     "shrunk": 0.196
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 43,
+     "n": 197,
+     "rate": 0.218,
+     "ci_low": 0.166,
+     "ci_high": 0.281,
+     "shrunk": 0.225
+    },
+    "normal": {
+     "wins": 32,
+     "n": 178,
+     "rate": 0.18,
+     "ci_low": 0.13,
+     "ci_high": 0.243,
+     "shrunk": 0.188
+    },
+    "explanatory": {
+     "wins": 42,
+     "n": 170,
+     "rate": 0.247,
+     "ci_low": 0.188,
+     "ci_high": 0.317,
+     "shrunk": 0.24
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 58,
+     "n": 275,
+     "rate": 0.211,
+     "ci_low": 0.167,
+     "ci_high": 0.263,
+     "shrunk": 0.212
+    },
+    "yes": {
+     "wins": 59,
+     "n": 270,
+     "rate": 0.219,
+     "ci_low": 0.173,
+     "ci_high": 0.272,
+     "shrunk": 0.222
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 32,
+     "n": 166,
+     "rate": 0.193,
+     "ci_low": 0.14,
+     "ci_high": 0.259,
+     "shrunk": 0.2
+    },
+    "normal": {
+     "wins": 36,
+     "n": 193,
+     "rate": 0.187,
+     "ci_low": 0.138,
+     "ci_high": 0.247,
+     "shrunk": 0.192
+    },
+    "slow": {
+     "wins": 49,
+     "n": 186,
+     "rate": 0.263,
+     "ci_low": 0.205,
+     "ci_high": 0.331,
+     "shrunk": 0.261
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 66,
+     "n": 277,
+     "rate": 0.238,
+     "ci_low": 0.192,
+     "ci_high": 0.292,
+     "shrunk": 0.238
+    },
+    "female": {
+     "wins": 51,
+     "n": 268,
+     "rate": 0.19,
+     "ci_low": 0.148,
+     "ci_high": 0.242,
+     "shrunk": 0.195
+    }
+   }
+  },
+  "seller_language=hinglish&size=large": {
+   "_baseline": {
+    "wins": 257,
+    "n": 1082,
+    "rate": 0.238,
+    "ci_low": 0.213,
+    "ci_high": 0.264
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 76,
+     "n": 355,
+     "rate": 0.214,
+     "ci_low": 0.175,
+     "ci_high": 0.26,
+     "shrunk": 0.216
+    },
+    "en": {
+     "wins": 77,
+     "n": 378,
+     "rate": 0.204,
+     "ci_low": 0.166,
+     "ci_high": 0.247,
+     "shrunk": 0.204
+    },
+    "hinglish": {
+     "wins": 104,
+     "n": 349,
+     "rate": 0.298,
+     "ci_low": 0.252,
+     "ci_high": 0.348,
+     "shrunk": 0.294
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 84,
+     "n": 359,
+     "rate": 0.234,
+     "ci_low": 0.193,
+     "ci_high": 0.28,
+     "shrunk": 0.232
+    },
+    "aap_friendly": {
+     "wins": 86,
+     "n": 372,
+     "rate": 0.231,
+     "ci_low": 0.191,
+     "ci_high": 0.277,
+     "shrunk": 0.232
+    },
+    "aap_formal": {
+     "wins": 87,
+     "n": 351,
+     "rate": 0.248,
+     "ci_low": 0.206,
+     "ci_high": 0.296,
+     "shrunk": 0.248
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 96,
+     "n": 369,
+     "rate": 0.26,
+     "ci_low": 0.218,
+     "ci_high": 0.307,
+     "shrunk": 0.261
+    },
+    "normal": {
+     "wins": 94,
+     "n": 374,
+     "rate": 0.251,
+     "ci_low": 0.21,
+     "ci_high": 0.298,
+     "shrunk": 0.25
+    },
+    "explanatory": {
+     "wins": 67,
+     "n": 339,
+     "rate": 0.198,
+     "ci_low": 0.159,
+     "ci_high": 0.243,
+     "shrunk": 0.198
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 121,
+     "n": 538,
+     "rate": 0.225,
+     "ci_low": 0.192,
+     "ci_high": 0.262,
+     "shrunk": 0.225
+    },
+    "yes": {
+     "wins": 136,
+     "n": 544,
+     "rate": 0.25,
+     "ci_low": 0.215,
+     "ci_high": 0.288,
+     "shrunk": 0.25
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 84,
+     "n": 353,
+     "rate": 0.238,
+     "ci_low": 0.197,
+     "ci_high": 0.285,
+     "shrunk": 0.238
+    },
+    "normal": {
+     "wins": 86,
+     "n": 334,
+     "rate": 0.257,
+     "ci_low": 0.214,
+     "ci_high": 0.307,
+     "shrunk": 0.255
+    },
+    "slow": {
+     "wins": 87,
+     "n": 395,
+     "rate": 0.22,
+     "ci_low": 0.182,
+     "ci_high": 0.264,
+     "shrunk": 0.222
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 139,
+     "n": 565,
+     "rate": 0.246,
+     "ci_low": 0.212,
+     "ci_high": 0.283,
+     "shrunk": 0.246
+    },
+    "female": {
+     "wins": 118,
+     "n": 517,
+     "rate": 0.228,
+     "ci_low": 0.194,
+     "ci_high": 0.266,
+     "shrunk": 0.229
+    }
+   }
+  },
+  "business_type=retailer&size=large": {
+   "_baseline": {
+    "wins": 99,
+    "n": 428,
+    "rate": 0.231,
+    "ci_low": 0.194,
+    "ci_high": 0.274
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 35,
+     "n": 145,
+     "rate": 0.241,
+     "ci_low": 0.179,
+     "ci_high": 0.317,
+     "shrunk": 0.243
+    },
+    "hi": {
+     "wins": 24,
+     "n": 126,
+     "rate": 0.19,
+     "ci_low": 0.131,
+     "ci_high": 0.268,
+     "shrunk": 0.201
+    },
+    "en": {
+     "wins": 40,
+     "n": 157,
+     "rate": 0.255,
+     "ci_low": 0.193,
+     "ci_high": 0.328,
+     "shrunk": 0.248
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 24,
+     "n": 135,
+     "rate": 0.178,
+     "ci_low": 0.122,
+     "ci_high": 0.251,
+     "shrunk": 0.184
+    },
+    "aap_formal": {
+     "wins": 43,
+     "n": 152,
+     "rate": 0.283,
+     "ci_low": 0.217,
+     "ci_high": 0.359,
+     "shrunk": 0.278
+    },
+    "aap_friendly": {
+     "wins": 32,
+     "n": 141,
+     "rate": 0.227,
+     "ci_low": 0.166,
+     "ci_high": 0.303,
+     "shrunk": 0.23
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 24,
+     "n": 152,
+     "rate": 0.158,
+     "ci_low": 0.108,
+     "ci_high": 0.224,
+     "shrunk": 0.165
+    },
+    "normal": {
+     "wins": 43,
+     "n": 148,
+     "rate": 0.291,
+     "ci_low": 0.223,
+     "ci_high": 0.368,
+     "shrunk": 0.282
+    },
+    "crisp": {
+     "wins": 32,
+     "n": 128,
+     "rate": 0.25,
+     "ci_low": 0.183,
+     "ci_high": 0.332,
+     "shrunk": 0.254
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 60,
+     "n": 222,
+     "rate": 0.27,
+     "ci_low": 0.216,
+     "ci_high": 0.332,
+     "shrunk": 0.268
+    },
+    "no": {
+     "wins": 39,
+     "n": 206,
+     "rate": 0.189,
+     "ci_low": 0.142,
+     "ci_high": 0.248,
+     "shrunk": 0.193
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 26,
+     "n": 132,
+     "rate": 0.197,
+     "ci_low": 0.138,
+     "ci_high": 0.273,
+     "shrunk": 0.204
+    },
+    "normal": {
+     "wins": 35,
+     "n": 150,
+     "rate": 0.233,
+     "ci_low": 0.173,
+     "ci_high": 0.307,
+     "shrunk": 0.232
+    },
+    "slow": {
+     "wins": 38,
+     "n": 146,
+     "rate": 0.26,
+     "ci_low": 0.196,
+     "ci_high": 0.337,
+     "shrunk": 0.258
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 39,
+     "n": 202,
+     "rate": 0.193,
+     "ci_low": 0.145,
+     "ci_high": 0.253,
+     "shrunk": 0.199
+    },
+    "male": {
+     "wins": 60,
+     "n": 226,
+     "rate": 0.265,
+     "ci_low": 0.212,
+     "ci_high": 0.327,
+     "shrunk": 0.262
+    }
+   }
+  },
+  "business_type=exporter&size=large": {
+   "_baseline": {
+    "wins": 83,
+    "n": 365,
+    "rate": 0.227,
+    "ci_low": 0.187,
+    "ci_high": 0.273
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 29,
+     "n": 121,
+     "rate": 0.24,
+     "ci_low": 0.172,
+     "ci_high": 0.323,
+     "shrunk": 0.242
+    },
+    "en": {
+     "wins": 28,
+     "n": 136,
+     "rate": 0.206,
+     "ci_low": 0.146,
+     "ci_high": 0.281,
+     "shrunk": 0.207
+    },
+    "hi": {
+     "wins": 26,
+     "n": 108,
+     "rate": 0.241,
+     "ci_low": 0.17,
+     "ci_high": 0.329,
+     "shrunk": 0.241
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 29,
+     "n": 122,
+     "rate": 0.238,
+     "ci_low": 0.171,
+     "ci_high": 0.321,
+     "shrunk": 0.241
+    },
+    "casual": {
+     "wins": 28,
+     "n": 127,
+     "rate": 0.22,
+     "ci_low": 0.157,
+     "ci_high": 0.3,
+     "shrunk": 0.219
+    },
+    "aap_friendly": {
+     "wins": 26,
+     "n": 116,
+     "rate": 0.224,
+     "ci_low": 0.158,
+     "ci_high": 0.308,
+     "shrunk": 0.228
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 27,
+     "n": 128,
+     "rate": 0.211,
+     "ci_low": 0.149,
+     "ci_high": 0.29,
+     "shrunk": 0.209
+    },
+    "crisp": {
+     "wins": 33,
+     "n": 124,
+     "rate": 0.266,
+     "ci_low": 0.196,
+     "ci_high": 0.35,
+     "shrunk": 0.267
+    },
+    "normal": {
+     "wins": 23,
+     "n": 113,
+     "rate": 0.204,
+     "ci_low": 0.14,
+     "ci_high": 0.287,
+     "shrunk": 0.211
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 47,
+     "n": 190,
+     "rate": 0.247,
+     "ci_low": 0.191,
+     "ci_high": 0.313,
+     "shrunk": 0.244
+    },
+    "yes": {
+     "wins": 36,
+     "n": 175,
+     "rate": 0.206,
+     "ci_low": 0.152,
+     "ci_high": 0.272,
+     "shrunk": 0.212
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 29,
+     "n": 133,
+     "rate": 0.218,
+     "ci_low": 0.156,
+     "ci_high": 0.296,
+     "shrunk": 0.219
+    },
+    "slow": {
+     "wins": 28,
+     "n": 117,
+     "rate": 0.239,
+     "ci_low": 0.171,
+     "ci_high": 0.324,
+     "shrunk": 0.241
+    },
+    "fast": {
+     "wins": 26,
+     "n": 115,
+     "rate": 0.226,
+     "ci_low": 0.159,
+     "ci_high": 0.311,
+     "shrunk": 0.228
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 37,
+     "n": 183,
+     "rate": 0.202,
+     "ci_low": 0.15,
+     "ci_high": 0.266,
+     "shrunk": 0.207
+    },
+    "male": {
+     "wins": 46,
+     "n": 182,
+     "rate": 0.253,
+     "ci_low": 0.195,
+     "ci_high": 0.321,
+     "shrunk": 0.251
+    }
+   }
+  },
+  "top_objection=busy": {
+   "_baseline": {
+    "wins": 322,
+    "n": 1463,
+    "rate": 0.22,
+    "ci_low": 0.2,
+    "ci_high": 0.242
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 119,
+     "n": 475,
+     "rate": 0.251,
+     "ci_low": 0.214,
+     "ci_high": 0.291,
+     "shrunk": 0.251
+    },
+    "hi": {
+     "wins": 107,
+     "n": 472,
+     "rate": 0.227,
+     "ci_low": 0.191,
+     "ci_high": 0.267,
+     "shrunk": 0.228
+    },
+    "en": {
+     "wins": 96,
+     "n": 516,
+     "rate": 0.186,
+     "ci_low": 0.155,
+     "ci_high": 0.222,
+     "shrunk": 0.188
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 107,
+     "n": 481,
+     "rate": 0.222,
+     "ci_low": 0.188,
+     "ci_high": 0.262,
+     "shrunk": 0.224
+    },
+    "casual": {
+     "wins": 92,
+     "n": 470,
+     "rate": 0.196,
+     "ci_low": 0.162,
+     "ci_high": 0.234,
+     "shrunk": 0.197
+    },
+    "aap_friendly": {
+     "wins": 123,
+     "n": 512,
+     "rate": 0.24,
+     "ci_low": 0.205,
+     "ci_high": 0.279,
+     "shrunk": 0.24
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 70,
+     "n": 494,
+     "rate": 0.142,
+     "ci_low": 0.114,
+     "ci_high": 0.175,
+     "shrunk": 0.145
+    },
+    "normal": {
+     "wins": 112,
+     "n": 486,
+     "rate": 0.23,
+     "ci_low": 0.195,
+     "ci_high": 0.27,
+     "shrunk": 0.231
+    },
+    "crisp": {
+     "wins": 140,
+     "n": 483,
+     "rate": 0.29,
+     "ci_low": 0.251,
+     "ci_high": 0.332,
+     "shrunk": 0.289
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 165,
+     "n": 725,
+     "rate": 0.228,
+     "ci_low": 0.199,
+     "ci_high": 0.259,
+     "shrunk": 0.227
+    },
+    "yes": {
+     "wins": 157,
+     "n": 738,
+     "rate": 0.213,
+     "ci_low": 0.185,
+     "ci_high": 0.244,
+     "shrunk": 0.214
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 107,
+     "n": 511,
+     "rate": 0.209,
+     "ci_low": 0.176,
+     "ci_high": 0.247,
+     "shrunk": 0.21
+    },
+    "slow": {
+     "wins": 99,
+     "n": 466,
+     "rate": 0.212,
+     "ci_low": 0.178,
+     "ci_high": 0.252,
+     "shrunk": 0.215
+    },
+    "fast": {
+     "wins": 116,
+     "n": 486,
+     "rate": 0.239,
+     "ci_low": 0.203,
+     "ci_high": 0.279,
+     "shrunk": 0.239
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 168,
+     "n": 704,
+     "rate": 0.239,
+     "ci_low": 0.209,
+     "ci_high": 0.271,
+     "shrunk": 0.238
+    },
+    "male": {
+     "wins": 154,
+     "n": 759,
+     "rate": 0.203,
+     "ci_low": 0.176,
+     "ci_high": 0.233,
+     "shrunk": 0.204
+    }
+   }
+  },
+  "business_type=trader&size=small": {
+   "_baseline": {
+    "wins": 97,
+    "n": 427,
+    "rate": 0.227,
+    "ci_low": 0.19,
+    "ci_high": 0.269
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 29,
+     "n": 135,
+     "rate": 0.215,
+     "ci_low": 0.154,
+     "ci_high": 0.291,
+     "shrunk": 0.22
+    },
+    "en": {
+     "wins": 32,
+     "n": 154,
+     "rate": 0.208,
+     "ci_low": 0.151,
+     "ci_high": 0.279,
+     "shrunk": 0.209
+    },
+    "hinglish": {
+     "wins": 36,
+     "n": 138,
+     "rate": 0.261,
+     "ci_low": 0.195,
+     "ci_high": 0.34,
+     "shrunk": 0.259
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 34,
+     "n": 144,
+     "rate": 0.236,
+     "ci_low": 0.174,
+     "ci_high": 0.312,
+     "shrunk": 0.238
+    },
+    "aap_formal": {
+     "wins": 32,
+     "n": 131,
+     "rate": 0.244,
+     "ci_low": 0.179,
+     "ci_high": 0.324,
+     "shrunk": 0.246
+    },
+    "casual": {
+     "wins": 31,
+     "n": 152,
+     "rate": 0.204,
+     "ci_low": 0.148,
+     "ci_high": 0.275,
+     "shrunk": 0.205
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 40,
+     "n": 127,
+     "rate": 0.315,
+     "ci_low": 0.241,
+     "ci_high": 0.4,
+     "shrunk": 0.306
+    },
+    "explanatory": {
+     "wins": 25,
+     "n": 157,
+     "rate": 0.159,
+     "ci_low": 0.11,
+     "ci_high": 0.225,
+     "shrunk": 0.166
+    },
+    "normal": {
+     "wins": 32,
+     "n": 143,
+     "rate": 0.224,
+     "ci_low": 0.163,
+     "ci_high": 0.299,
+     "shrunk": 0.226
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 53,
+     "n": 237,
+     "rate": 0.224,
+     "ci_low": 0.175,
+     "ci_high": 0.281,
+     "shrunk": 0.227
+    },
+    "no": {
+     "wins": 44,
+     "n": 190,
+     "rate": 0.232,
+     "ci_low": 0.177,
+     "ci_high": 0.297,
+     "shrunk": 0.23
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 33,
+     "n": 144,
+     "rate": 0.229,
+     "ci_low": 0.168,
+     "ci_high": 0.304,
+     "shrunk": 0.231
+    },
+    "normal": {
+     "wins": 30,
+     "n": 143,
+     "rate": 0.21,
+     "ci_low": 0.151,
+     "ci_high": 0.284,
+     "shrunk": 0.213
+    },
+    "slow": {
+     "wins": 34,
+     "n": 140,
+     "rate": 0.243,
+     "ci_low": 0.179,
+     "ci_high": 0.32,
+     "shrunk": 0.244
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 52,
+     "n": 202,
+     "rate": 0.257,
+     "ci_low": 0.202,
+     "ci_high": 0.322,
+     "shrunk": 0.255
+    },
+    "male": {
+     "wins": 45,
+     "n": 225,
+     "rate": 0.2,
+     "ci_low": 0.153,
+     "ci_high": 0.257,
+     "shrunk": 0.204
+    }
+   }
+  },
+  "business_type=trader": {
+   "_baseline": {
+    "wins": 249,
+    "n": 1040,
+    "rate": 0.239,
+    "ci_low": 0.214,
+    "ci_high": 0.266
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 94,
+     "n": 342,
+     "rate": 0.275,
+     "ci_low": 0.23,
+     "ci_high": 0.324,
+     "shrunk": 0.272
+    },
+    "hinglish": {
+     "wins": 85,
+     "n": 328,
+     "rate": 0.259,
+     "ci_low": 0.215,
+     "ci_high": 0.309,
+     "shrunk": 0.259
+    },
+    "en": {
+     "wins": 70,
+     "n": 370,
+     "rate": 0.189,
+     "ci_low": 0.153,
+     "ci_high": 0.232,
+     "shrunk": 0.191
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 95,
+     "n": 344,
+     "rate": 0.276,
+     "ci_low": 0.232,
+     "ci_high": 0.326,
+     "shrunk": 0.274
+    },
+    "casual": {
+     "wins": 81,
+     "n": 362,
+     "rate": 0.224,
+     "ci_low": 0.184,
+     "ci_high": 0.269,
+     "shrunk": 0.223
+    },
+    "aap_formal": {
+     "wins": 73,
+     "n": 334,
+     "rate": 0.219,
+     "ci_low": 0.178,
+     "ci_high": 0.266,
+     "shrunk": 0.221
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 109,
+     "n": 338,
+     "rate": 0.322,
+     "ci_low": 0.275,
+     "ci_high": 0.374,
+     "shrunk": 0.318
+    },
+    "explanatory": {
+     "wins": 51,
+     "n": 337,
+     "rate": 0.151,
+     "ci_low": 0.117,
+     "ci_high": 0.194,
+     "shrunk": 0.155
+    },
+    "normal": {
+     "wins": 89,
+     "n": 365,
+     "rate": 0.244,
+     "ci_low": 0.203,
+     "ci_high": 0.29,
+     "shrunk": 0.243
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 131,
+     "n": 537,
+     "rate": 0.244,
+     "ci_low": 0.21,
+     "ci_high": 0.282,
+     "shrunk": 0.244
+    },
+    "no": {
+     "wins": 118,
+     "n": 503,
+     "rate": 0.235,
+     "ci_low": 0.2,
+     "ci_high": 0.274,
+     "shrunk": 0.234
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 82,
+     "n": 354,
+     "rate": 0.232,
+     "ci_low": 0.191,
+     "ci_high": 0.278,
+     "shrunk": 0.232
+    },
+    "slow": {
+     "wins": 88,
+     "n": 349,
+     "rate": 0.252,
+     "ci_low": 0.209,
+     "ci_high": 0.3,
+     "shrunk": 0.252
+    },
+    "normal": {
+     "wins": 79,
+     "n": 337,
+     "rate": 0.234,
+     "ci_low": 0.192,
+     "ci_high": 0.282,
+     "shrunk": 0.234
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 135,
+     "n": 517,
+     "rate": 0.261,
+     "ci_low": 0.225,
+     "ci_high": 0.301,
+     "shrunk": 0.26
+    },
+    "male": {
+     "wins": 114,
+     "n": 523,
+     "rate": 0.218,
+     "ci_low": 0.185,
+     "ci_high": 0.255,
+     "shrunk": 0.219
+    }
+   }
+  },
+  "business_type=distributor&size=large": {
+   "_baseline": {
+    "wins": 111,
+    "n": 459,
+    "rate": 0.242,
+    "ci_low": 0.205,
+    "ci_high": 0.283
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 35,
+     "n": 164,
+     "rate": 0.213,
+     "ci_low": 0.158,
+     "ci_high": 0.282,
+     "shrunk": 0.218
+    },
+    "en": {
+     "wins": 33,
+     "n": 147,
+     "rate": 0.224,
+     "ci_low": 0.165,
+     "ci_high": 0.298,
+     "shrunk": 0.223
+    },
+    "hinglish": {
+     "wins": 43,
+     "n": 148,
+     "rate": 0.291,
+     "ci_low": 0.223,
+     "ci_high": 0.368,
+     "shrunk": 0.284
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 40,
+     "n": 154,
+     "rate": 0.26,
+     "ci_low": 0.197,
+     "ci_high": 0.334,
+     "shrunk": 0.257
+    },
+    "casual": {
+     "wins": 34,
+     "n": 148,
+     "rate": 0.23,
+     "ci_low": 0.169,
+     "ci_high": 0.304,
+     "shrunk": 0.227
+    },
+    "aap_formal": {
+     "wins": 37,
+     "n": 157,
+     "rate": 0.236,
+     "ci_low": 0.176,
+     "ci_high": 0.308,
+     "shrunk": 0.238
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 37,
+     "n": 142,
+     "rate": 0.261,
+     "ci_low": 0.195,
+     "ci_high": 0.338,
+     "shrunk": 0.256
+    },
+    "crisp": {
+     "wins": 36,
+     "n": 162,
+     "rate": 0.222,
+     "ci_low": 0.165,
+     "ci_high": 0.292,
+     "shrunk": 0.23
+    },
+    "explanatory": {
+     "wins": 38,
+     "n": 155,
+     "rate": 0.245,
+     "ci_low": 0.184,
+     "ci_high": 0.319,
+     "shrunk": 0.238
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 62,
+     "n": 243,
+     "rate": 0.255,
+     "ci_low": 0.204,
+     "ci_high": 0.313,
+     "shrunk": 0.255
+    },
+    "no": {
+     "wins": 49,
+     "n": 216,
+     "rate": 0.227,
+     "ci_low": 0.176,
+     "ci_high": 0.287,
+     "shrunk": 0.226
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 33,
+     "n": 158,
+     "rate": 0.209,
+     "ci_low": 0.153,
+     "ci_high": 0.279,
+     "shrunk": 0.212
+    },
+    "slow": {
+     "wins": 41,
+     "n": 146,
+     "rate": 0.281,
+     "ci_low": 0.214,
+     "ci_high": 0.359,
+     "shrunk": 0.275
+    },
+    "fast": {
+     "wins": 37,
+     "n": 155,
+     "rate": 0.239,
+     "ci_low": 0.178,
+     "ci_high": 0.312,
+     "shrunk": 0.238
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 58,
+     "n": 232,
+     "rate": 0.25,
+     "ci_low": 0.199,
+     "ci_high": 0.309,
+     "shrunk": 0.248
+    },
+    "male": {
+     "wins": 53,
+     "n": 227,
+     "rate": 0.233,
+     "ci_low": 0.183,
+     "ci_high": 0.293,
+     "shrunk": 0.234
+    }
+   }
+  },
+  "business_type=trader&size=large": {
+   "_baseline": {
+    "wins": 95,
+    "n": 411,
+    "rate": 0.231,
+    "ci_low": 0.193,
+    "ci_high": 0.274
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 28,
+     "n": 121,
+     "rate": 0.231,
+     "ci_low": 0.165,
+     "ci_high": 0.314,
+     "shrunk": 0.236
+    },
+    "hi": {
+     "wins": 45,
+     "n": 144,
+     "rate": 0.312,
+     "ci_low": 0.242,
+     "ci_high": 0.392,
+     "shrunk": 0.301
+    },
+    "en": {
+     "wins": 22,
+     "n": 146,
+     "rate": 0.151,
+     "ci_low": 0.102,
+     "ci_high": 0.218,
+     "shrunk": 0.161
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 32,
+     "n": 141,
+     "rate": 0.227,
+     "ci_low": 0.166,
+     "ci_high": 0.303,
+     "shrunk": 0.224
+    },
+    "aap_friendly": {
+     "wins": 41,
+     "n": 140,
+     "rate": 0.293,
+     "ci_low": 0.224,
+     "ci_high": 0.373,
+     "shrunk": 0.284
+    },
+    "aap_formal": {
+     "wins": 22,
+     "n": 130,
+     "rate": 0.169,
+     "ci_low": 0.114,
+     "ci_high": 0.243,
+     "shrunk": 0.185
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 15,
+     "n": 120,
+     "rate": 0.125,
+     "ci_low": 0.077,
+     "ci_high": 0.196,
+     "shrunk": 0.14
+    },
+    "crisp": {
+     "wins": 38,
+     "n": 139,
+     "rate": 0.273,
+     "ci_low": 0.206,
+     "ci_high": 0.353,
+     "shrunk": 0.273
+    },
+    "normal": {
+     "wins": 42,
+     "n": 152,
+     "rate": 0.276,
+     "ci_low": 0.211,
+     "ci_high": 0.352,
+     "shrunk": 0.27
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 46,
+     "n": 212,
+     "rate": 0.217,
+     "ci_low": 0.167,
+     "ci_high": 0.277,
+     "shrunk": 0.218
+    },
+    "yes": {
+     "wins": 49,
+     "n": 199,
+     "rate": 0.246,
+     "ci_low": 0.192,
+     "ci_high": 0.311,
+     "shrunk": 0.247
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 37,
+     "n": 149,
+     "rate": 0.248,
+     "ci_low": 0.186,
+     "ci_high": 0.323,
+     "shrunk": 0.248
+    },
+    "fast": {
+     "wins": 28,
+     "n": 140,
+     "rate": 0.2,
+     "ci_low": 0.142,
+     "ci_high": 0.274,
+     "shrunk": 0.207
+    },
+    "normal": {
+     "wins": 30,
+     "n": 122,
+     "rate": 0.246,
+     "ci_low": 0.178,
+     "ci_high": 0.329,
+     "shrunk": 0.242
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 50,
+     "n": 199,
+     "rate": 0.251,
+     "ci_low": 0.196,
+     "ci_high": 0.316,
+     "shrunk": 0.249
+    },
+    "male": {
+     "wins": 45,
+     "n": 212,
+     "rate": 0.212,
+     "ci_low": 0.163,
+     "ci_high": 0.272,
+     "shrunk": 0.215
+    }
+   }
+  },
+  "seller_language=en&size=large": {
+   "_baseline": {
+    "wins": 136,
+    "n": 569,
+    "rate": 0.239,
+    "ci_low": 0.206,
+    "ci_high": 0.276
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 36,
+     "n": 195,
+     "rate": 0.185,
+     "ci_low": 0.136,
+     "ci_high": 0.245,
+     "shrunk": 0.194
+    },
+    "hi": {
+     "wins": 46,
+     "n": 179,
+     "rate": 0.257,
+     "ci_low": 0.199,
+     "ci_high": 0.326,
+     "shrunk": 0.255
+    },
+    "en": {
+     "wins": 54,
+     "n": 195,
+     "rate": 0.277,
+     "ci_low": 0.219,
+     "ci_high": 0.344,
+     "shrunk": 0.268
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 30,
+     "n": 181,
+     "rate": 0.166,
+     "ci_low": 0.119,
+     "ci_high": 0.227,
+     "shrunk": 0.172
+    },
+    "aap_friendly": {
+     "wins": 61,
+     "n": 196,
+     "rate": 0.311,
+     "ci_low": 0.251,
+     "ci_high": 0.379,
+     "shrunk": 0.302
+    },
+    "aap_formal": {
+     "wins": 45,
+     "n": 192,
+     "rate": 0.234,
+     "ci_low": 0.18,
+     "ci_high": 0.299,
+     "shrunk": 0.237
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 47,
+     "n": 198,
+     "rate": 0.237,
+     "ci_low": 0.183,
+     "ci_high": 0.301,
+     "shrunk": 0.233
+    },
+    "normal": {
+     "wins": 39,
+     "n": 173,
+     "rate": 0.225,
+     "ci_low": 0.17,
+     "ci_high": 0.293,
+     "shrunk": 0.227
+    },
+    "crisp": {
+     "wins": 50,
+     "n": 198,
+     "rate": 0.253,
+     "ci_low": 0.197,
+     "ci_high": 0.317,
+     "shrunk": 0.255
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 66,
+     "n": 296,
+     "rate": 0.223,
+     "ci_low": 0.179,
+     "ci_high": 0.274,
+     "shrunk": 0.223
+    },
+    "yes": {
+     "wins": 70,
+     "n": 273,
+     "rate": 0.256,
+     "ci_low": 0.208,
+     "ci_high": 0.311,
+     "shrunk": 0.256
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 50,
+     "n": 181,
+     "rate": 0.276,
+     "ci_low": 0.216,
+     "ci_high": 0.346,
+     "shrunk": 0.272
+    },
+    "normal": {
+     "wins": 45,
+     "n": 210,
+     "rate": 0.214,
+     "ci_low": 0.164,
+     "ci_high": 0.275,
+     "shrunk": 0.216
+    },
+    "fast": {
+     "wins": 41,
+     "n": 178,
+     "rate": 0.23,
+     "ci_low": 0.175,
+     "ci_high": 0.297,
+     "shrunk": 0.231
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 70,
+     "n": 289,
+     "rate": 0.242,
+     "ci_low": 0.196,
+     "ci_high": 0.295,
+     "shrunk": 0.242
+    },
+    "male": {
+     "wins": 66,
+     "n": 280,
+     "rate": 0.236,
+     "ci_low": 0.19,
+     "ci_high": 0.289,
+     "shrunk": 0.236
+    }
+   }
+  },
+  "business_type=distributor&size=mid": {
+   "_baseline": {
+    "wins": 42,
+    "n": 192,
+    "rate": 0.219,
+    "ci_low": 0.166,
+    "ci_high": 0.282
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 18,
+     "n": 84,
+     "rate": 0.214,
+     "ci_low": 0.14,
+     "ci_high": 0.313,
+     "shrunk": 0.222
+    },
+    "hinglish": {
+     "wins": 12,
+     "n": 63,
+     "rate": 0.19,
+     "ci_low": 0.112,
+     "ci_high": 0.304,
+     "shrunk": 0.211
+    },
+    "en": {
+     "wins": 12,
+     "n": 45,
+     "rate": 0.267,
+     "ci_low": 0.16,
+     "ci_high": 0.41,
+     "shrunk": 0.245
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 15,
+     "n": 56,
+     "rate": 0.268,
+     "ci_low": 0.17,
+     "ci_high": 0.396,
+     "shrunk": 0.26
+    },
+    "casual": {
+     "wins": 13,
+     "n": 65,
+     "rate": 0.2,
+     "ci_low": 0.121,
+     "ci_high": 0.313,
+     "shrunk": 0.204
+    },
+    "aap_formal": {
+     "wins": 14,
+     "n": 71,
+     "rate": 0.197,
+     "ci_low": 0.121,
+     "ci_high": 0.304,
+     "shrunk": 0.214
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 18,
+     "n": 77,
+     "rate": 0.234,
+     "ci_low": 0.153,
+     "ci_high": 0.34,
+     "shrunk": 0.235
+    },
+    "explanatory": {
+     "wins": 7,
+     "n": 50,
+     "rate": 0.14,
+     "ci_low": 0.07,
+     "ci_high": 0.262,
+     "shrunk": 0.163
+    },
+    "crisp": {
+     "wins": 17,
+     "n": 65,
+     "rate": 0.262,
+     "ci_low": 0.17,
+     "ci_high": 0.38,
+     "shrunk": 0.264
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 31,
+     "n": 97,
+     "rate": 0.32,
+     "ci_low": 0.235,
+     "ci_high": 0.418,
+     "shrunk": 0.303
+    },
+    "no": {
+     "wins": 11,
+     "n": 95,
+     "rate": 0.116,
+     "ci_low": 0.066,
+     "ci_high": 0.196,
+     "shrunk": 0.141
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 10,
+     "n": 49,
+     "rate": 0.204,
+     "ci_low": 0.115,
+     "ci_high": 0.336,
+     "shrunk": 0.221
+    },
+    "fast": {
+     "wins": 18,
+     "n": 80,
+     "rate": 0.225,
+     "ci_low": 0.147,
+     "ci_high": 0.328,
+     "shrunk": 0.228
+    },
+    "normal": {
+     "wins": 14,
+     "n": 63,
+     "rate": 0.222,
+     "ci_low": 0.137,
+     "ci_high": 0.339,
+     "shrunk": 0.223
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 17,
+     "n": 96,
+     "rate": 0.177,
+     "ci_low": 0.114,
+     "ci_high": 0.265,
+     "shrunk": 0.191
+    },
+    "male": {
+     "wins": 25,
+     "n": 96,
+     "rate": 0.26,
+     "ci_low": 0.183,
+     "ci_high": 0.356,
+     "shrunk": 0.255
+    }
+   }
+  },
+  "seller_language=hinglish&size=mid": {
+   "_baseline": {
+    "wins": 103,
+    "n": 443,
+    "rate": 0.233,
+    "ci_low": 0.196,
+    "ci_high": 0.274
+   },
+   "bot_language": {
+    "hi": {
+     "wins": 31,
+     "n": 157,
+     "rate": 0.197,
+     "ci_low": 0.143,
+     "ci_high": 0.267,
+     "shrunk": 0.205
+    },
+    "hinglish": {
+     "wins": 48,
+     "n": 152,
+     "rate": 0.316,
+     "ci_low": 0.247,
+     "ci_high": 0.393,
+     "shrunk": 0.305
+    },
+    "en": {
+     "wins": 24,
+     "n": 134,
+     "rate": 0.179,
+     "ci_low": 0.123,
+     "ci_high": 0.253,
+     "shrunk": 0.185
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 35,
+     "n": 132,
+     "rate": 0.265,
+     "ci_low": 0.197,
+     "ci_high": 0.346,
+     "shrunk": 0.261
+    },
+    "aap_formal": {
+     "wins": 39,
+     "n": 153,
+     "rate": 0.255,
+     "ci_low": 0.192,
+     "ci_high": 0.329,
+     "shrunk": 0.255
+    },
+    "casual": {
+     "wins": 29,
+     "n": 158,
+     "rate": 0.184,
+     "ci_low": 0.131,
+     "ci_high": 0.251,
+     "shrunk": 0.188
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 39,
+     "n": 160,
+     "rate": 0.244,
+     "ci_low": 0.184,
+     "ci_high": 0.316,
+     "shrunk": 0.243
+    },
+    "explanatory": {
+     "wins": 23,
+     "n": 144,
+     "rate": 0.16,
+     "ci_low": 0.109,
+     "ci_high": 0.228,
+     "shrunk": 0.167
+    },
+    "crisp": {
+     "wins": 41,
+     "n": 139,
+     "rate": 0.295,
+     "ci_low": 0.225,
+     "ci_high": 0.375,
+     "shrunk": 0.291
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 60,
+     "n": 221,
+     "rate": 0.271,
+     "ci_low": 0.217,
+     "ci_high": 0.334,
+     "shrunk": 0.269
+    },
+    "no": {
+     "wins": 43,
+     "n": 222,
+     "rate": 0.194,
+     "ci_low": 0.147,
+     "ci_high": 0.251,
+     "shrunk": 0.197
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 36,
+     "n": 146,
+     "rate": 0.247,
+     "ci_low": 0.184,
+     "ci_high": 0.322,
+     "shrunk": 0.247
+    },
+    "fast": {
+     "wins": 30,
+     "n": 139,
+     "rate": 0.216,
+     "ci_low": 0.156,
+     "ci_high": 0.291,
+     "shrunk": 0.22
+    },
+    "normal": {
+     "wins": 37,
+     "n": 158,
+     "rate": 0.234,
+     "ci_low": 0.175,
+     "ci_high": 0.306,
+     "shrunk": 0.233
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 48,
+     "n": 232,
+     "rate": 0.207,
+     "ci_low": 0.16,
+     "ci_high": 0.264,
+     "shrunk": 0.21
+    },
+    "male": {
+     "wins": 55,
+     "n": 211,
+     "rate": 0.261,
+     "ci_low": 0.206,
+     "ci_high": 0.324,
+     "shrunk": 0.258
+    }
+   }
+  },
+  "business_type=trader&size=mid": {
+   "_baseline": {
+    "wins": 57,
+    "n": 202,
+    "rate": 0.282,
+    "ci_low": 0.225,
+    "ci_high": 0.348
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 21,
+     "n": 69,
+     "rate": 0.304,
+     "ci_low": 0.208,
+     "ci_high": 0.421,
+     "shrunk": 0.289
+    },
+    "en": {
+     "wins": 16,
+     "n": 70,
+     "rate": 0.229,
+     "ci_low": 0.146,
+     "ci_high": 0.34,
+     "shrunk": 0.224
+    },
+    "hi": {
+     "wins": 20,
+     "n": 63,
+     "rate": 0.317,
+     "ci_low": 0.216,
+     "ci_high": 0.44,
+     "shrunk": 0.294
+    }
+   },
+   "formality": {
+    "aap_formal": {
+     "wins": 19,
+     "n": 73,
+     "rate": 0.26,
+     "ci_low": 0.173,
+     "ci_high": 0.371,
+     "shrunk": 0.258
+    },
+    "aap_friendly": {
+     "wins": 20,
+     "n": 60,
+     "rate": 0.333,
+     "ci_low": 0.227,
+     "ci_high": 0.459,
+     "shrunk": 0.304
+    },
+    "casual": {
+     "wins": 18,
+     "n": 69,
+     "rate": 0.261,
+     "ci_low": 0.172,
+     "ci_high": 0.375,
+     "shrunk": 0.246
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 15,
+     "n": 70,
+     "rate": 0.214,
+     "ci_low": 0.134,
+     "ci_high": 0.324,
+     "shrunk": 0.221
+    },
+    "crisp": {
+     "wins": 31,
+     "n": 72,
+     "rate": 0.431,
+     "ci_low": 0.323,
+     "ci_high": 0.546,
+     "shrunk": 0.383
+    },
+    "explanatory": {
+     "wins": 11,
+     "n": 60,
+     "rate": 0.183,
+     "ci_low": 0.106,
+     "ci_high": 0.299,
+     "shrunk": 0.19
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 29,
+     "n": 101,
+     "rate": 0.287,
+     "ci_low": 0.208,
+     "ci_high": 0.382,
+     "shrunk": 0.279
+    },
+    "no": {
+     "wins": 28,
+     "n": 101,
+     "rate": 0.277,
+     "ci_low": 0.199,
+     "ci_high": 0.371,
+     "shrunk": 0.264
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 21,
+     "n": 70,
+     "rate": 0.3,
+     "ci_low": 0.205,
+     "ci_high": 0.415,
+     "shrunk": 0.281
+    },
+    "normal": {
+     "wins": 19,
+     "n": 72,
+     "rate": 0.264,
+     "ci_low": 0.176,
+     "ci_high": 0.376,
+     "shrunk": 0.253
+    },
+    "slow": {
+     "wins": 17,
+     "n": 60,
+     "rate": 0.283,
+     "ci_low": 0.185,
+     "ci_high": 0.408,
+     "shrunk": 0.271
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 24,
+     "n": 86,
+     "rate": 0.279,
+     "ci_low": 0.195,
+     "ci_high": 0.382,
+     "shrunk": 0.268
+    },
+    "female": {
+     "wins": 33,
+     "n": 116,
+     "rate": 0.284,
+     "ci_low": 0.21,
+     "ci_high": 0.372,
+     "shrunk": 0.274
+    }
+   }
+  },
+  "business_type=retailer&size=mid": {
+   "_baseline": {
+    "wins": 52,
+    "n": 213,
+    "rate": 0.244,
+    "ci_low": 0.191,
+    "ci_high": 0.306
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 18,
+     "n": 78,
+     "rate": 0.231,
+     "ci_low": 0.151,
+     "ci_high": 0.336,
+     "shrunk": 0.237
+    },
+    "en": {
+     "wins": 16,
+     "n": 57,
+     "rate": 0.281,
+     "ci_low": 0.181,
+     "ci_high": 0.408,
+     "shrunk": 0.257
+    },
+    "hi": {
+     "wins": 18,
+     "n": 78,
+     "rate": 0.231,
+     "ci_low": 0.151,
+     "ci_high": 0.336,
+     "shrunk": 0.234
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 16,
+     "n": 68,
+     "rate": 0.235,
+     "ci_low": 0.15,
+     "ci_high": 0.349,
+     "shrunk": 0.238
+    },
+    "casual": {
+     "wins": 15,
+     "n": 75,
+     "rate": 0.2,
+     "ci_low": 0.125,
+     "ci_high": 0.304,
+     "shrunk": 0.204
+    },
+    "aap_formal": {
+     "wins": 21,
+     "n": 70,
+     "rate": 0.3,
+     "ci_low": 0.205,
+     "ci_high": 0.415,
+     "shrunk": 0.286
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 17,
+     "n": 70,
+     "rate": 0.243,
+     "ci_low": 0.158,
+     "ci_high": 0.355,
+     "shrunk": 0.241
+    },
+    "explanatory": {
+     "wins": 14,
+     "n": 72,
+     "rate": 0.194,
+     "ci_low": 0.12,
+     "ci_high": 0.3,
+     "shrunk": 0.197
+    },
+    "crisp": {
+     "wins": 21,
+     "n": 71,
+     "rate": 0.296,
+     "ci_low": 0.202,
+     "ci_high": 0.41,
+     "shrunk": 0.288
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 32,
+     "n": 103,
+     "rate": 0.311,
+     "ci_low": 0.229,
+     "ci_high": 0.406,
+     "shrunk": 0.291
+    },
+    "yes": {
+     "wins": 20,
+     "n": 110,
+     "rate": 0.182,
+     "ci_low": 0.121,
+     "ci_high": 0.264,
+     "shrunk": 0.197
+    }
+   },
+   "pace_band": {
+    "fast": {
+     "wins": 14,
+     "n": 64,
+     "rate": 0.219,
+     "ci_low": 0.135,
+     "ci_high": 0.334,
+     "shrunk": 0.225
+    },
+    "normal": {
+     "wins": 21,
+     "n": 77,
+     "rate": 0.273,
+     "ci_low": 0.186,
+     "ci_high": 0.381,
+     "shrunk": 0.259
+    },
+    "slow": {
+     "wins": 17,
+     "n": 72,
+     "rate": 0.236,
+     "ci_low": 0.153,
+     "ci_high": 0.346,
+     "shrunk": 0.239
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 34,
+     "n": 111,
+     "rate": 0.306,
+     "ci_low": 0.228,
+     "ci_high": 0.397,
+     "shrunk": 0.292
+    },
+    "female": {
+     "wins": 18,
+     "n": 102,
+     "rate": 0.176,
+     "ci_low": 0.115,
+     "ci_high": 0.262,
+     "shrunk": 0.19
+    }
+   }
+  },
+  "seller_language=en&size=mid": {
+   "_baseline": {
+    "wins": 83,
+    "n": 320,
+    "rate": 0.259,
+    "ci_low": 0.214,
+    "ci_high": 0.31
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 29,
+     "n": 106,
+     "rate": 0.274,
+     "ci_low": 0.198,
+     "ci_high": 0.365,
+     "shrunk": 0.269
+    },
+    "en": {
+     "wins": 30,
+     "n": 96,
+     "rate": 0.312,
+     "ci_low": 0.229,
+     "ci_high": 0.411,
+     "shrunk": 0.289
+    },
+    "hi": {
+     "wins": 24,
+     "n": 118,
+     "rate": 0.203,
+     "ci_low": 0.141,
+     "ci_high": 0.285,
+     "shrunk": 0.212
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 29,
+     "n": 99,
+     "rate": 0.293,
+     "ci_low": 0.212,
+     "ci_high": 0.389,
+     "shrunk": 0.282
+    },
+    "aap_formal": {
+     "wins": 30,
+     "n": 108,
+     "rate": 0.278,
+     "ci_low": 0.202,
+     "ci_high": 0.369,
+     "shrunk": 0.272
+    },
+    "casual": {
+     "wins": 24,
+     "n": 113,
+     "rate": 0.212,
+     "ci_low": 0.147,
+     "ci_high": 0.297,
+     "shrunk": 0.212
+    }
+   },
+   "verbosity": {
+    "explanatory": {
+     "wins": 23,
+     "n": 108,
+     "rate": 0.213,
+     "ci_low": 0.146,
+     "ci_high": 0.299,
+     "shrunk": 0.211
+    },
+    "crisp": {
+     "wins": 36,
+     "n": 105,
+     "rate": 0.343,
+     "ci_low": 0.259,
+     "ci_high": 0.438,
+     "shrunk": 0.327
+    },
+    "normal": {
+     "wins": 24,
+     "n": 107,
+     "rate": 0.224,
+     "ci_low": 0.156,
+     "ci_high": 0.312,
+     "shrunk": 0.227
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 47,
+     "n": 173,
+     "rate": 0.272,
+     "ci_low": 0.211,
+     "ci_high": 0.342,
+     "shrunk": 0.269
+    },
+    "no": {
+     "wins": 36,
+     "n": 147,
+     "rate": 0.245,
+     "ci_low": 0.182,
+     "ci_high": 0.32,
+     "shrunk": 0.241
+    }
+   },
+   "pace_band": {
+    "normal": {
+     "wins": 27,
+     "n": 105,
+     "rate": 0.257,
+     "ci_low": 0.183,
+     "ci_high": 0.348,
+     "shrunk": 0.25
+    },
+    "fast": {
+     "wins": 29,
+     "n": 113,
+     "rate": 0.257,
+     "ci_low": 0.185,
+     "ci_high": 0.344,
+     "shrunk": 0.253
+    },
+    "slow": {
+     "wins": 27,
+     "n": 102,
+     "rate": 0.265,
+     "ci_low": 0.189,
+     "ci_high": 0.358,
+     "shrunk": 0.261
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 44,
+     "n": 162,
+     "rate": 0.272,
+     "ci_low": 0.209,
+     "ci_high": 0.345,
+     "shrunk": 0.266
+    },
+    "male": {
+     "wins": 39,
+     "n": 158,
+     "rate": 0.247,
+     "ci_low": 0.186,
+     "ci_high": 0.32,
+     "shrunk": 0.245
+    }
+   }
+  },
+  "business_type=manufacturer&size=small": {
+   "_baseline": {
+    "wins": 107,
+    "n": 403,
+    "rate": 0.266,
+    "ci_low": 0.225,
+    "ci_high": 0.311
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 39,
+     "n": 132,
+     "rate": 0.295,
+     "ci_low": 0.224,
+     "ci_high": 0.378,
+     "shrunk": 0.288
+    },
+    "hi": {
+     "wins": 38,
+     "n": 123,
+     "rate": 0.309,
+     "ci_low": 0.234,
+     "ci_high": 0.395,
+     "shrunk": 0.296
+    },
+    "en": {
+     "wins": 30,
+     "n": 148,
+     "rate": 0.203,
+     "ci_low": 0.146,
+     "ci_high": 0.275,
+     "shrunk": 0.204
+    }
+   },
+   "formality": {
+    "aap_friendly": {
+     "wins": 30,
+     "n": 118,
+     "rate": 0.254,
+     "ci_low": 0.184,
+     "ci_high": 0.34,
+     "shrunk": 0.252
+    },
+    "casual": {
+     "wins": 29,
+     "n": 151,
+     "rate": 0.192,
+     "ci_low": 0.137,
+     "ci_high": 0.262,
+     "shrunk": 0.195
+    },
+    "aap_formal": {
+     "wins": 48,
+     "n": 134,
+     "rate": 0.358,
+     "ci_low": 0.282,
+     "ci_high": 0.442,
+     "shrunk": 0.339
+    }
+   },
+   "verbosity": {
+    "crisp": {
+     "wins": 31,
+     "n": 128,
+     "rate": 0.242,
+     "ci_low": 0.176,
+     "ci_high": 0.323,
+     "shrunk": 0.247
+    },
+    "explanatory": {
+     "wins": 41,
+     "n": 136,
+     "rate": 0.301,
+     "ci_low": 0.231,
+     "ci_high": 0.383,
+     "shrunk": 0.284
+    },
+    "normal": {
+     "wins": 35,
+     "n": 139,
+     "rate": 0.252,
+     "ci_low": 0.187,
+     "ci_high": 0.33,
+     "shrunk": 0.249
+    }
+   },
+   "acknowledged_objection": {
+    "no": {
+     "wins": 39,
+     "n": 187,
+     "rate": 0.209,
+     "ci_low": 0.156,
+     "ci_high": 0.272,
+     "shrunk": 0.21
+    },
+    "yes": {
+     "wins": 68,
+     "n": 216,
+     "rate": 0.315,
+     "ci_low": 0.257,
+     "ci_high": 0.38,
+     "shrunk": 0.307
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 29,
+     "n": 113,
+     "rate": 0.257,
+     "ci_low": 0.185,
+     "ci_high": 0.344,
+     "shrunk": 0.255
+    },
+    "fast": {
+     "wins": 43,
+     "n": 143,
+     "rate": 0.301,
+     "ci_low": 0.232,
+     "ci_high": 0.38,
+     "shrunk": 0.29
+    },
+    "normal": {
+     "wins": 35,
+     "n": 147,
+     "rate": 0.238,
+     "ci_low": 0.176,
+     "ci_high": 0.313,
+     "shrunk": 0.236
+    }
+   },
+   "voice_gender": {
+    "male": {
+     "wins": 59,
+     "n": 220,
+     "rate": 0.268,
+     "ci_low": 0.214,
+     "ci_high": 0.33,
+     "shrunk": 0.265
+    },
+    "female": {
+     "wins": 48,
+     "n": 183,
+     "rate": 0.262,
+     "ci_low": 0.204,
+     "ci_high": 0.33,
+     "shrunk": 0.258
+    }
+   }
+  },
+  "business_type=service_provider&size=mid": {
+   "_baseline": {
+    "wins": 57,
+    "n": 225,
+    "rate": 0.253,
+    "ci_low": 0.201,
+    "ci_high": 0.314
+   },
+   "bot_language": {
+    "hinglish": {
+     "wins": 25,
+     "n": 75,
+     "rate": 0.333,
+     "ci_low": 0.237,
+     "ci_high": 0.446,
+     "shrunk": 0.31
+    },
+    "en": {
+     "wins": 15,
+     "n": 77,
+     "rate": 0.195,
+     "ci_low": 0.122,
+     "ci_high": 0.297,
+     "shrunk": 0.2
+    },
+    "hi": {
+     "wins": 17,
+     "n": 73,
+     "rate": 0.233,
+     "ci_low": 0.151,
+     "ci_high": 0.342,
+     "shrunk": 0.236
+    }
+   },
+   "formality": {
+    "casual": {
+     "wins": 19,
+     "n": 71,
+     "rate": 0.268,
+     "ci_low": 0.179,
+     "ci_high": 0.381,
+     "shrunk": 0.251
+    },
+    "aap_formal": {
+     "wins": 21,
+     "n": 83,
+     "rate": 0.253,
+     "ci_low": 0.172,
+     "ci_high": 0.356,
+     "shrunk": 0.253
+    },
+    "aap_friendly": {
+     "wins": 17,
+     "n": 71,
+     "rate": 0.239,
+     "ci_low": 0.155,
+     "ci_high": 0.35,
+     "shrunk": 0.241
+    }
+   },
+   "verbosity": {
+    "normal": {
+     "wins": 23,
+     "n": 78,
+     "rate": 0.295,
+     "ci_low": 0.205,
+     "ci_high": 0.404,
+     "shrunk": 0.279
+    },
+    "explanatory": {
+     "wins": 15,
+     "n": 77,
+     "rate": 0.195,
+     "ci_low": 0.122,
+     "ci_high": 0.297,
+     "shrunk": 0.197
+    },
+    "crisp": {
+     "wins": 19,
+     "n": 70,
+     "rate": 0.271,
+     "ci_low": 0.181,
+     "ci_high": 0.385,
+     "shrunk": 0.271
+    }
+   },
+   "acknowledged_objection": {
+    "yes": {
+     "wins": 38,
+     "n": 123,
+     "rate": 0.309,
+     "ci_low": 0.234,
+     "ci_high": 0.395,
+     "shrunk": 0.298
+    },
+    "no": {
+     "wins": 19,
+     "n": 102,
+     "rate": 0.186,
+     "ci_low": 0.123,
+     "ci_high": 0.273,
+     "shrunk": 0.194
+    }
+   },
+   "pace_band": {
+    "slow": {
+     "wins": 26,
+     "n": 81,
+     "rate": 0.321,
+     "ci_low": 0.229,
+     "ci_high": 0.429,
+     "shrunk": 0.301
+    },
+    "normal": {
+     "wins": 21,
+     "n": 76,
+     "rate": 0.276,
+     "ci_low": 0.188,
+     "ci_high": 0.386,
+     "shrunk": 0.262
+    },
+    "fast": {
+     "wins": 10,
+     "n": 68,
+     "rate": 0.147,
+     "ci_low": 0.082,
+     "ci_high": 0.25,
+     "shrunk": 0.175
+    }
+   },
+   "voice_gender": {
+    "female": {
+     "wins": 32,
+     "n": 117,
+     "rate": 0.274,
+     "ci_low": 0.201,
+     "ci_high": 0.361,
+     "shrunk": 0.266
+    },
+    "male": {
+     "wins": 25,
+     "n": 108,
+     "rate": 0.231,
+     "ci_low": 0.162,
+     "ci_high": 0.319,
+     "shrunk": 0.233
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+  "seller_id": "R003",
+  "display_name": "Chicory Powder Manufacturer, Assam",
+  "city": "Guwahati",
+  "state": "Assam",
+  "business_type": "manufacturer",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Chicory Powder",
+    "Coffee Powder",
+    "Filter Coffee Powder"
+  ],
+  "years_on_im": 1,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 0,
+    "lead_response_rate": 0.0,
+    "app_active_days_30d": 10,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-06-28",
+      "outcome": "callback",
+      "duration_sec": 62,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-07-04",
+      "outcome": "callback",
+      "duration_sec": 76,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-07-08",
+      "outcome": "callback",
+      "duration_sec": 122,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-07-09",
+      "outcome": "callback",
+      "duration_sec": 46,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.3,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-07-13",
+      "outcome": "not_interested",
+      "duration_sec": 6,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.3,
+      "summary": "Bot call, original label 'Not Interested'."
+    },
+    {
+      "date": "2026-07-19",
+      "outcome": "disconnected",
+      "duration_sec": 4,
+      "objections": [
+        "busy",
+        "already_using_other"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 11.3,
+      "summary": "Bot call, original label 'Not Interested'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [
+      "Seller Unavailability & Scheduling Constraints",
+      "Not Ready / Needs Time / Early-Stage Seller",
+      "Existing Engagement / Past Experience"
+    ],
+    "years_on_im_is_proxy": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "seller_id": "R004",
+  "display_name": "Circuit Board Retailer, Delhi",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "business_type": "retailer",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Circuit Board",
+    "Fiber Optic Patch Cord",
+    "PCB Circuit"
+  ],
+  "years_on_im": 5,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 0,
+    "lead_response_rate": 0.0,
+    "app_active_days_30d": 10,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-06-18",
+      "outcome": "disconnected",
+      "duration_sec": 0,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 12.8,
+      "summary": "Bot call, original label 'Not Interested'."
+    },
+    {
+      "date": "2026-08-08",
+      "outcome": "general",
+      "duration_sec": 145,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 12.8,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-08-08",
+      "outcome": "disconnected",
+      "duration_sec": 5,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 12.8,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-08-08",
+      "outcome": "general",
+      "duration_sec": 98,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 12.8,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-09-21",
+      "outcome": "general",
+      "duration_sec": 9,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 12.8,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-09-22",
+      "outcome": "disconnected",
+      "duration_sec": 4,
+      "objections": [
+        "not_needed",
+        "already_using_other"
+      ],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 12.8,
+      "summary": "Bot call, original label 'General (talked)'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [
+      "Explicit Disinterest / Refusal",
+      "Not Ready / Needs Time / Early-Stage Seller",
+      "Existing Engagement / Past Experience"
+    ],
+    "years_on_im_is_proxy": true
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "seller_id": "R007",
+  "display_name": "Bottle Filling Machines Service Provider, Gujarat",
+  "city": "Vapi",
+  "state": "Gujarat",
+  "business_type": "service_provider",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Bottle Filling Machines",
+    "Cleaning Machinery",
+    "Filling Machines"
+  ],
+  "years_on_im": 9,
+  "subscription": "free",
+  "preferred_language": "en",
+  "engagement": {
+    "leads_last_30d": 3,
+    "lead_response_rate": 1.0,
+    "app_active_days_30d": 10,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-07-07",
+      "outcome": "general",
+      "duration_sec": 300,
+      "objections": [],
+      "seller_language": "en",
+      "avg_seller_turn_words": 4.1,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-07-17",
+      "outcome": "not_interested",
+      "duration_sec": 63,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 4.2,
+      "summary": "Bot call, original label 'Not Interested'."
+    },
+    {
+      "date": "2026-08-05",
+      "outcome": "disconnected",
+      "duration_sec": 25,
+      "objections": [],
+      "seller_language": "en",
+      "avg_seller_turn_words": 4.1,
+      "summary": "Bot call, original label 'Not Interested'."
+    },
+    {
+      "date": "2026-08-14",
+      "outcome": "disconnected",
+      "duration_sec": 13,
+      "objections": [],
+      "seller_language": "en",
+      "avg_seller_turn_words": 4.1,
+      "summary": "Bot call, original label 'Not Interested'."
+    }
+  ],
+  "history": {
+    "showed_frustration": true,
+    "asked_if_bot": false,
+    "past_objection_categories": [],
+    "years_on_im_is_proxy": true
+  }
+}

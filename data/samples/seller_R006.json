@@ -1,0 +1,58 @@
+{
+  "seller_id": "R006",
+  "display_name": "Paper Plate Making Machine Manufacturer, Delhi",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "business_type": "manufacturer",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Paper Plate Making Machine",
+    "Automatic Stirrup Benders",
+    "Bar Bending Machine"
+  ],
+  "years_on_im": 0,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 0,
+    "lead_response_rate": 0.0,
+    "app_active_days_30d": 4,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-04-23",
+      "outcome": "not_interested",
+      "duration_sec": 26,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 9.6,
+      "summary": "Bot call, original label 'Not Interested'."
+    },
+    {
+      "date": "2026-07-14",
+      "outcome": "callback",
+      "duration_sec": 95,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 9.6,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    },
+    {
+      "date": "2026-07-16",
+      "outcome": "disconnected",
+      "duration_sec": 4,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 9.6,
+      "summary": "Bot call, original label 'Not Interested'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [],
+    "years_on_im_is_proxy": true
+  }
+}

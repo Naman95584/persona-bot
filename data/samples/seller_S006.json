@@ -1,0 +1,46 @@
+{
+  "seller_id": "S006",
+  "display_name": "CoolAir HVAC Services",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "business_type": "service_provider",
+  "turnover_band": "1.5-5Cr",
+  "categories": [
+    "AC Installation",
+    "HVAC AMC"
+  ],
+  "years_on_im": 2,
+  "subscription": "paid_basic",
+  "preferred_language": "en",
+  "engagement": {
+    "leads_last_30d": 30,
+    "lead_response_rate": 0.4,
+    "app_active_days_30d": 15,
+    "avg_reply_time_hrs": 6.0,
+    "last_login_days_ago": 3
+  },
+  "past_calls": [
+    {
+      "date": "2026-09-10",
+      "outcome": "no_answer",
+      "duration_sec": 0,
+      "objections": [
+        "none"
+      ],
+      "seller_language": "en",
+      "avg_seller_turn_words": 0.0,
+      "summary": "Did not pick up."
+    },
+    {
+      "date": "2026-09-13",
+      "outcome": "callback",
+      "duration_sec": 50,
+      "objections": [
+        "busy"
+      ],
+      "seller_language": "en",
+      "avg_seller_turn_words": 6.0,
+      "summary": "On site; asked to call evening."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "seller_id": "R005",
+  "display_name": "Coconut Water Retailer, Uttar Pradesh",
+  "city": "Varanasi",
+  "state": "Uttar Pradesh",
+  "business_type": "retailer",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Coconut Water",
+    "Fruit Juice",
+    "Green Lemon Drink"
+  ],
+  "years_on_im": 8,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 1,
+    "lead_response_rate": 0.0,
+    "app_active_days_30d": 2,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-05-14",
+      "outcome": "meeting_fixed",
+      "duration_sec": 41,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 27.9,
+      "summary": "Bot call, original label 'Meeting Fixed'."
+    },
+    {
+      "date": "2026-08-15",
+      "outcome": "meeting_fixed",
+      "duration_sec": 241,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 27.9,
+      "summary": "Bot call, original label 'Meeting Fixed'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [],
+    "years_on_im_is_proxy": true
+  }
+}

@@ -1,0 +1,13 @@
+# Real-data demo 1 (R001): busy Hinglish distributor → RUSH switch on turn 2, agrees to a slot at the end.
+# Lines are written fresh for the demo; they are not real transcripts.
+seller_id: R001
+title: "Busy distributor (real-data persona R001)"
+turns:
+  - text: "हैलो, हाँ बोलिए"
+    expect: []
+  - text: "अभी बहुत busy हूँ यार, जल्दी बोलो, time नहीं है"
+    expect: [rush]
+  - text: "अच्छा, ये meeting free है क्या?"
+    expect: []            # interest, but inside the 2-turn cooldown → correctly held back
+  - text: "ठीक है, कल शाम 5 बजे का slot रख लो"
+    expect: [interest]

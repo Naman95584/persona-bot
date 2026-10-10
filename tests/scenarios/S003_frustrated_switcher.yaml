@@ -1,0 +1,13 @@
+# Demo scenario 3: English-first distributor gets irritated and switches to Hindi
+# → LANGUAGE_SWITCH (en→hi) + FRUSTRATION on the same turn.
+seller_id: S003
+title: "Irritated distributor switches to Hindi"
+turns:
+  - text: "Yes, who is this?"
+    expect: []
+  - text: "Look, the leads you send are mostly useless retail buyers"
+    expect: []            # mild (0.5); held back alone, but primes hysteresis
+  - text: "यार कितनी बार कॉल करोगे, हर हफ्ते यही बात"
+    expect: [language_switch, frustration]
+  - text: "ठीक है ठीक है, कल शाम पाँच बजे रख लो"
+    expect: []

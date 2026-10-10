@@ -1,0 +1,12 @@
+# Demo scenario 2: new Hindi-speaking manufacturer is unsure → CONFUSION switch.
+seller_id: S002
+title: "Confused small manufacturer"
+turns:
+  - text: "जी नमस्ते, बोलिए"
+    expect: []
+  - text: "लीड क्या होता है? मुझे समझ नहीं आया"
+    expect: [confusion]
+  - text: "अच्छा, तो इसके पैसे लगेंगे क्या?"
+    expect: []
+  - text: "ठीक है जी, कल ग्यारह बजे बात कर लेंगे"
+    expect: [interest]

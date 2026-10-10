@@ -1,0 +1,46 @@
+{
+  "seller_id": "S002",
+  "display_name": "Shree Ganesh Agro Industries",
+  "city": "Sehore",
+  "state": "Madhya Pradesh",
+  "business_type": "manufacturer",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Flour Mill Machine",
+    "Masala Grinder"
+  ],
+  "years_on_im": 1,
+  "subscription": "free",
+  "preferred_language": "hi",
+  "engagement": {
+    "leads_last_30d": 6,
+    "lead_response_rate": 0.5,
+    "app_active_days_30d": 3,
+    "avg_reply_time_hrs": 30.0,
+    "last_login_days_ago": 9
+  },
+  "past_calls": [
+    {
+      "date": "2026-09-10",
+      "outcome": "callback",
+      "duration_sec": 95,
+      "objections": [
+        "not_needed"
+      ],
+      "seller_language": "hi",
+      "avg_seller_turn_words": 12.0,
+      "summary": "Asked many questions about what a 'lead' is. Wanted son present."
+    },
+    {
+      "date": "2026-09-13",
+      "outcome": "not_interested",
+      "duration_sec": 70,
+      "objections": [
+        "trust"
+      ],
+      "seller_language": "hi",
+      "avg_seller_turn_words": 10.5,
+      "summary": "Unsure if service is genuine; asked 'paise to nahi lagenge?'"
+    }
+  ]
+}

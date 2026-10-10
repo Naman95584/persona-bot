@@ -1,0 +1,35 @@
+{
+  "seller_id": "S004",
+  "display_name": "Rajputana Handicrafts",
+  "city": "Jaipur",
+  "state": "Rajasthan",
+  "business_type": "retailer",
+  "turnover_band": "40L-1.5Cr",
+  "categories": [
+    "Wooden Handicrafts",
+    "Brass Idols"
+  ],
+  "years_on_im": 3,
+  "subscription": "free",
+  "preferred_language": "hi",
+  "engagement": {
+    "leads_last_30d": 15,
+    "lead_response_rate": 0.6,
+    "app_active_days_30d": 10,
+    "avg_reply_time_hrs": 12.0,
+    "last_login_days_ago": 2
+  },
+  "past_calls": [
+    {
+      "date": "2026-09-10",
+      "outcome": "callback",
+      "duration_sec": 75,
+      "objections": [
+        "price"
+      ],
+      "seller_language": "hi",
+      "avg_seller_turn_words": 9.0,
+      "summary": "Interested but worried about cost."
+    }
+  ]
+}

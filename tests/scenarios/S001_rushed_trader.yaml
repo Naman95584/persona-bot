@@ -1,0 +1,13 @@
+# Demo scenario 1: busy Hinglish trader gets impatient → RUSH switch.
+# `expect` = signals that SHOULD trigger a switch on that turn (used by tests + replay).
+seller_id: S001
+title: "Rushed Hinglish trader"
+turns:
+  - text: "हाँ बोलिए, कौन?"
+    expect: []
+  - text: "अरे जल्दी बोलो यार, time नहीं है, shop पे customer खड़ा है"
+    expect: [rush]
+  - text: "अच्छा, कितनी leads मिलेंगी इससे?"
+    expect: []            # interest, but inside the 2-turn cooldown → correctly held back
+  - text: "ठीक है, कल 11 बजे रख लो"
+    expect: [interest]

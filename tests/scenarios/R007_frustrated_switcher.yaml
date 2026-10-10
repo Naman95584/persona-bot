@@ -1,0 +1,12 @@
+# Real-data demo 3 (R007): English-first seller who gets irritated and snaps back in Hindi → LANGUAGE_SWITCH + FRUSTRATION.
+seller_id: R007
+title: "Frustrated language-switcher (real-data persona R007)"
+turns:
+  - text: "Yes, who is this please?"
+    expect: []
+  - text: "Okay, and what exactly do you want from me?"
+    expect: []
+  - text: "आप लोग बार बार call क्यों करते हो, कितनी बार मना किया है, परेशान मत करो"
+    expect: [frustration, language_switch]
+  - text: "ठीक है, शाम को 6 बजे एक बार call कर लेना, बस"
+    expect: []

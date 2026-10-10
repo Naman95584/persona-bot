@@ -1,0 +1,7 @@
+data/raw/
+.env
+outputs/latency.csv
+outputs/calls/
+__pycache__/
+.venv/
+.pytest_cache/

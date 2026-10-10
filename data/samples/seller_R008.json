@@ -1,0 +1,85 @@
+{
+  "seller_id": "R008",
+  "display_name": "Automobile Horns Distributor, Maharashtra",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "business_type": "distributor",
+  "turnover_band": "0-40L",
+  "categories": [
+    "Automobile Horns",
+    "Automotive Wiring Harness",
+    "Car Horn Relay"
+  ],
+  "years_on_im": 9,
+  "subscription": "free",
+  "preferred_language": "hinglish",
+  "engagement": {
+    "leads_last_30d": 0,
+    "lead_response_rate": 0.0,
+    "app_active_days_30d": 10,
+    "avg_reply_time_hrs": 0.0,
+    "last_login_days_ago": 0
+  },
+  "past_calls": [
+    {
+      "date": "2026-07-16",
+      "outcome": "meeting_fixed",
+      "duration_sec": 591,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 30.9,
+      "summary": "Bot call, original label 'Meeting Fixed'."
+    },
+    {
+      "date": "2026-09-08",
+      "outcome": "disconnected",
+      "duration_sec": 6,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 30.9,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-09-08",
+      "outcome": "general",
+      "duration_sec": 129,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 30.9,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-09-09",
+      "outcome": "disconnected",
+      "duration_sec": 8,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 30.9,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-09-09",
+      "outcome": "disconnected",
+      "duration_sec": 7,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 30.9,
+      "summary": "Bot call, original label 'General (talked)'."
+    },
+    {
+      "date": "2026-09-21",
+      "outcome": "callback",
+      "duration_sec": 58,
+      "objections": [],
+      "seller_language": "hinglish",
+      "avg_seller_turn_words": 30.9,
+      "summary": "Bot call, original label 'Call Later / Busy'."
+    }
+  ],
+  "history": {
+    "showed_frustration": false,
+    "asked_if_bot": false,
+    "past_objection_categories": [],
+    "years_on_im_is_proxy": true
+  }
+}

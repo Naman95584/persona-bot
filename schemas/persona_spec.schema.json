@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PersonaSpec",
+  "description": "Voice Bot persona for one seller. Every choice carries a reason tied to seller data or past-call evidence.",
+  "type": "object",
+  "required": ["seller_id", "segment", "voice", "language", "tone", "conversation_plan", "live_adaptation"],
+  "$defs": {
+    "reason": {
+      "type": "object",
+      "required": ["why", "source"],
+      "properties": {
+        "why": { "type": "string" },
+        "source": { "type": "string", "description": "seller field (e.g. seller.turnover_band) or evidence key (e.g. evidence:trader_small×hinglish → 31% meeting, n=212)" }
+      }
+    }
+  },
+  "properties": {
+    "seller_id": { "type": "string", "description": "Anonymised ID only" },
+    "segment": { "type": "string", "examples": ["small_trader_hinglish_price_objector"] },
+    "voice": {
+      "type": "object",
+      "required": ["tts_model", "speaker", "gender", "accent", "pace", "reason"],
+      "properties": {
+        "tts_model": { "enum": ["bulbul:v4-flash", "bulbul:v3", "bulbul:v2"] },
+        "speaker": { "type": "string" },
+        "gender": { "enum": ["female", "male"] },
+        "accent": { "type": "string", "examples": ["neutral Hindi-English", "North Indian Hindi"] },
+        "pace": { "type": "number", "minimum": 0.5, "maximum": 2.0 },
+        "pitch": { "type": ["number", "null"], "minimum": -0.75, "maximum": 0.75, "description": "bulbul:v2 only" },
+        "temperature": { "type": ["number", "null"], "minimum": 0.01, "maximum": 1.0, "description": "v3/v4-flash only" },
+        "reason": { "$ref": "#/$defs/reason" }
+      }
+    },
+    "language": {
+      "type": "object",
+      "required": ["primary_code", "hinglish_ratio", "formality", "reason"],
+      "properties": {
+        "primary_code": { "type": "string", "examples": ["hi-IN", "en-IN"] },
+        "hinglish_ratio": { "type": "number", "minimum": 0, "maximum": 1, "description": "share of English words in Hindi speech" },
+        "formality": { "enum": ["aap_formal", "aap_friendly", "casual"] },
+        "reason": { "$ref": "#/$defs/reason" }
+      }
+    },
+    "tone": {
+      "type": "object",
+      "required": ["warmth", "empathy", "verbosity", "reason"],
+      "properties": {
+        "warmth": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "empathy": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "verbosity": { "enum": ["crisp", "normal", "explanatory"] },
+        "reason": { "$ref": "#/$defs/reason" }
+      }
+    },
+    "conversation_plan": {
+      "type": "object",
+      "required": ["opening", "personalisation", "objection_playbook", "escalation_rules", "guardrails"],
+      "properties": {
+        "opening": { "type": "object", "required": ["line", "reason"], "properties": { "line": { "type": "string" }, "reason": { "$ref": "#/$defs/reason" } } },
+        "personalisation": { "type": "array", "items": { "type": "object", "required": ["hook", "reason"], "properties": { "hook": { "type": "string" }, "reason": { "$ref": "#/$defs/reason" } } } },
+        "objection_playbook": { "type": "array", "items": { "type": "object", "required": ["objection", "response", "reason"], "properties": { "objection": { "type": "string" }, "response": { "type": "string" }, "reason": { "$ref": "#/$defs/reason" } } } },
+        "escalation_rules": { "type": "array", "items": { "type": "string" } },
+        "guardrails": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "live_adaptation": {
+      "type": "object",
+      "description": "Seller-specific overrides of the default switch policy",
+      "properties": {
+        "watch_for": { "type": "array", "items": { "enum": ["frustration", "confusion", "interest", "language_switch", "rush"] } },
+        "fallback_language": { "type": "string" },
+        "max_switches_per_call": { "type": "integer", "default": 3 }
+      }
+    }
+  }
+}
